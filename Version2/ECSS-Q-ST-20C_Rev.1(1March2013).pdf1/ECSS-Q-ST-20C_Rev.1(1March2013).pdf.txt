@@ -1,0 +1,7513 @@
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+ 
+
+Space product 
+assurance 
+Quality assurance 
+
+ECSS Secretariat 
+ESA-ESTEC 
+Requirements & Standards Division 
+Noordwijk, The Netherlands 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+Foreword 
+This  Standard  is  one  of  the  series  of  ECSS  Standards  intended  to  be  applied  together  for  the 
+management,  engineering  and  product  assurance  in  space  projects  and  applications.  ECSS  is  a 
+cooperative  effort  of  the  European  Space  Agency,  national  space  agencies  and  European  industry 
+associations for the purpose of developing and maintaining common standards. Requirements in this 
+Standard are defined in terms of what shall be accomplished, rather than in terms of how to organize 
+and  perform  the  necessary  work.  This  allows  existing  organizational  structures  and  methods  to  be 
+applied where they are effective, and for the structures and methods to evolve as necessary without 
+rewriting the standards. 
+This  Standard  has  been  prepared  by  the  ECSS-Q-ST-20  Working  Group,  reviewed  by  the  ECSS 
+Executive Secretariat and approved by the ECSS Technical Authority. 
+
+Disclaimer 
+ECSS does not provide any warranty whatsoever, whether expressed, implied, or statutory, including, 
+but not limited to, any warranty of merchantability or fitness for a particular purpose or any warranty 
+that  the  contents  of  the  item  are  error-free.  In  no  respect  shall  ECSS  incur  any  liability  for  any 
+damages, including, but not limited to, direct, indirect, special, or consequential damages arising out 
+of, resulting from, or in any way connected to the use of this Standard, whether or not based upon 
+warranty, business agreement, tort, or otherwise; whether or not injury was sustained by persons or 
+property or otherwise; and whether or not loss was sustained from, or arose out of, the results of, the 
+item, or any services that may be provided by ECSS. 
+
+Published by:   ESA Requirements and Standards Division 
+ 
+ 
+ 
+Copyright:  
+
+ESTEC, P.O. Box 299, 
+2200 AG Noordwijk 
+The Netherlands 
+2013© by the European Space Agency for the members of ECSS 
+
+2 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+Change log 
+
+ECSS-Q-20A 
+19 April 1996 
+ECSS-Q-20-B 
+8 March 2002 
+ECSS-Q-ST-20C 
+15 November 2008 
+
+First issue 
+
+Second issue 
+
+Third issue 
+Major changes of this version of ECSS-Q-ST-20 with regard to the previous 
+version are: 
+•  Transfer of PA related requirements to the newly established ECSS-Q-
+
+ST-10, Product assurance management; 
+
+•  Adaptation of structure of document and formulation of requirements 
+
+to be consistent with ECSS drafting rules. 
+
+•  Deletion of ECSS-Q-20B or transfer to ECSS-Q-ST-10C: 
+
+o  Clause "4.6 Quality assurance programme audits" deleted; 
+
+transferred to Q-ST-10 clause "5.1.4 PA audits"; 
+
+o  Clause "4.7 QA role in configuration management" deleted; 
+transferred to Q-ST-10 clause "5.6 PA role in configuration 
+management"; 
+
+o  Clause "4.8 Critical items control" deleted; transferred to Q-ST-10 
+clause "5.2 Critical items control and PA interfaces to project risk 
+management"; 
+
+o  Clause "11 Operations" deleted. 
+
+•  New requirements:  
+
+o  Annex A of Q-20B: Ground Support Equipment moved to clause 5.8 
+
+of this document. 
+
+o  Annex A: DRD for QA Plan added. 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+Third issue Revision 1 
+Major changes of this version with regard to the previous version are: 
+
+Implementation of Change Requests 
+
+• 
+•  Addition of applicable terms from ECSS-S-ST-00-01 in 3.1 
+•  Abbreviated terms for “CoC, NCR, VCB and VCD” added 
+•  Clause 5.3.2.4 “Qualification process” aligned with ECSS-E-ST-10-02 
+•  Addition of the “Pre-Tailoring matrix” in Clause 6 
+•  Annex D abbreviated title of DRD changed from “DoC” to “CoC” 
+•  Addition of Annex J “ECSS-Q-ST-20 applicability according to 
+
+programme phases” 
+
+3 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+ 
+Detailed changes: 
+Addition of definitions in 3.2 for terms:  
+
+- 
+Inspectability 
+-  producibility 
+- 
+repeatability 
+testability 
+- 
+
+ 
+Added requirements:  
+5.2.7.2f; 5.3.2.4.1d; 5.5.8j; 5.5.11a-b; A.2<9>a; D.2.1a.8 
+ 
+Modified requirements: 
+5.1.2b and c; 5.2.4a-f(replacement of term “stamp” by “acceptance 
+authority media”); 5.2.7.2a. (NOTE added); 5.2.7.2b.4 (typo);.5.3.1.1a 
+(NOTE removed and text used for definition 3.2.3); 5.3.1.2a (NOTE 
+removed and text used for definition 3.2.4); 5.3.1.3a (NOTE removed and 
+text used for definitions 3.2.2 and 3.2.5); 5.3.2.4.1a-c (NOTES added); 
+5.4.1.2a.1and 3 (NOTE moved after last item of list); 5.4.3b; 5.4.3c; 5.4.3c.1 
+and 4 (NOTES moved after last item of list); 5.5.1d; 5.5.1e.3 and 4 (NOTES 
+moved after last item of list); 5.5.2a; 5.5.2b.3 and 5; 5.5.3.1b NOTE; 
+5.5.3.2a.1 (NOTE moved after last item of list); 5.5.3.2a.2; 5.5.5c (NOTE 
+deleted); 5.5.6.1d; 5.5.8e; 5.5.9.1d (NOTE added); 5.5.9.2a-b; 5.6.3.1a; 
+5.6.4a,c-e; 5.6.5a; 5.7.1b; 5.7.3a (NOTE deleted); 5.7.3g (NOTE added); 
+Clauses 5.8.4 to 5.8.7 merged into 5.8.4; clause 5.8.4 renamed to 
+“Acceptance and delivery”; 5.8.5a (now: req. 5.8.4.2a) modified and NOTE 
+deleted; A.2<3>a; B.2.1a.7; B.2.1a.17 (NOTE 2 added); 
+ 
+Moved requirements: 
+5.8.1.1.1a-c moved to 5.8.1a-c; clause 5.8.4 renamed to “Acceptance and 
+delivery”; 5.8.5a-c moved to 5.8.4.2a-c; 5.8.6a-b moved to 5.8.4.3a-b; 5.8.7a 
+moved to 5.8.4.4a. 
+ 
+Deleted requirements:  
+5.2.4g;  
+ 
+
+4 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+Table of contents 
+
+Change log ................................................................................................................. 3 
+
+1 Scope ....................................................................................................................... 8 
+
+2 Normative references ............................................................................................. 9 
+
+3 Terms and definitions .......................................................................................... 10 
+3.1  Terms from other standards .................................................................................... 10 
+3.2  Terms specific to the present standard ................................................................... 10 
+3.3  Abbreviated terms and symbols .............................................................................. 12 
+3.4  Nomenclature ......................................................................................................... 13 
+
+4 Quality assurance principles ............................................................................... 14 
+4.1  QA management principles ..................................................................................... 14 
+4.2  General principles ................................................................................................... 14 
+4.3  Design and verification principles ............................................................................ 14 
+4.4  Procurement principles ........................................................................................... 15 
+4.5  Manufacturing, assembly and integration principles ................................................ 15 
+4.6  Testing principles .................................................................................................... 15 
+4.7  Acceptance and delivery principles ......................................................................... 15 
+4.8  GSE principles ........................................................................................................ 15 
+
+5 Quality assurance requirements ......................................................................... 16 
+5.1  QA management requirements ............................................................................... 16 
+5.1.1  Quality assurance plan .............................................................................. 16 
+5.1.2 
+Personnel training and certification ........................................................... 16 
+5.2  QA general requirements ........................................................................................ 16 
+5.2.1  Critical-items control .................................................................................. 16 
+5.2.2  Nonconformance control system ............................................................... 16 
+5.2.3  Management of alerts ............................................................................... 17 
+5.2.4 
+Acceptance authority media ...................................................................... 17 
+5.2.5 
+Traceability ............................................................................................... 17 
+5.2.6  Metrology and calibration .......................................................................... 18 
+
+5 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+5.2.7  Handling, storage and preservation ........................................................... 19 
+Statistical quality control and analysis ....................................................... 20 
+5.2.8 
+5.3  QA requirements for design and verification ........................................................... 21 
+5.3.1  Design rules .............................................................................................. 21 
+5.3.2 
+Verification ................................................................................................ 21 
+5.4  QA requirements for procurement ........................................................................... 24 
+5.4.1 
+Selection of procurement sources ............................................................. 24 
+5.4.2 
+Procurement documents ........................................................................... 25 
+5.4.3 
+Surveillance of procurement sources ........................................................ 25 
+5.4.4  Receiving inspection ................................................................................. 26 
+5.5  QA requirements for manufacturing, assembly and integration ............................... 28 
+
+5.5.1 
+
+Planning of manufacturing, assembly and integration activities and 
+associated documents .............................................................................. 28 
+5.5.2  Manufacturing readiness reviews .............................................................. 29 
+5.5.3  Control of processes ................................................................................. 29 
+5.5.4  Workmanship standards............................................................................ 30 
+5.5.5  Materials and parts control ........................................................................ 30 
+5.5.6 
+Equipment control ..................................................................................... 31 
+5.5.7  Cleanliness and contamination control ...................................................... 31 
+5.5.8 
+Inspection ................................................................................................. 32 
+5.5.9 
+Specific requirements for assembly and integration .................................. 34 
+5.5.10  Manufacturing, assembly and integration records ..................................... 34 
+5.5.11  Electrostatic discharge control (ESD) ........................................................ 34 
+5.6  QA requirements for testing .................................................................................... 35 
+Test facilities ............................................................................................. 35 
+Test equipment ......................................................................................... 35 
+Test documentation ................................................................................... 35 
+Test performance monitoring .................................................................... 35 
+Test reviews .............................................................................................. 36 
+5.7  QA requirements for acceptance and delivery ........................................................ 36 
+Acceptance and delivery process .............................................................. 36 
+5.7.1 
+5.7.2 
+End item data package ............................................................................. 37 
+5.7.3  Delivery review board (DRB) ..................................................................... 37 
+5.7.4 
+Preparation for delivery ............................................................................. 38 
+5.7.5  Delivery ..................................................................................................... 38 
+5.8  QA requirements for ground support equipment (GSE) .......................................... 38 
+5.8.1  Design, development and verification ........................................................ 38 
+5.8.2  Configuration control ................................................................................. 39 
+
+5.6.1 
+5.6.2 
+5.6.3 
+5.6.4 
+5.6.5 
+
+6 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+Production ................................................................................................. 39 
+5.8.3 
+Acceptance and delivery ........................................................................... 39 
+5.8.4 
+<<deleted, requirements moved to 5.8.4.2>> ............................................ 40 
+5.8.5 
+<<deleted, requirements moved to 5.8.4.3>> ............................................ 40 
+5.8.6 
+5.8.7 
+<<deleted, requirements moved to 5.8.4.4>> ............................................ 40 
+5.8.8  General requirements ............................................................................... 41 
+5.8.9  Maintenance ............................................................................................. 41 
+
+6 Pre-tailoring matrix per space product types .................................................... 42 
+
+Annex A (normative) QA plan - DRD ...................................................................... 51 
+
+Annex B (normative) End item data package (EIDP) - DRD ................................. 53 
+
+Annex C (normative) Logbook - DRD .................................................................... 55 
+
+Annex D (normative) Certificate of conformity (CoC) - DRD ................................ 57 
+
+Annex E (informative) Example of a logbook cover page .................................... 59 
+
+Annex F (informative) Example of EIDP cover page ............................................ 60 
+
+Annex G (informative) Example of EIDP contents ................................................ 61 
+
+Annex H (informative) Example of Certificate of conformity ............................... 62 
+
+Annex I (informative) QA document requirement list ........................................... 63 
+
+Annex J (informative) ECSS-Q-ST-20 applicability according to 
+
+programme phases ............................................................................................. 64 
+
+Bibliography ............................................................................................................. 67 
+ 
+Tables 
+Table I-1 : QA document requirement list with respect to milestones .................................... 63 
+Table J-1 : ECSS-Q-ST-20C Requirements per programme phase ...................................... 64 
+
+ 
+ 
+ 
+
+7 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+1 
+Scope 
+
+This  Standard  defines  the  quality  assurance  (QA)  requirements  for  the 
+establishment  and  implementation  of  a  Quality  Assurance  programme  for 
+products of space projects. 
+Discipline  related  qualification  activities  are  complemented  in  standards 
+specific to those disciplines (e.g. ECSS-E-ST-32-01 for fracture control). 
+For software quality assurance, the software product assurance standard, ECSS-
+Q-ST-80 is applicable. 
+This Standard is applicable to all space projects. 
+This standard may be tailored for the specific characteristic and constrains of a 
+space project in conformance with ECSS-S-ST-00. 
+For the tailoring of this standard the following information is provided: 
+A table providing the pre-tailoring per “Product types” in clause 6 
+• 
+A table providing the pre-tailoring per “Project phase” in Annex J  
+• 
+ 
+
+8 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+2 
+Normative references 
+
+The  following  normative  documents  contain  provisions  which,  through 
+reference  in  this  text,  constitute  provisions  of  this  ECSS  Standard.  For  dated 
+references, subsequent amendments to, or revision of any of these publications 
+do not apply. However, parties to agreements based on this ECSS Standard are 
+encouraged to investigate the possibility of applying the more recent editions of 
+the  normative  documents  indicated  below.  For  undated  references,  the  latest 
+edition of the publication referred to applies. 
+ECSS-S-ST-00-01 
+ECSS-Q-ST-10 
+
+ECSS system - Glossary of terms 
+Space product assurance - Product assurance 
+management 
+Space product assurance - Critical-item control 
+Space product assurance - Nonconformance control 
+system 
+
+ECSS-Q-ST-10-04 
+ECSS-Q-ST-10-09 
+
+EN 61340-5-1 (2007)  Electrostatics - Part 5-1: Protection of electronic 
+devices from electrostatic phenomena - General 
+requirements 
+Development of an Electrostatic Discharge Control 
+Program for Protection of Electrical and Electronic 
+Parts, Assemblies and Equipment 
+
+ANSI-ESD S20.20-
+2007 
+
+9 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+3 
+Terms and definitions  
+
+3.1  Terms from other standards 
+
+For the purpose of this Standard, the terms and definitions from ECSS-ST-00-01 
+apply, in particular for the following terms: 
+
+nonconformance 
+process 
+product assurance 
+quality assurance 
+space system 
+space segment element 
+space segment sub-system 
+launch segment element  
+launch segment sub-system 
+ground segment element  
+ground segment sub-system 
+space segment equipment 
+launch segment equipment 
+ground segment equipment 
+
+3.2  Terms specific to the present standard 
+ground support equipment (GSE) 
+
+3.2.1 
+optical,  mechanical,  fluidic,  electrical  and  software  support  equipment  or 
+systems  used  for  example  for  calibration,  measurements,  testing,  simulation, 
+transportation, and handling of space segment or of space segment elements 
+
+3.2.2 
+ability of an item of being inspected 
+
+inspectability 
+
+NOTE  
+
+Inspectability 
+followings aspects: 
+
+includes  provisions 
+
+for 
+
+the 
+
+10 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+of 
+
+•  Definition 
+
+including 
+acceptance or rejection criteria, expressed in 
+an unambiguous and quantified manner. 
+
+inspection 
+
+•  Part  and 
+inspection  
+
+component  accessibility 
+
+for 
+
+•  Definition  of 
+
+tolerance  methods 
+
+for 
+dimensional  inspection  performance  (e.g. 
+functional tolerances). 
+
+3.2.3 
+ability of an item of being producible 
+
+producibility  
+
+NOTE  
+
+includes  provisions 
+
+Producibility 
+following aspects: 
+•  Design  simplification  and  standardization, 
+
+the 
+
+for 
+
+reduction in part types and part number. 
+
+•  Guidelines  for  selection  of  preferred  parts, 
+
+materials and processes. 
+
+•  Unambiguous 
+
+definitions 
+
+of 
+
+the 
+
+requirements and limits to be used. 
+
+•  Definition of tolerance build-up methods, in 
+order  to  simplify  manufacturing,  assembly, 
+inspection. 
+
+•  Standardization of interfaces. 
+•  Part 
+
+accessibility 
+
+for 
+
+assembly 
+
+and 
+
+inspection. 
+
+•  Definition  of  design  criteria  consistent  with 
+
+the capability of manufacturing processes. 
+
+•  Definition of design methods to ensure that 
+the cleanliness requirements are compatible 
+with  the  capability  of  related  cleanliness 
+procedures and facilities. 
+
+repeatability 
+
+3.2.4 
+ability to reproduce the performance and characteristics of an item  
+for 
+
+includes  provisions 
+
+NOTE  
+
+Repeatability 
+following aspects: 
+•  Definition  of  standard  tolerances  generally 
+
+the 
+
+applicable. 
+
+•  Recommended 
+
+design 
+
+concepts 
+
+and 
+
+solutions to ensure repeatability. 
+
+•  Recommended  manufacturing  processes 
+
+having proven repeatability. 
+
+•  Design 
+
+that 
+
+criteria 
+
+optimize 
+implementation 
+automated 
+manufacturing methods, or computer-aided 
+manufacturing 
+
+of 
+
+11 
+
+3.2.5 
+ability of an item of being tested  
+
+testability 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+NOTE  
+
+for 
+
+the 
+
+includes  provisions 
+
+Testability 
+followings aspects: 
+•  Definition  of  test  requirements,  including 
+acceptance or rejection criteria, expressed in 
+an unambiguous and quantified manner. 
+•  Part and component accessibility for test. 
+design 
+•  Definition 
+fault  detection, 
+techniques 
+identification  and  location  (e.g.  test  points, 
+modularity,  built-in 
+test  software,  and 
+feedback loops). 
+
+recommended 
+
+of 
+to 
+
+facilitate 
+
+3.3  Abbreviated terms and symbols 
+
+For  the  purpose  of  this  Standard,  the  abbreviated  terms  and  symbols  from 
+ECSS-S-ST-00-01 and the following apply: 
+Abbreviation  Meaning 
+AIV 
+BB 
+CI 
+CoC 
+DRB 
+
+assembly, integration, verification 
+breadboard 
+configuration item 
+certificate of confirmity 
+delivery review board 
+NOTE:  DRB is synonymous to “Acceptance Review 
+
+DRD 
+EEE 
+EGSE 
+EIDP 
+FGSE 
+FM 
+GSE 
+MGSE 
+MIP 
+NCR 
+NRB 
+OGSE 
+PA 
+PM 
+QA 
+QM 
+
+Board” (ARB) in ECSS-M-ST-10 
+
+document requirements definition 
+electrical, electronic, electromechanical 
+electrical ground support equipment 
+end item data package 
+fluidic ground support equipment 
+flight model 
+ground support equipment 
+mechanical ground support equipment 
+mandatory inspection point 
+nonconformance report 
+nonconformance review board 
+optical ground support equipment 
+product assurance 
+project manager 
+quality assurance 
+qualification model 
+
+12 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+RFD 
+RFW 
+TRB 
+TRR 
+VCB 
+VCD 
+ 
+
+request for deviation 
+request for waiver 
+test review board 
+test readiness review 
+verification control board 
+verification control document 
+
+3.4  Nomenclature 
+
+The following nomenclature apply throughout this document: 
+a. 
+
+The word “shall” is used in this standard to express requirements. All the 
+requirements are expressed with the word “shall”. 
+The word “should” is used in this standard to express recommendations. 
+All the recommendations are expressed with the word “should”. 
+
+b. 
+
+c. 
+
+d. 
+
+NOTE  
+
+It  is  expected  that,  during  tailoring,  all  the 
+recommendations  in  this  document  are  either 
+converted into requirements or tailored out. 
+
+The  words  “may”  and  “need  not”  are  used  in  this  standard  to  express 
+positive  and  negative  permissions  respectively.  All 
+the  positive 
+permissions  are  expressed  with  the  word  “may”.  All  the  negative 
+permissions are expressed with the words “need not”. 
+The  word  “can”  is  used  in  this  standard  to  express  capabilities  or 
+possibilities,  and  therefore,  if  not  accompanied  by  one  of  the  previous 
+words, it implies descriptive text. 
+
+NOTE  
+
+In  ECSS  “may”  and  “can”  have  a  complete 
+different  meaning: 
+is  normative 
+(permission) and “can” is descriptive. 
+
+“may” 
+
+e. 
+
+The present and past tense are used in this standard to express statement 
+of fact, and therefore they imply descriptive text. 
+
+13 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+4 
+Quality assurance principles 
+
+4.1  QA management principles 
+
+The prime objective of Quality Assurance (QA) management is to ensure that a 
+QA programme for projects covering  mission definition, design, development 
+and production of space systems is established, maintained and implemented. 
+All  QA  requirements  are  specified  through  definition  and  implementation  of 
+adequate methods and procedures. 
+Personnel whose performance determines or affects product quality are trained 
+and certified in accordance with project needs. 
+
+4.2  General principles 
+
+The implementation of the following phase-independent activities is ensured by 
+the QA function throughout the lead-time of projects: 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+
+critical-items control 
+nonconformance control 
+alert management 
+stamp control 
+traceability 
+metrology and calibration 
+handling, storage and preservation 
+statistical quality control (if required by the business agreement). 
+
+4.3  Design and verification principles 
+
+The objective of the QA function is to ensure that: 
+a. 
+
+a set of design rules and methods has been set up and is consistent with 
+the project techniques and technologies; 
+
+b.  methods, procedures and tools have been defined and are implemented 
+in  order  to  prove  that  each  applicable  requirement  is  verified  through 
+one or more of the following methods: analysis, inspection, test, review 
+of design, audits; 
+the  design  is  producible  and  repeatable  and  that  the  resulting  product 
+can be verified and operated within the required operating limits; 
+
+c. 
+
+14 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+d. 
+
+e. 
+
+f. 
+
+design and verification activities are planned in a consistent and logical 
+way; 
+the  verification  process  is  complete  and  includes  clear  test,  test  model 
+and verification logic; 
+a defined qualification approach is implemented to demonstrate that the 
+item performs satisfactorily in the intended environment. 
+
+4.4  Procurement principles 
+including  selection  of  procurement  sources, 
+All  procurement  activities 
+procurement  documents,  procurement  source  surveillance  and  receiving 
+inspection are controlled to ensure that all procured items and services conform 
+to requirements. 
+
+4.5  Manufacturing, assembly and integration principles 
+
+All  manufacturing,  assembly  and  integration  operations  are  planned  and 
+performed  in  coordination  with  inspections  and  tests  to  ensure  that  the 
+deliverables are built, assembled and integrated to the approved configuration 
+baseline. 
+Special processes and new technologies are identified in a timely manner and 
+adequate  evaluation  or  qualification  activities  should  be  implemented  in  line 
+with the overall schedule. 
+
+4.6  Testing principles 
+
+Test  facilities  and  test  equipment  are  validated  prior  to  their  use  to  ensure 
+conformance to project requirements. 
+All  tests  are  performed  in  accordance  with  documented  and  released 
+procedures and results are comprehensively recorded. 
+
+4.7  Acceptance and delivery principles 
+
+The  objective  is  to  ensure  that  an  acceptance  and  delivery  process  is 
+implemented  which  allows  demonstrating  and  documenting  the  conformance 
+of the delivered item. 
+
+4.8  GSE principles 
+
+Design,  production,  delivery  and  maintenance  requirements  for  GSE  are 
+defined  and  implemented  allowing  for  testability,  availability,  safety,  life 
+duration, operability and ability to interface as necessary with space segment in 
+a safe way. 
+
+15 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+5 
+Quality assurance requirements 
+
+5.1  QA management requirements 
+
+5.1.1  Quality assurance plan 
+a. 
+
+The  supplier  shall  prepare,  maintain  and  implement  a  QA  plan  in 
+conformance with the DRD in Annex A. 
+The QA plan shall be submitted to the customer for approval. 
+
+b. 
+
+NOTE  
+
+Information on the schedule for delivery of the 
+QA plan is given in Annex I. 
+
+Personnel training and certification 
+
+The  supplier  shall  establish  a  documented  training  programme  for  the 
+personnel whose performance determines or affects product quality. 
+Personnel performing or evaluating special processes shall be trained and 
+certified according to standards accepted by the customer. 
+
+NOTE  
+
+The term “special process” is defined in ECSS-
+S-ST-00-01. 
+
+Personnel  performing  non-destructive  testing  and  evaluation  shall  be 
+trained and certified according to standards accepted by the customer. 
+The supplier shall maintain records of the training. 
+
+5.2  QA general requirements 
+
+5.1.2 
+a. 
+
+b. 
+
+c. 
+
+d. 
+
+5.2.1 
+a. 
+
+5.2.2 
+a. 
+
+Critical-items control 
+
+The supplier shall implement Critical-items control in conformance with 
+ECSS-Q-ST-10-04. 
+
+Nonconformance control system 
+
+The  supplier  shall  implement  a  nonconformance  control  system  in 
+conformance with ECSS-Q-ST-10-09. 
+
+16 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+5.2.3  Management of alerts 
+a. 
+
+The  supplier  shall  manage  alerts  in  conformance  with  ECSS-Q-ST-10, 
+clause 5.2.9. 
+
+5.2.4 
+a. 
+
+Acceptance authority media 
+
+The  supplier  shall  establish  and  maintain  a  documented  acceptance 
+authority media control system to ensure the correct and legitimate use 
+of all fabrication and inspection authority media. 
+Acceptance authority media shall be used to: 
+1. 
+2. 
+
+signify the completion of operations and processes, and 
+indicate 
+incoming 
+inspection  performance  at  source  and 
+inspection,  in  process  inspection  and  tests,  final  inspection,  end 
+point testing, storage and shipment. 
+
+The  use  of acceptance  authority  media  shall  be  restricted  to  authorized 
+personnel as identified in the acceptance authority media control system. 
+Acceptance authority media shall be traceable to individuals responsible 
+for their use. 
+Acceptance  authority  media  shall  be  applied  directly  to  parts  and 
+materials,  when  specified  by  engineering  drawings  and  specifications, 
+and associated documents, records, labels. 
+Acceptance  authority media materials and  methods shall be compatible 
+with the articles and their use. 
+
+NOTE   Acceptance  authority  media  include  stamps 
+
+and signatures as defined in EN9100. 
+
+b. 
+
+c. 
+
+d. 
+
+e. 
+
+f. 
+
+b. 
+
+c. 
+
+d. 
+
+e. 
+
+g. 
+
+<<deleted>> 
+
+5.2.5 
+a. 
+
+Traceability 
+
+The  supplier  shall  ensure 
+that  a  bidirectional  and  unequivocal 
+relationship  between  parts,  materials  or  products  and  associated 
+documentation or records is established and maintained. 
+The  supplier  shall  be  capable  to  trace  data,  personnel  and  equipment 
+related  to  procurement,  manufacturing,  inspection,  test,  assembly, 
+integration and operations activities. 
+The supplier shall be capable to trace backward the locations of materials, 
+parts, sub-assemblies. 
+The supplier shall be capable to trace forward the locations of materials 
+from raw stock. 
+The supplier shall establish controls to ensure that: 
+1. 
+2. 
+
+identification numbers are assigned in a systematic manner, 
+identification numbers of scrapped or destroyed items are not used 
+again, 
+
+17 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+3. 
+
+identification numbers, once allocated, are not changed, unless the 
+change is authorized by the customer. 
+
+NOTE  
+
+Requirements  for  identification  are  addressed 
+in ECSS-M-ST-40. 
+
+5.2.6  Metrology and calibration 
+a. 
+
+The supplier shall control, calibrate and maintain inspection, measuring 
+and test equipment, whether owned by the supplier, on loan, or provided 
+by  the  customer  to  demonstrate  the  conformance  of  product  to  the 
+specified requirements. 
+The  supplier  shall  use  equipment  in  a  manner  which  ensures  that 
+measurement  uncertainty  is  known  and  is  consistent  with  the  specified 
+measurement capability. 
+The  supplier  shall  include  in  the  calculations  of  all  measurements  the 
+total  error  in  the  measurement  process  attributable  to  the  cumulative 
+error  from  the  calibration  chain,  measuring  equipment  and  those 
+contributed by personnel, procedures and the environment. 
+The supplier shall record the basis for the calculation of the cumulative 
+errors as specified in requirement 5.2.6c. 
+The  supplier  shall  select  inspection,  measuring  and  test  equipment  in 
+conformance with the required measurement accuracy and precision. 
+The supplier shall identify, calibrate and adjust all inspection, measuring 
+and  test  equipment  and  devices  that  can  affect  product  quality  at 
+prescribed intervals, or prior to use, against certified equipment. 
+The  supplier  shall  establish,  document  and  maintain  calibration 
+procedures,  including  details of  equipment  type,  identification  number, 
+location, frequency of checks, check method, acceptance criteria and the 
+action to be taken when results exceed the specified accuracy. 
+The  supplier  shall  ensure  that  the  inspection,  measuring  and  test 
+equipment is capable of the specified accuracy and precision. 
+The  supplier  shall  identify  inspection,  measuring  and  test  equipment 
+with  a  suitable  indicator  or  approved  identification  record  to  show  the 
+calibration status. 
+The supplier shall maintain calibration records for inspection, measuring 
+and test equipment. 
+The  supplier  shall  assess  and  document  the  validity  of  previous 
+inspection and test results when inspection, measuring or test equipment 
+is found to be out of calibration. 
+The supplier shall ensure that the environmental conditions are suitable 
+for  the  calibrations,  inspections,  measurements  and  tests  being  carried 
+out. 
+The  supplier  shall  ensure  that  inspection,  measuring  and  test  facilities, 
+including  both  test  hardware  and  test  software  are  protected  against 
+adjustments, which can invalidate the calibration setting. 
+
+b. 
+
+c. 
+
+d. 
+
+e. 
+
+f. 
+
+g. 
+
+h. 
+
+i. 
+
+j. 
+
+k. 
+
+l. 
+
+m. 
+
+18 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+n. 
+
+o. 
+
+The  supplier  shall  ensure  that  the  inspection,  measuring  and  test 
+equipment is handled, preserved and stored such that the accuracy and 
+fitness for use is maintained. 
+The  supplier  shall  check  the  test  hardware  or  test  software  used  for 
+inspection to prove that it is capable of verifying the acceptability of the 
+product prior to release for use during production and installation, and 
+recheck it at specified intervals.  
+
+NOTE 1  Examples  of  test  hardware  are:  jigs,  fixtures, 
+
+templates and patterns.  
+
+NOTE 2  Test  aids  such  as  test  leads,  break-out  boxes, 
+mains leads and similar items are not subject to 
+the  entire  set  of  requirements  defined  in  this 
+clause,  but  are  validated  in  a  way  appropriate 
+to their usage. 
+
+p. 
+
+q. 
+
+The supplier shall establish the extent and frequency of such checks and 
+shall maintain records as evidence of control. 
+The  supplier  shall  make  the  measurement  design  data  available  to  the 
+customer upon request. 
+
+5.2.7 
+
+Handling, storage and preservation 
+
+5.2.7.1  Handling 
+a. 
+
+The  supplier  shall  prevent  handling  damage  during  all  phases  of 
+manufacturing, assembly, integration, testing, storage, transportation and 
+operation. 
+
+NOTE  
+
+Possible prevention measures are: 
+•  protection of items during handling, 
+•  handling devices, or 
+•  procedures and instructions. 
+
+Storage 
+
+5.2.7.2 
+a. 
+
+The supplier shall place the following items in secure storage areas: 
+1. 
+2. 
+3. 
+
+incoming materials, 
+intermediate items needing temporary storage, and 
+end items before shipping. 
+
+NOTE  
+
+Security  of  the  storage  is  defined  according  to 
+specific customer requirements. 
+
+b. 
+
+The  supplier  shall  place  the  following  items  in  designated  segregated 
+areas: 
+1. 
+2. 
+3. 
+
+limited life materials, 
+suspended limited life materials, 
+nonconforming items awaiting NRB disposition, 
+
+19 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+4. 
+5. 
+
+scrapped items, 
+items  designated  to  be  stored  separately  for  health  or  safety 
+reasons. 
+
+Each segregated area shall be identified and labelled for its intended use. 
+The supplier shall maintain control over acceptance into and withdrawal 
+from storage areas. 
+The  supplier  shall  maintain  records  to  ensure  that  all  stored  items  are 
+within  the  usable  life  limits,  controlled  and  retested,  and  to  provide 
+traceability within the storage or segregated area. 
+The  supplier  shall  ensure  that  no  deterioration,  damage  or  unexpected 
+performance degradation occur to stored items due to storage conditions. 
+
+c. 
+d. 
+
+e. 
+
+f. 
+
+5.2.7.3 
+a. 
+
+Preservation 
+
+The supplier shall ensure that items subject to deterioration, corrosion or 
+contamination  through  exposure  to  any  environmental  elements  are 
+preserved  by  methods that ensure maximum protection consistent with 
+life and usage. 
+NOTE  
+
+Examples  of  such  environmental  elements  are: 
+air and moisture. 
+
+5.2.8 
+
+Statistical quality control and analysis 
+
+5.2.8.1  General 
+a. 
+
+Statistical quality control and analysis methods shall be used to maintain 
+or improve the specified control of quality, when statistically significant 
+with respect to the product characteristics and to quantities produced. 
+
+NOTE  
+
+Examples  of  statistical  quality  control  and 
+analysis  methods  are  sample  inspection  plans, 
+determination  of  quality 
+levels,  statistical 
+process control and process capabilities studies. 
+
+b.  When  employing  statistical  quality  control  and  analysis  methods,  the 
+
+supplier shall ensure that all the conditions for use are enforced. 
+
+NOTE  
+
+Example  of  such  conditions  are  sample 
+significance, recording and elaboration of data, 
+and formulation of clear decision rules. 
+
+c. 
+
+Statistical  quality  control  applications,  when  used  by  the  supplier  for 
+acceptance of materials, parts, processes and products, shall be submitted 
+to the customer for approval.  
+
+5.2.8.2 
+a.  When sampling plans are  used the supplier shall define and justify the 
+
+Sampling plans 
+
+following: 
+
+20 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+1. 
+
+sample  size,  sample  selection  methods  and  criteria  for  inspection 
+severity,  
+acceptance / rejection criteria, and  
+screening of rejected lots. 
+
+2. 
+3. 
+The supplier shall maintain records of the sampling tests, together with 
+the identification of the characteristics to which sampling is applied. 
+
+b. 
+
+5.3  QA requirements for design and verification 
+
+5.3.1 
+
+Design rules 
+
+5.3.1.1 
+a. 
+
+Producibility 
+
+The supplier shall ensure that the product is designed such that it can be 
+produced with the specified level of quality.  
+
+5.3.1.2  Repeatability 
+a. 
+
+The  supplier  shall  ensure  that  the  product  is  designed  such  that  its 
+performances  and  characteristics  can  be  reproduced  over  different 
+models and serial production.  
+
+5.3.1.3 
+a. 
+
+Inspectability and testability 
+
+The supplier shall ensure that the product is designed such that it can be 
+inspected  and  tested  under  representative  conditions,  for  production, 
+AIV and operational environment.  
+
+5.3.1.4  Operability 
+a. 
+
+The supplier shall ensure that the product is designed such that it can be 
+operated  in  accordance  with  programme  constraints  and  requirements, 
+throughout 
+storage, 
+transportation, integration and operations. 
+
+including  handling, 
+
+its  whole 
+
+life 
+
+cycle 
+
+5.3.2 
+
+Verification 
+
+5.3.2.1  General 
+a. 
+
+The  supplier  shall  ensure  that  requirement  verification  is  performed 
+progressively, as each stage of the project is completed, and provides the 
+organized  base  of  data  upon  which  qualification  and  acceptance  is 
+incrementally declared. 
+The  supplier  shall  ensure  that  top-down  requirement  allocations  and 
+bottom-up requirement verifications are complete and consistent. 
+
+b. 
+
+21 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+c. 
+
+d. 
+
+e. 
+
+The  supplier  shall  ensure  that  a  system  for  tracking  requirements  and 
+verification  of  results  is  established  and  maintained  during  the  whole 
+project life cycle. 
+The  supplier  shall  ensure  that  verification  methods  are  adequate  and 
+consistent with the type and criticality of the requirements. 
+The  supplier  shall  ensure  that  appropriate  reference  to  the  verification 
+documentation  is recorded  and  status  updated  at  project  reviews  up  to 
+final acceptance. 
+
+5.3.2.2  Design verification analysis 
+a. 
+
+b. 
+
+The supplier shall ensure that the objectives of the analysis are defined in 
+relation with the development logic defined in the verification plan. 
+The following items shall be identified: 
+1. 
+2. 
+3. 
+
+reference of the configuration item definition under analysis; 
+environmental constraints considered in the analysis; 
+basic assumptions, analysis methods, mathematical models. 
+
+5.3.2.3  Design reviews 
+a. 
+
+The  supplier  shall  ensure  that  design  reviews  are  conducted  in 
+accordance with project requirements and written procedures. 
+NOTE   Design reviews address the following items: 
+
+•  Quality requirements and criteria for design, 
+producibility,  repeatability,  testability  and 
+operability  are  adequately  considered  in 
+design documentation. 
+
+and 
+
+data 
+
+•  Methods 
+
+for 
+procurement, manufacturing, inspection and 
+test are available and validated. 
+
+required 
+
+•  Risks  of  not  achieving  requirements  are 
+
+highlighted and adequately controlled. 
+
+5.3.2.4  Qualification process 
+
+5.3.2.4.1  Qualification 
+a. 
+
+The  supplier  shall  ensure  that  all  configuration  items  and  their 
+constituent  items,  either  off-the-shelf  or  specifically  designed,  are 
+properly qualified with margins commensurate with the application and 
+use environment. 
+
+NOTE  
+
+For  equipment  with  heritage,  an  Equipment 
+Qualification Status Review can be organised to 
+assess qualification status. 
+
+b. 
+
+The supplier QA shall review and approve the qualification plan. 
+
+NOTE  
+
+The qualification plan is a subset of the VCD as 
+defined in ECSS-E-ST-10-02. 
+
+22 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+c. 
+
+The supplier QA shall review and approve the qualification results. 
+NOTE   Qualification results  are a  subset of Verification 
+Control Document (VCD) as defined in ECSS-E-
+ST-10-02. 
+
+d. 
+
+The supplier QA manager shall ensure that a Verification Control Board 
+(VCB) is established to monitor the qualification process. 
+
+NOTE  
+
+Verification  Control  Board  (VCB)  is  defined in 
+ECSS-E-ST-10-02. 
+
+5.3.2.4.2  Qualification by similarity 
+a. 
+
+Qualification  by  similarity  with  an  identical  or  similar  product  shall  be 
+justified  by  providing  evidence  that  the  new  application  is  within  the 
+limits of the previously qualified design. 
+Any  difference  in  definition  with  respect  to  the  reference  product  and 
+any difference in the required qualification tests shall be identified. 
+The need for complementary qualification tests shall be analysed and the 
+decision justified and submitted to the customer for approval. 
+For this purpose the supplier shall: 
+1. 
+
+evaluate  the  as-designed  or  as-built  configuration  and  related 
+nonconformances, 
+ensure that qualification requirements and qualification ranges are 
+compatible with project requirements, 
+ensure  that  qualification  test  results  meet  the  requirements  and 
+any nonconformances are available for evaluation, and 
+ensure that a logbook of the selected model is available for review. 
+
+2. 
+
+3. 
+
+4. 
+
+b. 
+
+c. 
+
+d. 
+
+b. 
+
+5.3.2.4.3  Qualification testing 
+a. 
+
+The  product  used  for  qualification  testing  shall  be  produced  in 
+accordance  with  a  full  and  clearly  identified  manufacturing  and 
+inspection file.  
+To  obtain  authorization  to  initiate  qualification  tests  the  supplier  shall 
+demonstrate that: 
+1. 
+
+the  qualification  model is fully  representative  of  the  flight  model 
+and any differences have been analysed to evaluate their effect on 
+the qualification status; 
+inspection and test requirements are expressed in an unambiguous 
+and quantified manner including: 
+(a) 
+(b) 
+(c) 
+(d) 
+(e) 
+
+test sequence; 
+test conditions; 
+test standards, if any; 
+applicable test levels, durations and tolerances; 
+accuracy in measurement. 
+
+2. 
+
+23 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+3. 
+
+the  qualification  test  procedures  and  facilities  are  defined, 
+available and conforming to requirements of clause 5.5.11b. 
+
+5.3.2.4.4  Qualification status 
+a. 
+
+The supplier shall report the qualification status in conformance with the 
+“Qualification status list” DRD as defined in ECSS-Q-ST-10. 
+
+5.3.2.4.5  Maintenance of qualification 
+a. 
+
+Once  the  design  is  qualified,  the  supplier  shall  assess  all  subsequent 
+changes,  deviations  and  anomalies  for  their  impact  on  the  qualification 
+status and shall perform requalification as necessary. 
+
+5.3.2.5  Design changes 
+a. 
+
+The supplier shall ensure that  all design changes  and modifications are 
+identified,  documented, 
+their 
+implementation. 
+
+reviewed  and  approved  before 
+
+5.4  QA requirements for procurement 
+
+5.4.1 
+
+Selection of procurement sources 
+
+5.4.1.1  General 
+a. 
+
+The  supplier  QA  shall  participate  in  the  approval  and  the  selection  of 
+procurement sources. 
+
+NOTE  
+
+The  selection  of  procurement  sources  for  EEE 
+components is defined in ECSS-Q-ST-60. 
+
+5.4.1.2 
+a. 
+
+Selection criteria 
+
+The supplier shall select its suppliers on the basis of one of the following 
+criteria: 
+1. 
+
+The  supplier  has  been  certified  by  the  final  customer,  and  has  a 
+current  approval  to  furnish  items  or  services  of  the  type  and 
+quality level being procured. 
+The  supplier  is  furnishing,  or  has  furnished  within  the  past  two 
+years,  items  or  services  of  the  type  and  quality  level  being 
+procured under other contracts with the final customer. 
+The  supplier  has  demonstrated  continuous  capability  to  furnish 
+items  or  services  of  the  type  and  quality  level  being  procured, 
+supported by objective documentation. 
+Supplier’s 
+agreement 
+requirements is demonstrated by a pre-award audit by the relevant 
+customer. 
+
+capability 
+
+business 
+
+of 
+
+satisfying 
+
+2. 
+
+3. 
+
+4. 
+
+24 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+NOTE 1  NOTE  to  item  1:Third  party  certification  (for 
+ISO  9001)  can  be  also 
+
+instance  against 
+considered. 
+
+NOTE 2  NOTE to item 3: This criterion does not apply if 
+the supplier has not furnished items or services 
+of  the  type  being  procured  for  more  than  two 
+years. 
+
+b. 
+
+The  supplier  shall  document  and  maintain  on  file  results  of  supplier 
+selection process. 
+
+5.4.1.3  Record and list of procurement sources 
+a. 
+
+The  supplier  shall  establish  and  maintain  records  of  all  procurement 
+sources involved in business agreement performance. 
+The  supplier  shall  submit  to  the  customer,  upon  request,  the  list  of 
+procurement  sources,  including  all  the  information  in  the  records 
+5.4.1.3a, for information. 
+
+b. 
+
+5.4.2 
+a. 
+
+Procurement documents 
+
+b. 
+
+c. 
+
+d. 
+
+The  supplier  shall  ensure  that  supplies  are  identified  and  that  all 
+applicable requirements are defined in the procurement documents. 
+The supplier shall ensure that requirements to those contained in lower 
+tier procurement documents are traceable. 
+The procurement documents shall contain, by statement or reference: 
+1. 
+
+comprehensive technical descriptions of the items and services to 
+be procured, 
+details  of  the  applicable  requirements,  such  as  requirements  for 
+preservation,  packaging,  marking, 
+shipping,  accompanying 
+documentation and provisions for limited-life items, 
+details of QA activities to be performed, such as inspection and test 
+characteristics, records and reports, 
+details of supplier’s QA activities at source, and 
+special acceptance conditions. 
+
+4. 
+5. 
+The supplier’s quality assurance organization shall review procurement 
+documents prior to release, to verify the correct selection of procurement 
+sources and appropriateness of their content. 
+
+2. 
+
+3. 
+
+5.4.3 
+a. 
+
+b. 
+
+Surveillance of procurement sources 
+
+The supplier shall exercise surveillance over all the activities carried out 
+by lower level suppliers during business agreement performance. 
+The  surveillance  programme  shall  address  audits,  reviews,  mandatory 
+inspection  points,  as  well  as  direct  supervision  by  supplier’s  resident 
+personnel at his suppliers’ facilities and source inspection. 
+
+25 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+NOTE  
+
+Example  of  review 
+readiness review. 
+
+is 
+
+the  manufacturing 
+
+c. 
+
+The supplier shall define the type and extent of surveillance by reviewing 
+the following criteria: 
+1. 
+2. 
+
+Testing or inspections cannot be accomplished by the supplier. 
+Verification tests are destructive in nature and the quality cannot 
+be verified solely by inspection or test at supplier’s facility. 
+Supplies  are  designated  for  direct  shipment  from  source  to  a 
+customer site or the using site. 
+
+3. 
+
+4.  Manufacturing and AIV of complex equipment or subsystems. 
+5. 
+
+Past performance or quality history of the lower level supplier is 
+marginal. 
+Functional criticality and technical complexity of the supplies. 
+The degree of responsibility placed on the procurement source. 
+
+6. 
+7. 
+
+NOTE 1  Examples  for  item  1:  environments  or  test 
+
+equipment not available at supplier’s facility. 
+
+NOTE 2  Example for item 4: payloads. 
+
+d. 
+
+e. 
+
+The  supplier  shall  ensure  that  each  of  his  suppliers  implements 
+surveillance on their lower level suppliers, in accordance with the same 
+criteria. 
+Surveillance may be delegated by the customer to third parties. 
+
+5.4.4 
+
+Receiving inspection 
+
+5.4.4.1  General 
+a. 
+
+b. 
+
+incoming  supplies, 
+
+The  supplier  shall  ensure  that  all 
+including 
+documentation  and  packaging,  whether  delivered  on  his  own  premises 
+or  elsewhere,  conform  to  the  requirements  of  the  procurement 
+documents. 
+The  supplier  shall  perform  inspections  in  accordance  with  established 
+procedures  and  instructions,  to  ensure  that  quality  level  is  properly 
+determined.  
+
+NOTE 1  Sampling  plans  in  receiving  inspection  are 
+
+defined in 5.2.8.2. 
+
+NOTE 2  Receiving  inspection  of  components  is  defined 
+
+in ECSS-Q-ST-60. 
+
+NOTE 3  Lot  or  batch  acceptance  of  materials  and 
+
+mechanical parts is defined in ECSS-Q-ST-70. 
+
+c. 
+
+Receiving  inspectors  shall  have  available  the  procurement  documents, 
+specifications,  drawings  and  any  other  document  relevant  to  incoming 
+supplies as required in the procurement documents. 
+
+26 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+5.4.4.2  Receiving inspection activities 
+a. 
+
+Receiving inspection activities shall include: 
+1. 
+
+2. 
+3. 
+
+4. 
+
+5. 
+
+6. 
+
+7. 
+8. 
+
+9. 
+10. 
+
+verification  of  the  packaging  conditions  and  of  the  status  of 
+environmental sensors, 
+visual inspection of the delivered items, 
+verification  of  correct  identification  and,  where  appropriate, 
+configuration identification for conformance to the ordering data, 
+verification  of  the  evidence  of  inspection  and  tests  performed  by 
+the supplier and associated documentation, 
+verification  of  the  performance  of  supplier’s  source  inspection, 
+when required, 
+performance of inspections and tests on selected characteristics of 
+incoming supplies or test specimens submitted with the supplies, 
+identification of the shelf life of limited-life items, 
+identification  of  the  inspection  status  and  physical  separation  of 
+the  supplies  in  the  receiving  inspection  area  according  to  the 
+following categories: 
+(a) 
+
+items  for  which  the  receiving  inspection  has  not  been 
+completed; 
+conforming items; 
+nonconforming items. 
+
+(b) 
+(c) 
+prevention of unauthorized use of uninspected items, 
+identification  of  the  items  to  be  released  for  production  with 
+conformance  status  and  traceability  data  to  be  recorded  in 
+manufacturing documents, 
+
+11.  maintenance  of  receiving  inspection  records in  conformance  with 
+
+5.4.4.4. 
+
+5.4.4.3  Customer furnished items 
+a. 
+
+Receiving  inspection  of  items  supplied  by  the  customer  shall  consist  of 
+the verification of identity and integrity after transportation. 
+
+NOTE   Additional  inspections  and  tests,  if  any,  are 
+
+specified in the business agreement. 
+
+5.4.4.4  Receiving inspection records 
+a. 
+
+The  supplier  shall  maintain  receiving  inspection  records  to  ensure 
+traceability  and  the  availability  of  historical  data  to  monitor  supplier 
+performance and quality trends. 
+
+27 
+
+5.5  QA requirements for manufacturing, assembly and 
+
+integration 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+5.5.1 
+
+Planning of manufacturing, assembly and 
+integration activities and associated 
+documents 
+
+a. 
+
+b. 
+
+c. 
+
+d. 
+
+e. 
+
+The  supplier  shall  document  the  planning  of  manufacturing,  assembly 
+and integration operations and inspections in the manufacturing plan or 
+flow  chart  for  the  product,  including  the  sequence  of  operations  and 
+associated inspections and tests. 
+The  planning  shall  include  the  identification  of  MIPs  in  conformance 
+with  5.5.8,  together  with  the  reference  to  the  procedures  by  which  the 
+various activities are performed and the required cleanliness levels and 
+temperature and humidity requirements of the facilities. 
+Instructions  shall  direct  the  actual  performance  of  manufacturing, 
+assembly and integration  operations and inspections, to ensure that the 
+activities  proceed  in  an  orderly  manner  and  according  to  the  planned 
+sequence. 
+
+NOTE  
+supplier 
+
+For example: shop travellers. 
+shall 
+
+issue 
+
+The 
+and  maintain  manufacturing, 
+assembly,integration  and  inspection  documents  in  accordance  with 
+established and released procedures. 
+The QA organization shall review and approve such documents, and any 
+modifications thereof, to ensure that they include or refer to: 
+1. 
+
+2. 
+
+3. 
+
+4. 
+5. 
+
+6. 
+
+7. 
+
+8. 
+9. 
+
+Identification of the item to be  manufactured or equipment to  be 
+used. 
+Configuration  data,  including  parts  lists,  drawings,  changes  and 
+specifications. 
+Identification  of  the  production  and  inspection  equipment  to  be 
+used for the manufacturing, assembly and integration of the item. 
+Identification of critical characteristics. 
+Detailed definition, by description or reference, of manufacturing, 
+assembly,  integration,  inspections  and  test  operations  to  be 
+performed, and special conditions to be maintained. 
+Provisions  for  inspections  and  tests  to  be  witnessed  by  customer 
+representative. 
+Accept  or  reject  criteria  (with  tolerances)  and  workmanship 
+standards. 
+Details of sampling inspection procedures to be used, if any. 
+Detailed procedures for the activities to be performed. 
+
+NOTE 1  Examples  for 
+
+item  3,  of  production  and 
+jigs  and 
+
+tools, 
+
+inspection  equipment  are 
+fixtures. 
+
+28 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+NOTE 2  Critical characteristics, for item 4, are defined in 
+
+ECSS-Q-ST-30. 
+
+f. 
+
+g. 
+
+Only  “first  off”  shop  travellers  shall  be  reviewed  unless  subsequent 
+travellers incorporate a significant change of inspection requirements or 
+order of events. 
+The  supplier  shall  also  provide  for  detail  support  documents  and 
+instructions,  such  as  drawings,  procedure  and  instruction  sheets,  to 
+enable operations to be correctly performed. 
+
+5.5.2  Manufacturing readiness reviews 
+a. 
+
+2. 
+
+inspection  and 
+
+The supplier shall perform a review of the readiness for manufacturing, 
+prior to starting the manufacture of the first flight-standard product. 
+The manufacturing readiness review shall evaluate the following aspects: 
+status of product definition and requirements, differences with the 
+1. 
+status of the qualification model, and impacts of these differences; 
+status  of  manufacturing,  assembly, 
+test 
+documentation,  differences  with  the  status  of  the  qualification 
+model, and impacts of these differences; 
+verification status of manufacturing processes 
+implementation  of  dispositions  for  risk  reduction,  as  defined  by 
+risk  assessment,  into  the  manufacturing,  assembly,  integration, 
+inspection and test procedures; 
+availability  of  personnel  and  of  specified  materials  and  parts, 
+production, measuring and inspection equipment, and calibration 
+status, when relevant; 
+cleanliness  of  facilities,  with  respect  to  the  specified  cleanliness 
+levels; 
+facility temperature and humidity with respect to requirements. 
+
+3. 
+4. 
+
+5. 
+
+6. 
+
+7. 
+
+b. 
+
+b. 
+
+c. 
+
+d. 
+
+5.5.3 
+
+Control of processes 
+
+5.5.3.1  General 
+a. 
+
+The  supplier  shall  monitor  all  processes  used  for  manufacturing, 
+assembly  and 
+integration,  and  enforce  all  applicable  process 
+requirements. 
+The supplier shall ensure that all manufacturing processes are covered by 
+documented process specifications or standards. 
+
+NOTE  
+
+The  definition  of  manufacturing  process 
+specifications is given in ECSS-Q-ST-70. 
+
+Process  specifications  shall 
+inspection and test, number of samples, accept or reject criteria. 
+Process witness samples shall be stored in controlled conditions. 
+
+include  QA  provisions,  methods  for 
+
+29 
+
+5.5.3.2 
+a. 
+
+Special processes 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+The supplier shall establish and implement procedures and controls for 
+special processes, to ensure that: 
+1. 
+2. 
+
+Special processes are validated for the intended application. 
+Personnel  who  perform  or  inspect  special  processes  are  trained 
+and certified according to requirements 5.1.2b.and 5.1.2c 
+
+3.  Materials,  equipment,  computer  systems  and  software,  and 
+procedures involved in the performance of the special process are 
+validated and monitored. 
+Coordination 
+is  maintained  with  the  cognizant  engineering 
+function  to  ensure  proper  selection  of  the  non-destructive  or 
+destructive methods for the evaluation of process performance. 
+
+4. 
+
+NOTE  
+
+Validation of special processes, as mentioned in 
+item 1, is defined in ECSS-Q-ST-70. 
+
+5.5.3.3 
+a. 
+
+Statistical process control 
+
+Statistical methods for process control should be used for early detection 
+of  significant  variations  in  manufacturing  processes,  in  order  to 
+determine, analyse and eliminate the causes of undesirable variations. 
+
+5.5.4  Workmanship standards 
+a. 
+
+The supplier shall employ workmanship standards throughout all phases 
+of  manufacturing,  assembly  and  integration,  to  ensure  acceptable  and 
+consistent workmanship quality levels. 
+
+b.  Workmanship standards shall identify acceptance or rejection criteria. 
+c. 
+
+Physical  samples  or  visual  aids  shall  be  reviewed  and  agreed  by  the 
+customer when they are used for the purpose of acceptance or rejection of 
+items. 
+
+5.5.5  Materials and parts control 
+a. 
+
+The  supplier  shall  ensure  that  only  conforming  items  are  released  and 
+used, and that those not required for the operation involved are removed 
+from work operation areas. 
+Items having limited-life or definite characteristics of quality degradation 
+or drift with age or use shall be marked to indicate the dates, test times or 
+cycles at which life was initiated and at which the useful life expires. 
+Sensitive items shall be processed or manufactured, inspected and tested 
+in a controlled environment to prevent any degradation.  
+
+b. 
+
+c. 
+
+30 
+
+5.5.6 
+
+Equipment control 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+5.5.6.1 
+a. 
+
+Tooling 
+
+The supplier shall make provisions for accountability, identification and 
+maintenance of manufacture, assembly and integration tooling. 
+
+c. 
+d. 
+e. 
+
+b.  Manufacture,  assembly  and  integration  tooling  shall  be  checked  for  its 
+dimensional  accuracy,  regarding  the  product  drawings,  and  correct 
+function. 
+The QA organization shall approve tooling prior to use. 
+The approval shall be marked in conformance with 5.2.4, and recorded. 
+Tools  shall  be  checked  for  accuracy  during  the  production  life  at 
+adequate intervals. 
+Tools shall be submitted to re-approval following modification. 
+Tools  shall  be  properly  stored  to  prevent  misuse,  damage  and 
+deterioration. 
+Unnecessary tools shall be removed from working areas. 
+Records shall be kept of all manufacturing equipment.  
+
+f. 
+g. 
+
+h. 
+i. 
+
+5.5.6.2 
+a. 
+
+b. 
+
+Equipment for computer-aided manufacturing 
+
+The  supplier  shall  ensure  that  computer-aided  techniques  and  data  for 
+processing  and  machining  are  validated  prior  to  use  and  controlled 
+during their use in manufacturing. 
+The  supplier  shall  ensure  that  provisions  are  made  for  the  testing, 
+approval  and  configuration  control  of  the  software  involved  and 
+prevention of its being tampered with. 
+
+5.5.7 
+
+Cleanliness and contamination control 
+
+5.5.7.1  General 
+a. 
+
+The  supplier  shall  establish  controls  for  cleanliness  of  spacecraft 
+hardware and facilities, and the limitation of sources of contamination. 
+
+NOTE  
+
+Cleanliness and contamination control methods 
+and processes are detailed in ECSS-Q-ST-70-01. 
+
+5.5.7.2  Cleanliness levels 
+a. 
+
+b. 
+
+items  shall  be  cleaned,  controlled  and 
+
+Contamination-sensitive 
+maintained to the required cleanliness levels. 
+The  required  cleanliness  levels  for  all levels  of  flight hardware  shall  be 
+indicated  on  drawings,  specifications,  procedures,  or  other  documents 
+controlling the manufacture, assembly, integration and test of the items.  
+
+31 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+5.5.7.3  Cleaning materials and methods 
+a. 
+
+The supplier shall develop detailed methods for attaining the cleanliness 
+levels specified for the hardware. 
+
+5.5.7.4  Contamination control 
+a. 
+
+Contamination shall be minimized  by operating in clean  working  areas 
+and by proper handling, preservation, packaging and storage. 
+Contamination-sensitive items fabricated or processed in contamination-
+controlled environments shall be inspected, tested, modified or repaired 
+in identical or cleaner environments, unless specific precautions are taken 
+to protect the items concerned from contamination. 
+Specific  protection  measures,  such  as  protective  dust  covers,  shall  be 
+implemented  to  protect  contamination-sensitive  items  when  they  are 
+integrated in a higher level of assembly. 
+
+5.5.7.5  Cleanliness of facilities 
+a. 
+
+Fabrication,  assembly  and  integration  of  contamination  sensitive  items 
+shall be conducted in facilities that provide cleanliness levels compatible 
+with the specified product cleanliness. 
+
+b. 
+
+c. 
+
+b. 
+
+c. 
+
+d. 
+
+5.5.8 
+a. 
+
+Inspection 
+
+Inspection and tests shall be planned at the points of the manufacturing, 
+assembly  and  integration  flow  where  maximum  assurance  for  correct 
+processing and  prevention  of  unrecoverable  or  costly  nonconformances 
+can be obtained. 
+All identified critical characteristics shall be inspected as defined in the 
+critical-item control programme. 
+Self-inspection 
+manufacturing,  assembly  and 
+considered sufficient for critical characteristics. 
+Among the inspections and tests as part of the manufacturing, assembly 
+and  integration  flow,  mandatory  inspection  points  (MIPs)  shall  be 
+performed with participation of the customer. 
+
+associated 
+integration  activities  shall  not  be 
+
+operators  performing 
+
+by 
+
+the 
+
+the 
+
+e.  MIPs shall be agreed with the customer on the basis of a list prepared by 
+
+the supplier. 
+
+NOTE  
+
+This  list  may  be  part  of  another  deliverable 
+document. 
+
+f. 
+
+MIPs shall be selected in accordance with the criteria as defined below, 
+when one or more of the following conditions apply: 
+1.  When maximum visibility of quality is given. 
+2.  When critical processes are performed. 
+3.  Where the next step of the manufacturing sequence: 
+
+(a) 
+
+is irreversible, or 
+
+32 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+(b)  makes  the  item  difficult  and  costly  to  disassemble  for 
+
+inspection, or 
+renders the location inaccessible for inspection. 
+
+(c) 
+
+4.  When the item, once installed in the next higher assembly damages 
+
+by its failure the higher assembly. 
+
+5.  When  previous  failure  history  of  the  item  indicates  a  need  for 
+
+inspection. 
+
+6.  When a potential adverse impact on the properties and integrity of 
+the end product could result, owing to the criticality or complexity 
+of the manufacturing step. 
+
+7.  When testing or critical inspections cannot be accomplished by the 
+
+supplier. 
+NOTE  
+
+For  example,  environments  or  test  equipment 
+not available at supplier’s facility. 
+
+g. 
+
+h. 
+
+i. 
+
+j. 
+
+8.  When  verification  tests  are  destructive  in  nature  and  the  quality 
+cannot  be  verified  solely  by  inspection  or  test  at  the  supplier’s 
+facility. 
+
+9.  When  manufacturing  and  AIV  of  complex  equipment  or 
+
+subsystems is planned. 
+
+NOTE  
+
+For example, for payloads. 
+
+10.  When  past  performance  or  quality  history  of  the  lower  level 
+
+supplier is marginal. 
+
+11.  When an item is going to final inspection. 
+Criteria 5.5.8f.7 to 10 shall be considered together with the criticality and 
+complexity of the supplies and the supplier’s experience with the lower 
+level supplier. 
+A MIP shall require an invitation with the agreed notice before the event, 
+and  the  participation  of  the  customer,  or  their  written  agreement  to 
+proceed without their participation. 
+The  supplier  shall  make  provisions  for  a  positive  identification  of  the 
+inspection and test status of any items at any stage of the manufacturing, 
+assembly and integration cycle, starting from the incoming inspection up 
+to shipping of the end item. 
+MIP information shall include as a minimum: 
+1. 
+Purpose and subject of the inspections, 
+Criteria for the selection, 
+2. 
+3. 
+Notification period, 
+4.  MIP identifier, 
+5.  MIP description, 
+6. 
+7.  MIP location in the manufacturing and Inspection flow chart or the 
+
+Reference of procedures necessary to perform the MIP, and 
+
+AIV flow chart. 
+
+33 
+
+5.5.9 
+
+Specific requirements for assembly and 
+integration 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+5.5.9.1  Control of temporary installations and removals 
+a. 
+
+The  supplier  shall  ensure  the  control  of  flight  items  which  are 
+temporarily removed or non-flight items which are temporarily installed 
+to facilitate assembly, integration, testing, handling or preservation of the 
+end item. 
+The  control  shall  be  initiated  upon  installation  or  removal  of  the  first 
+temporarily  installed  or  removed  item  and  be  maintained  through 
+delivery and use of the end item. 
+The  supplier  shall  establish  and  maintain  records  of  temporary 
+installations and removals. 
+Temporarily installed items shall be accounted for to prevent their being 
+incorporated in the final flight configuration. 
+
+b. 
+
+c. 
+
+d. 
+
+NOTE  
+
+Temporary  installations  and  removals  are  also 
+called respectively, red tag items and green tag 
+items. 
+
+Logbooks 
+
+5.5.9.2 
+a. 
+
+The  supplier  shall  prepare  and  maintain  system,  subsystem  and 
+equipment  logbooks  in  conformance  with  the  DRD  in  Annex  C  for  all 
+operations and tests performed on the item.  
+Equipment logbooks shall start with the first test after assembly. 
+Subsystem  and  system  logbooks  shall  follow-on  from  the  individual 
+equipment logbooks to form a full record. 
+The logbook shall accompany the hardware whenever it is placed in the 
+custody of another organization 
+The receiving organization shall maintain the logbook up-to-date. 
+
+b. 
+c. 
+
+d. 
+
+e. 
+
+5.5.10  Manufacturing, assembly and integration 
+
+records 
+
+a. 
+
+The supplier shall establish and maintain manufacturing, assembly and 
+integration  records  to  provide  all  manufacturing,  assembly,  integration 
+and inspection data required for traceability. 
+
+5.5.11  Electrostatic discharge control (ESD) 
+a. 
+
+The supplier shall establish and maintain an ESD protection programme 
+during  the  design,  manufacture,  test  and  storage/transport  of  flight 
+hardware. 
+The  supplier  shall  provide  an  ESD  control  plan  in  conformance  with  EN 
+61340-5-1 or ANSI-ESD S20.20. 
+
+b. 
+
+NOTE   ANSI-ESD  S20.20  is  the  US  equivalent  of  EN 
+
+61340-5-1. 
+
+34 
+
+5.6  QA requirements for testing 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+5.6.1 
+a. 
+
+5.6.2 
+a. 
+
+b. 
+
+c. 
+
+Test facilities 
+
+The  supplier  shall  ensure  that  test  facilities,  either  internal  or  external, 
+conform to specified requirements. 
+
+Test equipment 
+
+The  supplier  shall  ensure  that  computer-aided  testing  techniques  and 
+data are validated prior to use and controlled during their use in testing. 
+The supplier shall ensure that provisions are made for testing, approval 
+and configuration control of the software involved and prevention of its 
+being tampered with. 
+The supplier shall ensure that test equipment are designed such that their 
+correct operation can be verified without having to apply them to the test 
+item. 
+
+5.6.3 
+
+Test documentation 
+
+5.6.3.1 
+a. 
+
+Test procedures 
+
+The  supplier  shall  ensure  that  tests  are  performed  in  accordance  with 
+documented procedures. 
+
+NOTE  
+
+Test  procedure  DRDs  are  defined  in  ECSS-E-
+ST-10-03. 
+
+b. 
+
+The QA organization shall review and approve test procedures. 
+
+5.6.3.2 
+a. 
+
+Test reports 
+
+The supplier shall ensure that all tests are comprehensively documented 
+in test reports, and that they include, as a minimum: 
+1. 
+
+reference  to  the  applicable  test  procedure,  and  description  of  the 
+deviations from it during the actual testing, 
+test data records and evaluation, and 
+summary of test results. 
+
+2. 
+3. 
+The QA organization shall review and approve test reports. 
+
+Test performance monitoring 
+
+On  the  basis  of  an  analysis  of  the  test  plan,  the  QA  organization  shall 
+define  within  the  test  plan  the  way  to  monitor  the  performance  of  test 
+activities,  to  ensure  the  adherence  to  the  test  procedures,  and  that  any 
+deviations are properly documented and treated. 
+
+b. 
+
+5.6.4 
+a. 
+
+35 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+b. 
+
+c. 
+
+d. 
+
+e. 
+
+f. 
+
+Test  witnessing  by  QA  personnel  shall  be  considered  when  manual 
+intervention is performed, at the setting-up, start and end of continuous 
+fully automated test sequences, or when no  automatic recording of test 
+parameters or results is available. 
+All testing activities related to critical characteristics as identified in the 
+critical-items control programme shall be verified by QA. 
+Self-verification by the operators performing the  test  activities shall not 
+be considered sufficient for critical characteristics. 
+Testing  activities  or  results  to  be  subject  to  QA  verification  shall  be 
+identified as such in the relevant test procedure. 
+Testing shall be subject to the requirements for the control of hazardous 
+operations. 
+
+NOTE   Definition  of  hazardous  operations  is  given  in 
+
+ECSS-Q-ST-40. 
+
+g.  Where  safety  of  personnel  or  damage  to  items  or  associated  test 
+equipment is possible, QA personnel shall have the authority to stop the 
+test. 
+
+5.6.5 
+a. 
+
+Test reviews 
+
+The  supplier  shall  ensure  that  reviews  are  performed  before    and  after 
+defined points during qualification or acceptance tests. 
+
+NOTE 1  Test Reviews are defined in ECSS-E-ST-10-03. 
+NOTE 2  Reviews  before  tests  are  called  Test  Readiness 
+Reviews and reviews after tests are called Post 
+Test Reviews or Test Review Boards. 
+
+b. 
+
+The  QA  organization  shall  be  represented  in  the  formal  boards 
+established  for  the  review  of  readiness  for  testing  and  testing 
+accomplishment. 
+
+5.7  QA requirements for acceptance and delivery 
+
+5.7.1 
+a. 
+
+b. 
+
+Acceptance and delivery process 
+
+The  supplier  shall  establish  a  formal  acceptance  process  for  all 
+deliverable items, at any contractual level, to ensure that conformance of 
+the items to be delivered is fully assessed and documented. 
+The  supplier  shall  ensure  that  the  preparation  of  the  items  for  delivery 
+and  the  physical  delivery  itself  are  performed  in  such  a  way  that 
+degradation is prevented. 
+
+36 
+
+5.7.2 
+a. 
+
+End item data package 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+The  supplier  shall  provide  an  EIDP  for  each  deliverable  end  item  in 
+conformance with the DRD in Annex B. 
+The EIDP shall constitute the basis for formal acceptance reviews. 
+EIDPs shall be maintained and integrated into higher level EIDPs during 
+subsystem or system integration and testing.  
+
+The supplier shall ensure that a DRB is convened prior to the delivery of 
+equipment,  separately  assembled  subsystems, 
+test  equipment  or 
+handling equipment for higher level activities.  
+The  DRB  functions  at  system  level  shall  be  fulfilled  by  the  final 
+acceptance review and chaired by the customer. 
+The DRB shall be composed, at least, of the following members: 
+1. 
+
+Representatives of the receiving organization: 
+(a) 
+(b) 
+(c) 
+
+Project manager, or authorized representative, as chairman; 
+PA manager, or authorized representative; 
+Engineering 
+representative. 
+
+design  manager, 
+
+authorized 
+
+or 
+
+or 
+
+2. 
+
+Submitting supplier’s representatives: 
+(a) 
+(b) 
+(c) 
+
+Project manager, or authorized representative; 
+PA manager, or authorized representative; 
+Engineering 
+representative. 
+
+design  manager, 
+
+or 
+
+or 
+
+authorized 
+
+3. 
+
+level  customers’  representative(s),  as  observers  (not 
+
+Higher 
+required for separate subsystems). 
+
+If the final customer reserves the right to attend DRBs at any lower level 
+as an observer, he shall be given due notice of such a DRB meeting. 
+The DRB shall be responsible for authorising the shipment of the items 
+under acceptance, and certifying in writing that: 
+1. 
+
+the  items  conform  to  the  contractual  requirements  and  to  an 
+approved design configuration; 
+the items are free from material and workmanship deficiencies; 
+all  nonconformances  are  closed-out,  or  corresponding  plans, 
+compatible with the delivery, are accepted; 
+the relevant EIDP is complete and accurate. 
+
+4. 
+Delivery  shall  only  be  authorized  by  the  unanimous  agreement  of  the 
+DRB members. 
+For the delivery a certificate of conformity, in conformance with Annex 
+D, shall be made available and signed by the supplier. 
+
+2. 
+3. 
+
+37 
+
+5.7.3 
+a. 
+
+Delivery review board (DRB) 
+
+b. 
+c. 
+
+b. 
+
+c. 
+
+d. 
+
+e. 
+
+f. 
+
+g. 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+NOTE  
+
+Certificate  of  Conformity  is  also  known  as 
+Declaration of Conformity. 
+
+5.7.4 
+
+Preparation for delivery 
+
+5.7.4.1 
+a. 
+
+Packaging 
+
+The supplier shall ensure that packaging materials, methods, procedures 
+and  instructions  provide  for  protection  of  items  while  at  the  supplier’s 
+plant, during transportation, and after their arrival at destination. 
+
+5.7.4.2  Marking and labelling 
+a. 
+
+The  supplier  shall  ensure  that  appropriate  marking  and  labelling  for 
+packaging, storage, transportation and shipping of items are performed 
+in accordance with the applicable specifications. 
+
+5.7.5 
+
+Delivery 
+
+Shipping control 
+
+The supplier shall ensure that the items to be shipped from his plant are 
+inspected before release and found to be complete, adequately preserved 
+and  packaged,  correctly  marked  and  accompanied  by  all  the  required 
+documentation. 
+Accompanying  documentation  shall  include  the  EIDP  and,  attached  to 
+the  outside  of  the  shipping  container,  the  handling  and  packing  or 
+unpacking procedure and any relevant safety procedures. 
+
+5.7.5.1 
+a. 
+
+b. 
+
+5.7.5.2 
+a. 
+
+Transportation 
+
+The supplier shall make provisions for the prevention of damage to items 
+during transportation. 
+
+5.8  QA requirements for ground support equipment 
+
+(GSE) 
+
+5.8.1 
+a. 
+
+b. 
+
+c. 
+
+Design, development and verification 
+
+The supplier shall ensure that internal design and verification standards 
+are used or developed corresponding with the techniques to be used and 
+fitting with the level of complexity of the items to be developed. 
+The  supplier  shall  ensure  that  development  risks  are  identified  and 
+appropriate back-up solutions are identified. 
+The  supplier  shall  ensure  that  the  verification  method  and  process  are 
+tailored to the: 
+
+38 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+1. 
+2. 
+3. 
+
+complexity of the item to be verified; 
+criticality of the function to be implemented by the GSE item; 
+inherent criticality of the item itself. 
+
+5.8.1.1 
+
+<< deleted >> 
+
+5.8.1.1.1  << deleted, requirements moved to 5.8.1 >> 
+a. 
+b. 
+c. 
+
+<< deleted, requirement moved to 5.8.1a >> 
+<< deleted, requirement moved to 5.8.1b >> 
+<< deleted, requirement moved to 5.8.1c >> 
+
+5.8.2 
+a. 
+
+Configuration control 
+
+The supplier shall ensure that GSE is configuration controlled. 
+
+5.8.3 
+
+Production 
+
+5.8.3.1 
+a. 
+
+Procurement 
+
+The  supplier  shall  ensure 
+demonstrated ability to conform to requirements, through: 
+1. 
+
+that  selected  GSE  suppliers  have  a 
+
+previous supply of items similar or more complex in the same field 
+of techniques and technologies, 
+certification covering similar design, development and production 
+as applicable for similar items in conformance with 5.4.1.2, or 
+evidence,  documented  by 
+existing  design,  development, 
+production  and  quality  standards,  of  having  similar  experience 
+associated with known success. 
+
+2. 
+
+3. 
+
+b. 
+
+Procurement  documents  shall 
+identify  validation  and  receiving 
+inspection requirements, and conform to the requirements in clause 5.4.2. 
+
+5.8.3.2  Manufacturing, assembly, integration and test 
+a. 
+
+The supplier and his lower level suppliers should not deviate from their 
+standard  practices  when  these  are  already  documented  and  recognized 
+for similar items. 
+
+5.8.4 
+
+Acceptance and delivery 
+
+5.8.4.1 
+a. 
+
+End item data package 
+
+The acceptance data package shall include: 
+1. 
+2. 
+
+information regarding interfaces, 
+deviations from contractual requirements, 
+
+39 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+3. 
+4. 
+
+5. 
+
+certification of conformance to an identified baseline, 
+description  of  the  functioning  of  the  item,  and  instructions  to 
+operate and maintain it, and 
+safety data or safety certification(s). 
+
+5.8.4.2  Acceptance 
+a. 
+b. 
+
+Acceptance shall be achieved through a review process.  
+The acceptance process shall include: 
+1. 
+2. 
+3. 
+Acceptance  may  be  achieved  through  a  simple  inspection  process  if 
+agreed between customer and supplier. 
+
+acceptance plan, 
+inspection and test procedures, and 
+inspection and test reports. 
+
+5.8.4.3  Delivery board 
+a. 
+
+The supplier shall propose GSE elements for which acceptance is granted 
+by a delivery board and agree these with his customer. 
+The  delivery  board  shall  include  QA  representatives  from  the  supplier 
+and the customer. 
+
+c. 
+
+b. 
+
+5.8.4.4  Delivery 
+a. 
+
+The requirements of the following clauses shall be applied to the delivery 
+of ground items and handling, storage, packing and shipping activities: 
+1. 
+2. 
+3. 
+
+preparation for delivery, in conformance with 5.7.4, 
+delivery, in conformance with 5.7.5, and 
+handling, storage and preservation, in conformance with 5.2.7. 
+
+<<deleted, requirements moved to 5.8.4.2>> 
+
+<<deleted, requirement modified and moved to 5.8.4.2a>> 
+<<deleted, requirement moved to 5.8.4.2b>> 
+<<deleted, requirement moved to 5.8.4.2c>> 
+
+5.8.5 
+a. 
+b. 
+c. 
+
+5.8.6 
+a. 
+b. 
+
+5.8.7 
+a. 
+
+<<deleted, requirements moved to 5.8.4.3>> 
+
+<<deleted, requirement moved to 5.8.4.3a>> 
+<< deleted, requirement moved to 5.8.4.3b>> 
+
+<<deleted, requirements moved to 5.8.4.4>> 
+
+<<deleted, requirement moved to 5.8.4.4a. 
+
+40 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+5.8.8  General requirements 
+a. 
+
+The  following  requirements  shall  be  tailored  in  accordance  with  the 
+complexity and criticality of the GSE item: 
+1. 
+2. 
+
+traceability requirements in 5.2.5, and 
+metrology and calibration requirements in 5.2.6. 
+
+5.8.9  Maintenance 
+a. 
+b. 
+
+The supplier shall ensure that maintenance activities are planned. 
+The supplier shall ensure that maintenance demonstration is performed 
+in  order  to  prove  that  maintainability  requirements  are  satisfied  in  the 
+real operational environment. 
+
+41 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+6 
+Pre-tailoring matrix per space product 
+types 
+
+The Matrix of Table 6-1 presents the pre-tailoring of ECSS-Q-ST-20C Rev.1 per space product type. 
+For the terminology and definitions of the space product types see ECSS-S-ST-00-01 which is quoted in 3.1. 
+
+NOTE 1  In the matrix, the column “Software” is for consideration in the development 
+of  software,  only  in  the  case  when  the  software  is  not  installed  in  a 
+hardware. Since “Software product assurance” is covered by ECSS-Q-ST-80, 
+this  document  is  not  applicable  to  SW  PA,  and  therefore  the  column 
+“Software” in the matrix always states “NA”.  
+
+NOTE 2  Catalogue  Off-the-shelf  equipment  is  off-the-shelf  equipment  that  is 
+procured from a stock defined in a supplier catalogue. For example, a UNIX 
+Server is a “Catalogue Off-the-shelf equipment” while a 30 m Antenna can 
+be an off-the-shelf even it is built on order only. 
+
+Definitions of the columns 
+
+Column title 
+Applicability 
+status 
+
+There are seven product types, one per column. 
+For the column “i” (i = 1 to 8) possible values are: 
+
+Description 
+
+“A” when applicable, 
+“NA” when not applicable, or  
+“Xi” to be decided on a case by case basis, with explanation in column comments 
+
+• 
+• 
+• 
+•  A* when requirement is applicable with supplementary indications in the 
+
+“Comment” column 
+
+A requirement is considered applicable for a product type if it is verified on this 
+product type. 
+It is possible to have a requirement applicable at various level of product (system, 
+element, equipment and software) 
+
+• 
+
+• 
+
+If a requirement is verified only at one level, and the information transmitted to 
+the upper level without any treatment, it will be considered applicable only at the 
+level it was verified (“ Yes “ in the column where it is verified). 
+If a requirement is verified at one level, and also verified at the upper level, it will 
+be considered applicable at both levels (a “Yes “ in both columns). 
+
+The column “Comments” shall be used to explain the rationale for having not decided if 
+applicable or not. 
+It shall not be used to modify a requirement but it can provide clarification on specific 
+conditions for the applicability of the requirement. 
+
+Comments 
+
+ 
+
+42 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+Table 6-1: Pre-tailoring matrix per “Space product types” 
+
+ 
+
+ECSS req. 
+number 
+
+Space 
+system 
+
+Space 
+segment 
+
+Launch 
+segment 
+
+Ground 
+segment 
+
+element and 
+sub-system 
+
+element and 
+sub-system 
+
+element and 
+sub-system 
+
+Space product types 
+
+Space 
+segment 
+equipment 
+
+Launch 
+segment 
+equipment 
+
+Ground 
+segment 
+equipment 
+
+Software 
+
+Comments 
+
+5.1.1a 
+
+5.1.1b 
+5.1.2a 
+5.1.2b 
+5.1.2c 
+5.1.2d 
+5.2.1a 
+
+5.2.2a 
+5.2.3a 
+5.2.4a 
+5.2.4b 
+5.2.4c 
+5.2.4d 
+5.2.4e 
+5.2.4f 
+5.2.5a 
+
+5.2.5b 
+5.2.5c 
+5.2.5d 
+5.2.5e 
+5.2.6a 
+5.2.6b 
+5.2.6c 
+5.2.6d 
+5.2.6e 
+5.2.6f 
+
+A 
+
+A 
+A 
+A 
+A 
+A 
+A 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+A 
+
+A 
+A 
+A 
+A 
+A 
+A 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+A* 
+
+A 
+A 
+A 
+A 
+A 
+A* 
+
+A 
+A* 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+A* 
+
+A 
+A* 
+NA 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+A 
+
+A 
+A 
+A 
+A 
+A 
+A 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+A* 
+
+NA 
+
+A 
+A 
+A 
+A 
+A 
+A* 
+
+A 
+A* 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+A* 
+
+A 
+A* 
+NA 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+
+* except for suppliers of catalogue OFF-THE-SHELF 
+items such as standard laboratory equipment, work 
+stations,.. , from whom a dedicated QA plan is not 
+required. 
+ 
+ 
+ 
+ 
+ 
+* the list of criteria in ECSS-Q-ST-10-04 tailored for 
+applicability to ground products 
+ 
+* for items traced as per clause 5.2.5. 
+ 
+ 
+ 
+ 
+ 
+ 
+* traceability is limited to product level, not to parts 
+and material 
+ 
+* traceability at product level only. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+43 
+
+ 
+
+ECSS req. 
+number 
+
+Space 
+system 
+
+Space 
+segment 
+
+Launch 
+segment 
+
+Ground 
+segment 
+
+element and 
+sub-system 
+
+element and 
+sub-system 
+
+element and 
+sub-system 
+
+Space product types 
+
+Space 
+segment 
+equipment 
+
+Launch 
+segment 
+equipment 
+
+Ground 
+segment 
+equipment 
+
+Software 
+
+Comments 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+5.2.6g 
+5.2.6h 
+5.2.6i 
+5.2.6j 
+5.2.6k 
+5.2.6l 
+5.2.6m 
+5.2.6n 
+5.2.6o 
+5.2.6p 
+5.2.6q 
+5.2.7.1a 
+5.2.7.2a 
+5.2.7.2b 
+5.2.7.2c 
+5.2.7.2d 
+5.2.7.2e 
+5.2.7.2f 
+5.2.7.3a. 
+5.2.8.1a 
+5.2.8.1b 
+5.2.8.1c 
+5.2.8.2a 
+5.2.8.2b 
+5.3.1.1a 
+5.3.1.2a 
+5.3.1.3a 
+5.3.1.4a 
+5.3.2.1a 
+5.3.2.1b 
+5.3.2.1c 
+5.3.2.1d 
+5.3.2.1e 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+NA 
+NA 
+NA 
+NA 
+NA 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+NA 
+NA 
+NA 
+NA 
+NA 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+44 
+
+ 
+
+ECSS req. 
+number 
+
+Space 
+system 
+
+Space 
+segment 
+
+5.3.2.2a 
+5.3.2.2b 
+5.3.2.3a 
+5.3.2.4.1a 
+
+5.3.2.4.1b 
+
+5.3.2.4.1c 
+5.3.2.4.1d 
+
+5.3.2.4.2a 
+5.3.2.4.2b 
+5.3.2.4.2c 
+5.3.2.4.2d 
+
+5.3.2.4.3a 
+5.3.2.4.3b 
+
+5.3.2.4.4a 
+
+5.3.2.4.5a 
+5.3.2.5a 
+5.4.1.1a 
+5.4.1.2a 
+5.4.1.2b 
+5.4.1.3a 
+5.4.1.3b 
+5.4.2a 
+5.4.2b 
+5.4.2c 
+5.4.2d 
+5.4.3a 
+
+A 
+A 
+A 
+A 
+
+A 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+A 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+element and 
+sub-system 
+
+A 
+A 
+A 
+A 
+
+A 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+A 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+Launch 
+segment 
+
+Ground 
+segment 
+
+element and 
+sub-system 
+
+element and 
+sub-system 
+
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+A 
+A 
+A 
+A* 
+
+A* 
+
+A 
+A* 
+
+A 
+A 
+A 
+A* 
+
+A 
+A* 
+
+A* 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A* 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+Space product types 
+
+Space 
+segment 
+equipment 
+
+Launch 
+segment 
+equipment 
+
+Ground 
+segment 
+equipment 
+
+Software 
+
+Comments 
+
+A 
+A 
+A 
+A 
+
+A 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+A 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+A 
+A 
+A 
+A* 
+
+A* 
+
+A 
+A* 
+
+A 
+A 
+A 
+A* 
+
+A 
+A* 
+
+A* 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A* 
+
+NA 
+NA 
+NA 
+NA 
+
+NA 
+
+NA 
+NA 
+
+NA 
+NA 
+NA 
+NA 
+
+NA 
+NA 
+
+NA 
+
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+
+ 
+ 
+ 
+* except for catalogue OFF-THE-SHELF;  
+Qualification items related to catalogue OFF-THE-
+SHELF are covered at a higher level. 
+* Qualification plan can be included into another 
+document 
+ 
+* Qualification results can be included into another 
+document 
+ 
+ 
+ 
+* for ground products point 4 is NA since no Log Bok 
+is required 
+ 
+* "Flight" hardware is replaced by "operational" 
+product. 
+* The supplier reports the qualification status without 
+QSL. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+* except for catalogue OFF-THE-SHELF equipment 
+
+45 
+
+ 
+
+ECSS req. 
+number 
+
+Space 
+system 
+
+Space 
+segment 
+
+element and 
+sub-system 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+A 
+
+A 
+A 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+A 
+
+A 
+A 
+
+5.4.3b 
+5.4.3c 
+5.4.3d 
+5.4.3e 
+5.4.4.1a 
+5.4.4.1b 
+5.4.4.1c 
+5.4.4.2a 
+5.4.4.3a 
+5.4.4.4a 
+5.5.1a 
+5.5.1b 
+5.5.1c 
+5.5.1d 
+5.5.1e 
+
+5.5.1f 
+5.5.1g 
+5.5.2a 
+
+5.5.2b 
+5.5.3.1a 
+
+5.5.3.1b 
+
+5.5.3.1c 
+
+5.5.3.1d 
+
+5.5.3.2a 
+
+5.5.3.3a 
+
+5.5.4a 
+
+Launch 
+segment 
+
+Ground 
+segment 
+
+element and 
+sub-system 
+
+element and 
+sub-system 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+A* 
+A* 
+A* 
+A* 
+A 
+A 
+A 
+A 
+A 
+A 
+A* 
+NA 
+A* 
+A* 
+A*1 
+
+A* 
+A* 
+NA 
+
+NA 
+Xi 
+
+Xi 
+
+Xi 
+
+Xi 
+
+Xi 
+
+Xi 
+
+A 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+Space product types 
+
+Space 
+segment 
+equipment 
+
+Launch 
+segment 
+equipment 
+
+Ground 
+segment 
+equipment 
+
+Software 
+
+Comments 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+A 
+
+A 
+A 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+A* 
+A* 
+A* 
+A* 
+A 
+A 
+A 
+A 
+A 
+A 
+A* 
+NA 
+A* 
+A* 
+A*2 
+
+A* 
+A* 
+A* 
+
+A 
+XI 
+
+Xi 
+
+Xi 
+
+Xi 
+
+Xi 
+
+Xi 
+
+A 
+
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+
+NA 
+NA 
+NA 
+
+NA 
+NA 
+
+NA 
+
+NA 
+
+NA 
+
+NA 
+
+NA 
+
+NA 
+
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF equipment 
+ 
+ 
+ 
+ 
+ 
+ 
+* except for catalogue OFF-THE-SHELF equipment 
+ 
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF equipment 
+*1 except for catalogue OFF-THE-SHELF equipment 
+*2 point 6 and 8 are NA 
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF; 
+"Flight" hardware is replaced by "operational" product. 
+ 
+This requirement may be made applicable for series 
+production 
+This requirement may be made applicable for series 
+production 
+This requirement may be made applicable for series 
+production 
+This requirement may be made applicable for series 
+production 
+This requirement may be made applicable for series 
+production 
+This requirement may be made applicable for series 
+production 
+ 
+
+46 
+
+ 
+
+ECSS req. 
+number 
+
+Space 
+system 
+
+Space 
+segment 
+
+5.5.4b 
+5.5.4c 
+5.5.5a 
+5.5.5b 
+5.5.5c 
+5.5.6.1a 
+
+5.5.6.1b 
+
+5.5.6.1c 
+
+5.5.6.1d 
+
+5.5.6.1e 
+
+5.5.6.1f 
+
+5.5.6.1g 
+
+5.5.6.1h 
+
+5.5.6.1i 
+
+5.5.6.2a 
+5.5.6.2b 
+5.5.7.1a 
+5.5.7.2a 
+5.5.7.2b 
+5.5.7.3a 
+5.5.7.4a 
+5.5.7.4b 
+5.5.7.4c 
+5.5.7.5a 
+5.5.8a 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+element and 
+sub-system 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+Launch 
+segment 
+
+Ground 
+segment 
+
+element and 
+sub-system 
+
+element and 
+sub-system 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+A 
+A 
+A 
+A 
+A 
+Xi 
+
+Xi 
+
+Xi 
+
+Xi 
+
+Xi 
+
+Xi 
+
+Xi 
+
+Xi 
+
+Xi 
+
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+A 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+Space product types 
+
+Space 
+segment 
+equipment 
+
+Launch 
+segment 
+equipment 
+
+Ground 
+segment 
+equipment 
+
+Software 
+
+Comments 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+A 
+A 
+A 
+A 
+A 
+Xi 
+
+Xi 
+
+Xi 
+
+Xi 
+
+Xi 
+
+Xi 
+
+Xi 
+
+Xi 
+
+Xi 
+
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+A 
+
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+
+NA 
+
+NA 
+
+NA 
+
+NA 
+
+NA 
+
+NA 
+
+NA 
+
+NA 
+
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+
+ 
+ 
+ 
+ 
+ 
+For ground products: Requirements of this section are 
+only applicable to equipment in the critical items list. 
+For ground products: Requirements of this section are 
+only applicable to equipment in the critical items list. 
+For ground products: Requirements of this section are 
+only applicable to equipment in the critical items list. 
+For ground products: Requirements of this section are 
+only applicable to equipment in the critical items list. 
+For ground products: Requirements of this section are 
+only applicable to equipment in the critical items list. 
+For ground products: Requirements of this section are 
+only applicable to equipment in the critical items list. 
+For ground products: Requirements of this section are 
+only applicable to equipment in the critical items list. 
+For ground products: Requirements of this section are 
+only applicable to equipment in the critical items list. 
+For ground products: Requirements of this section are 
+only applicable to equipment in the critical items list. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+47 
+
+ 
+
+ECSS req. 
+number 
+
+Space 
+system 
+
+Space 
+segment 
+
+element and 
+sub-system 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+NA 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+5.5.8b 
+5.5.8c 
+5.5.8d 
+5.5.8e 
+5.5.8f 
+5.5.8g 
+5.5.8h 
+5.5.8i 
+5.5.8j 
+5.5.9.1a 
+5.5.9.1b 
+5.5.9.1c 
+5.5.9.1d 
+5.5.9.2a 
+5.5.9.2b 
+5.5.9.2c 
+5.5.9.2d 
+5.5.9.2e 
+5.5.10a 
+5.5.11a 
+5.5.11b 
+5.6.1a 
+5.6.2a 
+5.6.2b 
+5.6.2c 
+5.6.3.1a 
+5.6.3.1b 
+5.6.3.2a 
+5.6.3.2b 
+5.6.4a 
+5.6.4b 
+5.6.4c 
+5.6.4d 
+
+Launch 
+segment 
+
+Ground 
+segment 
+
+element and 
+sub-system 
+
+element and 
+sub-system 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+A 
+A 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+A 
+A 
+A 
+A 
+A 
+A 
+A* 
+A* 
+A* 
+A* 
+A* 
+NA 
+A* 
+A* 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+Space product types 
+
+Space 
+segment 
+equipment 
+
+Launch 
+segment 
+equipment 
+
+Ground 
+segment 
+equipment 
+
+Software 
+
+Comments 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+NA 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+A 
+A 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+A 
+A 
+A 
+A 
+A 
+A 
+A* 
+A* 
+A* 
+A* 
+A* 
+NA 
+A* 
+A* 
+
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF equipment 
+ 
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF equipment 
+
+48 
+
+ 
+
+ECSS req. 
+number 
+
+Space 
+system 
+
+Space 
+segment 
+
+element and 
+sub-system 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+A 
+A 
+NA 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+5.6.4e 
+5.6.4f 
+5.6.4g 
+5.6.5a 
+5.6.5b 
+5.7.1a 
+5.7.1b 
+5.7.2a 
+
+5.7.2b 
+5.7.2c 
+5.7.3a 
+5.7.3b 
+5.7.3c 
+5.7.3d 
+5.7.3e 
+5.7.3f 
+5.7.3g 
+5.7.4.1a 
+5.7.4.2a 
+5.7.5.1a 
+5.7.5.1b 
+5.7.5.2a 
+5.8.1a 
+5.8.1b 
+5.8.1c 
+5.8.2a 
+5.8.3.1a 
+5.8.3.1b 
+5.8.3.2a 
+5.8.4.1a 
+
+Launch 
+segment 
+
+Ground 
+segment 
+
+element and 
+sub-system 
+
+element and 
+sub-system 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+A* 
+A 
+A 
+A 
+A 
+A 
+A 
+A* 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A* 
+A* 
+A* 
+A* 
+A* 
+A* 
+A* 
+A* 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+Space product types 
+
+Space 
+segment 
+equipment 
+
+Launch 
+segment 
+equipment 
+
+Ground 
+segment 
+equipment 
+
+Software 
+
+Comments 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+A 
+A 
+A 
+NA 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+A* 
+A 
+A 
+A 
+A 
+A 
+A 
+A* 
+
+A 
+A 
+A 
+NA 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A* 
+A* 
+A* 
+A* 
+A* 
+A* 
+A* 
+A* 
+
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+
+* except for catalogue OFF-THE-SHELF equipment 
+ 
+ 
+ 
+ 
+ 
+ 
+* EIDP DRD is tailored for ground systems and in 
+particular delivery of logbooks and intermediate test 
+results are not required. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF equipment 
+ 
+
+49 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+ 
+
+ECSS req. 
+number 
+
+Space 
+system 
+
+Space 
+segment 
+
+element and 
+sub-system 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+5.8.4.2a 
+5.8.4.2b 
+5.8.4.2c 
+5.8.4.3a 
+5.8.4.3b 
+5.8.4.4a 
+5.8.8a 
+5.8.9a 
+5.8.9b 
+A.2.1<1>a 
+A.2.1<2>a 
+A.2.1<3>a 
+A.2.1<4>a 
+A.2.1<5>a 
+A.2.1<6>a 
+A.2.1<7>a 
+A.2.1<8>a 
+A.2.1<9>a 
+B.2.1a 
+C.2.1a 
+C.2.1b 
+C.2.1c 
+C.2.1d 
+C.2.1e 
+C.2.1f 
+C.2.1g 
+C.2.1h 
+C.2.1i. 
+D.2.1a. 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+ 
+
+Launch 
+segment 
+
+element and 
+sub-system 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+Ground 
+segment 
+
+element and 
+sub-system 
+
+A* 
+A* 
+A* 
+A* 
+A* 
+A* 
+A* 
+A* 
+A* 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+
+Space product types 
+
+Space 
+segment 
+equipment 
+
+Launch 
+segment 
+equipment 
+
+Ground 
+segment 
+equipment 
+
+Software 
+
+Comments 
+
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+A 
+
+A* 
+A* 
+A* 
+A* 
+A* 
+A* 
+A* 
+A* 
+A* 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+NA 
+
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF equipment 
+* except for catalogue OFF-THE-SHELF equipment 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+50 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+Annex A (normative) 
+QA plan - DRD 
+
+A.1  DRD identification  
+
+A.1.1 
+
+Requirement identification and source 
+document 
+
+This DRD is called from ECSS-Q-ST-20, requirement 5.1.1a. 
+
+Purpose and objective  
+
+A.1.2 
+The objective of the QA Plan is to describe the activities to be performed by the 
+supplier to assure the quality of the product and to demonstrate compliance to 
+the applicable quality assurance requirements. 
+
+A.2  Expected response 
+
+A.2.1 
+
+Scope and content 
+
+<1> 
+a. 
+
+<2> 
+a. 
+
+<3> 
+a. 
+
+Introduction 
+
+The  Quality  Assurance  Plan  shall  introduce  the  purpose,  objective  and 
+the reason prompting its preparation  
+
+Applicable and reference documents 
+
+The  Quality  Assurance  Plan  shall  list  the  applicable  and  reference 
+documents in support of the generation of the document. 
+
+Quality Assurance management 
+
+The Quality Assurance Plan shall describe the activities to be applied to 
+fulfil the applicable quality assurance management requirements defined 
+in ECSS-Q-ST-20 clause 5.1. 
+
+51 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+<4> 
+a. 
+
+<5> 
+a. 
+
+<6> 
+
+a. 
+
+<7> 
+a. 
+
+<8> 
+a. 
+
+<9> 
+a. 
+
+QA requirements for design and verification 
+
+The Quality Assurance Plan shall describe the activities to be applied to 
+fulfil  the  applicable  Quality  assurance  requirements  for  design  and 
+verification defined in ECSS-Q-ST-20 clause 5.3. 
+
+QA requirements for procurement 
+
+The Quality Assurance Plan shall describe the activities to be applied to 
+fulfil  the  applicable  Quality  assurance  requirements  for  procurement 
+defined in ECSS-Q-ST-20 clause 5.4. 
+
+QA requirements for manufacturing, assembly and 
+integration 
+
+The Quality Assurance Plan shall describe the activities to be applied to 
+fulfil  the  applicable  Quality  assurance  requirements  for  manufacturing, 
+assembly and integration defined in ECSS-Q-ST-20 clause 5.5. 
+
+QA requirements for Testing 
+
+The Quality Assurance Plan shall describe the activities to be applied to 
+fulfil the applicable Quality assurance requirements for testing defined in 
+ECSS-Q-ST-20 clause 5.5.11b. 
+
+QA requirements for acceptance and delivery 
+
+The Quality Assurance Plan shall describe the activities to be applied to 
+fulfil  the  applicable  Quality  assurance  requirements  for  acceptance  and 
+delivery defined in ECSS-Q-ST-20 clause 5.7. 
+
+Quality Assurance general requirements 
+
+The Quality Assurance Plan shall describe the activities to be applied to 
+fulfil the applicable general Quality assurance defined in ECSS-Q-ST-20 
+clause 5.3. 
+
+A.2.2 
+a. 
+
+Special remarks 
+
+The  response  to  this  DRD  may  be  combined  with  the  response  to  the 
+product assurance plan, as defined in ECSS-Q-ST-10. 
+
+52 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+Annex B (normative) 
+End item data package (EIDP) - DRD 
+
+B.1  DRD identification 
+
+B.1.1 
+
+Requirement identification and source 
+document 
+
+This DRD is called from ECSS-Q-ST-20, requirement 5.7.2a. 
+
+Purpose and objective 
+
+B.1.2 
+The  end  item  data  package  is  the  collection  of  the  data  related  to  the 
+manufacturing,  assembly,  integration  and  test  of  a  deliverable  configuration 
+item which provides the necessary traceability and events record. 
+The EIDP constitutes the basis to support the acceptance of the product. 
+The  document  is  built  from  the  beginning  of  the  activity  for  all  relevant 
+verification levels (i.e. MIP, TRR or TRB). 
+It is used to perform the TRB or DRB with the customer during the acceptance 
+review of deliverable hardware. 
+
+B.2  Expected response 
+
+B.2.1 
+a. 
+
+Scope and content 
+
+The EIDP shall include the following information and documentation: 
+1. 
+2. 
+3. 
+
+The DRB minutes 
+The customer acceptance certificate  if not covered in DRB minutes 
+Cover page 
+
+NOTE   An example is given in Annex F. 
+
+Table of contents 
+
+NOTE   An example is given in Annex G. 
+
+Change record 
+The product certificate of conformity in conformance with Annex D. 
+
+4. 
+
+5. 
+6. 
+
+53 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+7. 
+8. 
+9. 
+
+10. 
+11. 
+
+12. 
+
+NCR list and copies of major NCRs 
+ABCL 
+Summary and status of RFDs and RFWs raised and processed on 
+the product 
+The product logbook 
+Product  definition  documents  to  be  used  for  further  integration, 
+testing  and  operation  in  higher  level  assemblies  including  the 
+software  used  to  operate  the  item  and  the  product  user  or 
+operating manuals. 
+Procedures to be used for the proper handling of the product after 
+its final delivery, including procedures for: 
+(a) 
+(b) 
+(c) 
+(d) 
+(e) 
+(f) 
+
+packing, 
+handling, 
+storage, 
+transportation, 
+safety, and 
+cleanliness. 
+
+13.  Copies of the product test reports, or as a minimum the list of the 
+
+14. 
+
+15. 
+
+16. 
+
+documents with the identification of their location. 
+List  of  delivered  ground  support  equipment  (e.g.:  MGSE,  EGSE, 
+FGSE, OGSE) with the reference to their corresponding EIDPs and 
+software product. 
+List  of  EIDPs  or  logbooks  of  units  and  subsystem  supplied  by 
+lower tier suppliers. 
+List  of  the  loose  items  and  not  installed  items  supplied  with  the 
+product. 
+
+17.  Any additional useful information or data relevant to the product. 
+
+NOTE 1  For  example,  cleanliness  certification  when 
+
+cleanliness is a requirement. 
+
+NOTE 2  For  example,  temporary  installed  or  removed 
+
+items when applicable to the product. 
+
+B.2.2 
+None. 
+
+Special remarks 
+
+54 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+Annex C (normative) 
+Logbook - DRD 
+
+C.1  DRD identification 
+
+C.1.1 
+
+Requirement identification and source 
+document 
+
+This DRD is called from ECSS-Q-ST-20C, requirement 5.5.9.2a. 
+
+Purpose and objective 
+
+C.1.2 
+The logbook is the document in which the data related to the integration and 
+testing of a configuration item are recorded in chronological order to provide 
+the necessary events traceability at any time during the programme life cycle, 
+beginning with the first  qualification or acceptance test. It is part of the EIDP 
+(see Annex B). 
+
+C.2  Expected response 
+
+C.2.1 
+a. 
+
+Scope and content 
+
+The logbook cover page shall contain the following: 
+1. 
+2. 
+3. 
+4. 
+
+general information, 
+contents, 
+approvals of the relevant authorities (QA, PA, PM), and 
+customer acceptance (if required by the business agreement). 
+NOTE   An example of a logbook cover page is given in 
+
+Annex E. 
+
+b. 
+
+c. 
+
+The logbook shall contain the “hardware configuration and traceability” 
+table,  which  reports  all  the  identification  references  of  single  elements 
+composing the CI.  
+The  logbook  shall  contain  the  “hardware  configuration  change  and 
+status” table, which reports for each singe element of the CI all the events 
+relevant to integration, removal and replacement on the higher level. 
+
+55 
+
+d. 
+
+e. 
+
+f. 
+
+g. 
+
+h. 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+The  logbook  shall  contain  the  summary  list  of  the  integration  and  test 
+instructions,  including  for  each  entry,  the  action  start  date,  action 
+performed date and action close-out date shall also be reported. 
+
+NOTE  
+
+Example: shop traveller. 
+
+The  logbook  shall  contain  the  summary  list  of  nonconformances  with 
+relevant identification references, issue date, closure dates, and status. 
+The  logbook  shall  contain  all  the  electrical  connector  (or  other  limited 
+cycles items) mate and demate cycles in order to ensure the conformance 
+with the project requirements. 
+The  logbook  shall  contain  the  records  of  total  operating  hours  for  each 
+limited-life element identified in the test procedures. 
+The  logbook  shall  contain,  in  chronological  order,  the  events  related  to 
+the  integration  and  test  activities  performed  on  the  relevant  item  (i.e. 
+system, subsystem, and equipment), including the following: 
+1. 
+
+Action  requested  form,  reporting  all  the  operations  performed 
+with  the  references  to  the  applicable  documents  or  procedures, 
+start date, completion date and quality inspection stamps. 
+Step-by-step procedures and results, in which copies of the as-run 
+procedures are included in a suitable format. 
+Procedures variation form, in which copies of modified procedures 
+(red  marked)  identified  with  a  procedure  variation  number  and 
+duly approved by responsible authorities, are included.  
+
+2. 
+
+3. 
+
+i. 
+
+The logbook shall contain the list of open action or open test at the time 
+of the product shipment to the customer, test facility or launch pad. 
+
+C.2.2 
+An example of a logbook cover page is given in Annex E. 
+
+Special remarks 
+
+56 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+Annex D (normative) 
+Certificate of conformity (CoC) - DRD 
+
+D.1  DRD identification 
+
+D.1.1 
+
+Requirement identification and source 
+document 
+
+This DRD is called from ECSS-Q-ST-20C, requirement 5.7.3g. 
+
+NOTE  
+
+See also Annex B.2.1a.6. 
+
+Purpose and objective 
+
+D.1.2 
+The certificate of conformity is the document that declares the conformance of 
+an  end  item  in  all  respect with  the  applicable  specification(s),  drawing(s)  and 
+requirements of the order. 
+This document is included in the EIDP to provide to the customer the assurance 
+that  the  deliverable  item  has  been  designed,  manufactured  and  tested  in 
+accordance  with  the  technical  and  quality  requirements  established  by  the 
+business agreement and the statement of work. 
+
+D.2  Expected response 
+
+D.2.1 
+a. 
+
+Content 
+
+The CoC shall contain the following elements: 
+1. 
+
+Title including references to identify the product and the relevant 
+applicable documents; 
+
+NOTE  
+
+Examples for references are item name, project, 
+serial number, part number, customer, contract 
+number. 
+
+2. 
+
+3. 
+4. 
+
+Document  no.  in  accordance  with  project  configuration  control 
+rules; 
+EIDP reference number; 
+Intended use, specifying the item objective (i.e. BB, QM, FM); 
+
+57 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+5. 
+
+6. 
+7. 
+8. 
+
+Reference  of  conformity,  calling  for  example  the  following 
+documents: 
+(a) 
+
+Business  agreement  requirements:  reference  number  of 
+design spec., ICD or other contractual documents; 
+
+(b)  Operational  documents:  reference  number  of  drawings, 
+
+procedures, and electrical schemes; 
+
+(c)  Deliverable  documents: 
+
+logbooks, and manuals. 
+
+reference  number  of  EIDP, 
+
+Statement of conformity; 
+List of waivers or deviations or other remarks; 
+Full name and function of the signing person(s) authorised by the 
+issuer’s management to sign on his behalf.  
+
+NOTE  
+
+The  number  of  signatures  included  is  the 
+minimum  determined  by  the  legal  form  of  the 
+issuer’s organisation. 
+
+D.2.2 
+An example of a CoC is given in Annex H. 
+
+Special remarks 
+
+58 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+Annex E (informative) 
+Example of a logbook cover page 
+
+Logbook 
+
+General information 
+
+Log No. 
+Model 
+Sheet 1 of 1 
+
+Item serial no. 
+
+Contract no. 
+
+Log start date 
+
+Log finish date 
+
+Item name 
+
+Item part no. 
+
+Hardware configuration and traceability 
+Hardware configuration change and status 
+Shop traveller list (or similar documents) 
+Nonconformances summary list 
+Connectors mate and demate 
+Operating hours log 
+Log of actions 
+
+Program 
+ 
+Customer 
+ 
+Contents: 
+  Section 1 
+  Section 2 
+  Section 3 
+  Section 4 
+  Section 5 
+  Section 6 
+  Section 7 
+  Section 7.1  Action requested 
+  Section 7.2  Additional actions undertaken 
+  Section 7.3 
+  Section 8 
+  Date system quality  
+assurance approval: 
+  Date programme  
+manager acceptance: 
+  Customer acceptance: 
+ 
+ 
+ 
+  Date:   
+
+Step by step procedure and results 
+Open works 
+
+Date PA manager  
+acceptance: 
+
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  Customer 
+signature 
+ 
+
+ 
+
+Total Sheets 
+”      ” 
+”      ” 
+”      ” 
+”      ” 
+”      ” 
+”      ” 
+”      ” 
+”      ” 
+”      ” 
+”      ” 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+
+ 
+
+59 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+Annex F (informative) 
+Example of EIDP cover page 
+
+EIDP no. 
+ 
+
+ 
+
+ 
+
+ 
+
+End item data package 
+
+ 
+
+ 
+
+Specification no. 
+
+Serial no. 
+
+Model 
+
+Contract no. 
+
+ 
+
+ 
+
+ 
+
+Dept.: 
+
+Dept.: 
+
+Date: 
+
+Date: 
+
+60 
+
+ 
+ 
+
+Item description 
+ 
+Drawing or identification no. 
+ 
+CI no. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Prepared by: 
+ 
+Approved by: 
+ 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+Annex G (informative) 
+Example of EIDP contents 
+
+EIDP contents 
+
+EIDP no. 
+  
+
+ 
+
+Included  Vol. no. 
+
+Remarks 
+
+Customer follow-up sheet, 
+DRB minutes, customer acceptance 
+certificate if not covered by DRB minutes 
+EIDP front sheet and contents 
+EIDP change record 
+Certificate of conformity 
+As-design as-built configuration status 
+Request for waivers and NCR list (NCR, 
+RFW or RFD) summary. Copy of Major 
+NCRs. 
+Operation documentation 
+• Interface drawings 
+• User or operating manuals 
+• Operational S/W list 
+Logbook 
+Procedures for e.g. packing, handling, 
+storage, transportation, safety, and 
+cleanliness. 
+Test report 
+Ground support equipment (GSE) and 
+S/W product list 
+EIDPs or logbooks list (SBCOs H/W, GSE) 
+Loose item list (not installed items and 
+spares) 
+Other data and remarks 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+
+Section 1 
+
+Section 2 
+Section 3 
+Section 4 
+Section 5 
+Section 6 
+
+Section 7 
+
+Section 8 
+Section 9 
+
+Section 10 
+Section 11 
+
+Section 12 
+Section 13 
+
+Section 14 
+
+61 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+Annex H (informative) 
+Example of Certificate of conformity 
+
+Document no. 
+Item name 
+Customer 
+
+Certificate of conformity 
+
+Project 
+
+Log 
+
+Item part no. 
+
+Item serial no. 
+
+Customer code 
+
+Contract no. 
+
+Intended use 
+
+Reference of conformity 
+
+Operational documents 
+
+Deliverable documents 
+
+Contract requirements 
+Document no. 
+ 
+ 
+ 
+ 
+ 
+
+Issue/rev.  Document no. 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+Issue/rev.  Document no. 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+Issue/rev. 
+ 
+ 
+ 
+ 
+ 
+
+Statement of conformity 
+
+   
+   
+
+It is hereby certified that apart from the deviations or waivers noted in the “Remarks” box below, the 
+whole of the supplies detailed above, conform in all respects to the specification(s), drawing(s) and 
+condition(s) or requirement(s) respects to the specification(s), drawing(s) and condition(s) or 
+requirement(s) of the contract. 
+   
+   
+ Remarks: 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+   
+  PA manager: 
+  Project/ Programme manager: 
+
+Date: 
+Date: 
+
+   
+   
+
+   
+   
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+   
+
+62 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+Annex I (informative) 
+QA document requirement list 
+
+Table  I-1  presents  the  reviews  at  which  the  different  issues  of  the  Quality 
+Assurance documents are expected. 
+
+Table I-1: QA document requirement list with respect to milestones 
+
+Document 
+
+Title 
+
+Review 
+
+MDR  PRR  SRR  PDR  CDR  QR  AR  ORR  FRR  LRR  CRR  ELR 
+
+Quality 
+Assurance 
+Plan 
+
+EIDP 
+
+ 
+
+ 
+
+X 
+
+X 
+
+X 
+
+X 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+X 
+
+X 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Note: EIDP includes logbook (Annex C) and certificate of conformity (Annex D) 
+
+ 
+
+DRD Ref. 
+
+ECSS-Q-ST-20C 
+Rev.1 
+Annex A  
+ECSS-Q-ST-20C 
+Rev.1 
+Annex B 
+
+63 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+Annex J (informative) 
+ECSS-Q-ST-20 applicability according to 
+programme phases 
+
+The contents of this informative annex are general guidelines to be considered 
+in  support  for  the  selection  of  applicable  requirements  according  to  the 
+programme phases. 
+
+NOTE   During  phase  A  only 
+
+is  during 
+
+this  phase 
+
+few  documents/ 
+requirements  are  actually  applicable,  however, 
+it 
+future 
+standards/requirements  applicability  to  phase 
+B/C/D/E  should  be  defined.  A  larger  set  of 
+standards  can  then  be  called  up  as  reference 
+documents  for  phase  A  while  not  made 
+formally applicable.” 
+
+that 
+
+the 
+
+Table J-1: ECSS-Q-ST-20C Requirements per programme phase 
+
+Clause 
+
+Requirement Section 
+
+Quality assurance requirements 
+QA management requirements 
+
+Personnel training and certification 
+QA general requirements 
+Critical-items control 
+
+5  
+5.1 
+5.1.1  Quality assurance plan 
+5.1.2 
+5.2 
+5.2.1 
+5.2.2  Nonconformance control system 
+5.2.3  Management of alerts 
+5.2.4  Acceptance authority media 
+5.2.5 
+5.2.6  Metrology and calibration 
+5.2.7  Handling, storage and preservation 
+5.2.8 
+5.3 
+5.3.1  Design rules 
+
+Traceability 
+
+Statistical quality control and analysis 
+QA requirements for design and verification 
+
+Phase 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+
+A B C D E F 
+ 
+ 
+ 
+ 
+X  X  X  X  X  X 
+X  X  X  X  X  X 
+ 
+ 
+  X  X  X  X   
+ 
+  X  X  X  X 
+  X  X  X  X   
+ 
+  X  X  X   
+  X  X  X  X   
+  X  X  X  X   
+  X  X  X   
+ 
+  X  X   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+X  X  X 
+
+ 
+ 
+
+ 
+ 
+
+64 
+
+Clause 
+
+Requirement Section 
+
+5.3.2  Verification 
+5.3.2.1  General 
+5.3.2.2  Design verification analysis 
+5.3.2.3  Design reviews 
+5.3.2.4  Qualification process 
+5.3.2.4.1 Qualification 
+5.3.2.4.2 Qualification by similarity 
+5.3.2.4.3 Qualification testing 
+5.3.2.4.4 Qualification status 
+5.3.2.4.5 Maintenance of qualification 
+5.3.2.5  Design changes 
+5.4 
+5.4.1 
+5.4.2 
+5.4.3 
+5.4.4 
+5.5 
+5.5.1 
+
+QA requirements for procurement 
+Selection of procurement sources 
+Procurement documents 
+Surveillance of procurement sources 
+Receiving inspection 
+QA requirements for manufacturing, assembly and integration 
+Planning of manufacturing, assembly and integration activities and 
+associated documents 
+
+Control of processes 
+
+Equipment control 
+Cleanliness and contamination control 
+
+5.5.2  Manufacturing readiness reviews 
+5.5.3 
+5.5.3.1  General 
+5.5.3.2  Special processes 
+5.5.3.3  Statistical process control 
+5.5.4  Workmanship standards 
+5.5.5  Materials and parts control 
+5.5.6 
+5.5.7 
+5.5.7.1  General 
+5.5.7.2  Cleanliness levels 
+5.5.7.3  Cleaning materials and methods 
+5.5.7.4  Contamination control 
+5.5.7.5  Cleanliness of facilities 
+Inspection 
+5.5.8 
+5.5.9 
+Specific requirements for assembly and integration 
+5.5.10  Manufacturing, assembly and integration records 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+Phase 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+A B C D E F 
+ 
+ 
+  X  X  X  X  X 
+X  X  X  X  X   
+X  X  X  X 
+ 
+ 
+ 
+ 
+ 
+  X  X  X   
+ 
+ 
+  X  X  X   
+ 
+  X  X  X   
+  X  X  X  X   
+ 
+  X  X  X   
+  X  X  X  X   
+ 
+ 
+  X  X  X  X   
+  X  X  X  X   
+  X  X  X  X   
+  X  X  X  X   
+ 
+ 
+  X  X  X  X   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  X  X  X  X   
+ 
+ 
+  X  X  X  X   
+  X  X  X  X   
+ 
+  X  X  X   
+  X  X  X  X   
+  X  X  X  X   
+  X  X  X  X   
+ 
+ 
+  X  X  X  X   
+  X  X  X  X   
+  X  X  X  X   
+  X  X  X  X   
+  X  X  X  X   
+ 
+  X  X  X   
+ 
+  X  X  X   
+  X  X  X  X   
+
+ 
+
+ 
+
+ 
+
+ 
+
+65 
+
+Clause 
+
+Requirement Section 
+
+QA requirements for testing 
+QA requirements for acceptance and delivery 
+QA requirements for ground support equipment (GSE) 
+
+Configuration control 
+Production 
+
+5.5.11  Electrostatic discharge control (ESD) 
+5.6 
+5.7 
+5.8 
+5.8.1  Design, development and verification 
+5.8.2 
+5.8.3 
+5.8.3.1  Procurement 
+5.8.3.2  Manufacturing, assembly, integration and test 
+5.8.4  Acceptance and delivery 
+5.8.4.1  End item data package 
+5.8.4.2  Acceptance 
+5.8.4.3  Delivery board 
+5.8.4.4  Delivery 
+5.8.8  General requirements 
+5.8.9  Maintenance 
+ 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+Phase 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+
+ 
+ 
+
+A B C D E F 
+  X  X  X 
+ 
+  X  X  X  X   
+  X  X   
+ 
+ 
+ 
+ 
+  X  X 
+ 
+  X  X  X  X   
+ 
+ 
+  X  X  X  X   
+ 
+  X  X  X   
+ 
+ 
+ 
+  X  X  X   
+ 
+ 
+  X  X  X   
+  X  X  X   
+ 
+ 
+  X  X  X   
+  X  X  X  X   
+  X  X  X  X   
+
+ 
+
+ 
+
+66 
+
+ECSS-Q-ST-20C Rev.1 
+1 March 2013 
+
+Bibliography 
+
+ECSS-S-ST-00 
+
+ECSS-E-ST-10-02 
+ECSS-M-ST-10 
+
+ECSS-M-ST-10-01 
+
+ECSS-M-ST-40 
+
+ECSS-Q-ST-30 
+ECSS-Q-ST-40 
+ECSS-Q-ST-60 
+
+ECSS-Q-ST-70 
+
+ECSS-Q-ST-70-01 
+
+EN 9100 
+
+ 
+
+ECSS system - Description, implementation and general 
+requirements 
+Space engineering - Verification 
+Space project management - Project planning and 
+implementation 
+Space project management - Organization and conduct of 
+reviews 
+Space project management - Configuration and information 
+management 
+Space product assurance - Dependability 
+Space product assurance - Safety 
+Space product assurance - Electrical, electronic and 
+electromechanical (EEE) components 
+Space product assurance - Materials, mechanical parts and 
+processes 
+Space product assurance - Cleanliness and contamination 
+control 
+Aerospace series - Quality management systems - Requirements 
+(based on ISO 9001:2000) and Quality systems - Model for 
+quality assurance in design, development, production, 
+installation and servicing 
+
+67 
+
+
