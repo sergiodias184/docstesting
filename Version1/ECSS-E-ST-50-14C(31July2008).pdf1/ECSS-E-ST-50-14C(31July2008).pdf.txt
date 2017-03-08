@@ -1,0 +1,5324 @@
+ECSS-E-ST-50-14C 
+31 July 2008 
+
+ 
+
+Space engineering 
+Spacecraft discrete interfaces 
+
+ 
+
+ECSS Secretariat 
+ESA-ESTEC 
+Requirements & Standards Division 
+Noordwijk, The Netherlands 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+Foreword 
+This  Standard  is  one  of  the  series  of  ECSS  Standards  intended  to  be  applied  together  for  the 
+management,  engineering  and  product  assurance  in  space  projects  and  applications.  ECSS  is  a 
+cooperative  effort  of  the  European  Space  Agency,  national  space  agencies  and  European  industry 
+associations for the purpose of developing and maintaining common standards. Requirements in this 
+Standard are defined in terms of what shall be accomplished, rather than in terms of how to organize 
+and  perform  the  necessary  work.  This  allows  existing  organizational  structures  and  methods  to  be 
+applied where they are effective, and for the structures and methods to evolve as necessary without 
+rewriting the standards. 
+This Standard has been prepared by the ECSS‐E‐ST‐50‐14C Working Group, reviewed by the ECSS 
+Executive Secretariat and approved by the ECSS Technical Authority. 
+
+Disclaimer 
+ECSS does not provide any warranty whatsoever, whether expressed, implied, or statutory, including, 
+but not limited to, any warranty of merchantability or fitness for a particular purpose or any warranty 
+that  the  contents  of  the  item  are  error‐free.  In  no  respect  shall  ECSS  incur  any  liability  for  any 
+damages, including, but not limited to, direct, indirect, special, or consequential damages arising out 
+of, resulting from, or in any way connected to the use of this Standard, whether or not based upon 
+warranty, business agreement, tort, or otherwise; whether or not injury was sustained by persons or 
+property or otherwise; and whether or not loss was sustained from, or arose out of, the results of, the 
+item, or any services that may be provided by ECSS. 
+
+Published by:  
+ 
+ 
+ 
+Copyright:  
+
+ESA Requirements and Standards Division 
+ESTEC, P.O. Box 299, 
+2200 AG Noordwijk 
+The Netherlands 
+2008 © by the European Space Agency for the members of ECSS 
+
+2 
+
+ECSS‐E‐50‐14A 
+19 December 2007 
+ECSS‐E‐50‐14B 
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+First issue 
+
+Never issued 
+Second issue 
+Editorial changes. 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+Change log 
+
+3 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+Table of contents 
+
+Change log.................................................................................................................3 
+
+1 Scope.......................................................................................................................8 
+
+2 Normative references.............................................................................................9 
+
+3 Terms, definitions and abbreviated terms..........................................................10 
+3.1  Terms from other standards .....................................................................................10 
+3.2  Terms specific to the present standard ....................................................................10 
+3.3  Abbreviated terms ....................................................................................................11 
+3.4  Conventions .............................................................................................................12 
+Bit numbering convention...........................................................................12 
+Timing diagram conventions.......................................................................12 
+Signal and signal event naming convention ...............................................13 
+Signal timing and measurement references ...............................................14 
+
+3.4.1 
+3.4.2 
+3.4.3 
+3.4.4 
+
+4 General ..................................................................................................................15 
+4.1 
+Introduction...............................................................................................................15 
+4.2  Architectural concepts ..............................................................................................15 
+4.2.1  Overview.....................................................................................................15 
+4.2.2  General failure tolerance ............................................................................16 
+4.2.3 
+Interface control during power cycling........................................................17 
+4.2.4  Cross-strapping ..........................................................................................18 
+4.2.5  Harness cross-strapping.............................................................................19 
+4.2.6  Cable capacitance......................................................................................22 
+
+5 Analogue signal interfaces..................................................................................23 
+5.1  Overview ..................................................................................................................23 
+5.2  Analogue signal monitor (ASM) interface.................................................................23 
+5.2.1  General.......................................................................................................23 
+5.2.2 
+Analogue signal monitor interface ..............................................................25 
+5.3  Temperature sensors monitor (TSM) interface.........................................................27 
+5.3.1  Overview.....................................................................................................27 
+
+4 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+TSM acquisition layout ...............................................................................28 
+TSM acquisition resolution .........................................................................28 
+TSM wire configuration...............................................................................28 
+TSM electrical characteristics.....................................................................29 
+
+5.3.2 
+5.3.3 
+5.3.4 
+5.3.5 
+
+6 Bi-level discrete input interfaces ........................................................................37 
+6.1  Bi-level discrete monitor (BDM) interface.................................................................37 
+6.1.1  Overview.....................................................................................................37 
+6.1.2 
+Bi-level discrete monitor interface ..............................................................37 
+6.2  Bi-level switch monitor (BSM) interface....................................................................39 
+6.2.1  General principles.......................................................................................39 
+6.2.2 
+Bi-level switch monitor interface.................................................................40 
+
+7 Pulsed command interfaces ................................................................................42 
+7.1  High power command (HPC) interfaces...................................................................42 
+7.1.1  General principles.......................................................................................42 
+7.1.2  High power command interface..................................................................42 
+7.1.3 
+Low voltage high power command (LV-HPC) electrical characteristics .....43 
+7.1.4  High voltage high power command (HV-HPC) electrical 
+
+characteristics.............................................................................................45 
+
+7.1.5  High current high power command (HC-HPC) electrical 
+
+characteristics.............................................................................................46 
+7.1.6  Wiring type..................................................................................................47 
+7.1.7  High power command interface arrangement ............................................47 
+7.2  Low power command (LPC) interface ......................................................................48 
+7.2.1  General.......................................................................................................48 
+7.2.2 
+Low power command interface...................................................................48 
+7.2.3 
+LPC electrical characteristics .....................................................................49 
+7.2.4  Wiring type..................................................................................................50 
+7.2.5 
+Interface arrangement ................................................................................50 
+
+8 Serial digital interfaces ........................................................................................51 
+8.1  Foreword ..................................................................................................................51 
+8.2  General principles of serial digital interfaces............................................................51 
+8.2.1  Overview.....................................................................................................51 
+8.2.2  General requirements.................................................................................52 
+8.3  16-bit input serial digital (ISD) interface ...................................................................53 
+16-bit input serial digital interface description.............................................53 
+Signals skew...............................................................................................53 
+ISD interface timing specification ...............................................................53 
+
+8.3.1 
+8.3.2 
+8.3.3 
+
+5 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+16-bit input serial digital interface: signal description .................................56 
+8.4  16-bit output serial digital (OSD) interface description .............................................58 
+8.4.1 
+16-bit output serial digital interface description ..........................................58 
+8.4.2 
+Signals skew...............................................................................................58 
+8.4.3  OSD interface timing specification..............................................................59 
+8.4.4 
+16-bit output serial digital interface signal description ................................60 
+8.5  16-bit bi-directional serial digital (BSD) interface description ...................................62 
+8.6  Serial digital interface electrical circuits description .................................................63 
+8.7  Balanced differential serial digital interface signals..................................................64 
+Balanced differential serial digital interface - GATE_WRITE circuits .........64 
+Balanced differential serial digital interface - DATA_CLK_OUT circuits.....64 
+Balanced differential serial digital interface - DATA_OUT circuits..............64 
+Balanced differential serial digital interface - DATA_IN circuits..................65 
+Balanced differential serial digital interface - GATE_READ circuits ...........65 
+8.8  Serial digital interface circuit electrical characteristics..............................................65 
+Introduction.................................................................................................65 
+Provisions...................................................................................................65 
+
+8.7.1 
+8.7.2 
+8.7.3 
+8.7.4 
+8.7.5 
+
+8.3.4 
+
+8.8.1 
+8.8.2 
+
+Annex A (informative) Tailoring guidelines...........................................................69 
+
+Bibliography.............................................................................................................70 
+ 
+Figures 
+Figure 3-1: Bit numbering convention ....................................................................................12 
+Figure 3-2: Timing diagram conventions ................................................................................13 
+Figure 3-3: Signal timing and measurement references ........................................................14 
+Figure 4-1: Architectural context of interfaces defined in this standard..................................16 
+Figure 4-2: General scheme of redundant unit’s cross-strapping ..........................................18 
+Figure 4-3: Example scheme for Single source – Dual receiver cross-strapping...................20 
+Figure 4-4: Example scheme for Dual source – Single receiver cross-strapping...................21 
+Figure 4-5: Cable capacitance definitions ..............................................................................22 
+Figure 5-1: Analogue signal monitor (single ended source)  interface arrangement..............27 
+Figure 5-2: Analogue signal monitor (differential source)  interface arrangement .................27 
+Figure 5-3: TSM1 reference model ........................................................................................30 
+Figure 5-4: Requirement for ΔRth/Rth as a function of RNORM and Rth.  Δx = ±0,01 .................30 
+Figure 5-5: TSM1 interface arrangement ...............................................................................32 
+Figure 5-6: TSM2 interface arrangement ...............................................................................34 
+Figure 5-7: Example TSM1 and 4K3A354 thermistor.............................................................35 
+Figure 5-8: Example TSM1 and YSI44907 thermistor............................................................35 
+
+6 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+Figure 5-9: Example TSM2 and PT1000 thermistor...............................................................36 
+Figure 6-1: BDM Interface configuration ................................................................................39 
+Figure 6-2: Switch status circuit interface arrangement .........................................................41 
+Figure 7-1: HPC interface arrangement .................................................................................47 
+Figure 7-2: LPC active signal output voltage vs. load current ................................................49 
+Figure 7-3: LPC-P and LPC-S interface arrangement............................................................50 
+Figure 8-1: 16-bit input serial digital (ISD) interface signal arrangement ...............................53 
+Figure 8-2: 16-bit input serial digital (ISD) interface ...............................................................54 
+Figure 8-3: 16-bit output serial digital (OSD) interface signal arrangement ...........................58 
+Figure 8-4: 16-bit output serial digital (OSD) interface ...........................................................59 
+Figure 8-5: 16-bit bi-directional serial digital interface signal arrangement ............................63 
+Figure 8-6: Balanced differential circuits for serial digital interfaces ......................................64 
+Figure 8-7: Example of serial digital interface arrangement...................................................66 
+Figure 8-8: Threshold levels for ECSS-E-50-14 differential circuits .......................................68 
+
+ 
+
+Tables 
+Table 5-1: Analogue signal monitor source circuit characteristics .........................................25 
+Table 5-2 Analogue signal receiver circuit characteristics .....................................................26 
+Table 5-3: TSM1 source circuit characteristics ......................................................................30 
+Table 5-4: TSM1 receiver circuit characteristics ....................................................................31 
+Table 5-5: TSM2 source characteristics.................................................................................33 
+Table 5-6: TSM2 receiver characteristics...............................................................................33 
+Table 6-1: BDM source characteristics ..................................................................................38 
+Table 6-2: BDM receiver characteristics ................................................................................38 
+Table 6-3: Switch source characteristics................................................................................40 
+Table 6-4: Switch receiver characteristics..............................................................................41 
+Table 7-1: LV-HPC source characteristics .............................................................................44 
+Table 7-2: LV-HPC receiver characteristics ...........................................................................44 
+Table 7-3: HV-HPC source characteristics.............................................................................45 
+Table 7-4: HV-HPC receiver characteristics...........................................................................46 
+Table 7-5: HC-HPC source characteristics ............................................................................46 
+Table 7-6: HC-HPC receiver characteristics ..........................................................................47 
+Table 7-7: LPC source characteristics ...................................................................................49 
+Table 7-8: LPC receiver characteristics .................................................................................50 
+Table 8-1: 16-bit input serial digital (ISD) interface characteristics ........................................55 
+Table 8-2: tb values ................................................................................................................57 
+Table 8-3: 16-bit output serial digital (OSD) interface characteristics ....................................60 
+Table 8-4: Serial digital interface electrical characteristics.....................................................67 
+
+ 
+
+7 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+1 
+Scope 
+
+interface signal identification; 
+interface signal waveforms; 
+signal timing requirements; 
+signal modulation; 
+voltage levels; 
+input and output impedance; 
+overvoltage protection requirements; 
+bit ordering in digital data words; 
+cabling requirements where appropriate. 
+
+This standard specifies a common set of spacecraft onboard electrical interfaces 
+for  sensor  acquisition  and  actuator  control.  The  interfaces  specified  in  this 
+standard  are  the  traditional  point‐to‐point  interfaces  that  are  commonly  used 
+on modern spacecraft. 
+The interfaces specified in this standard include analogue and discrete digital 
+interfaces  used  for  status  measurement  and  control,  as  well  as  point‐to‐point 
+serial  digital  interfaces  used  for  digital  data  acquisition  and  commanding  of 
+devices. 
+This standard specifies: 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+This standard does not cover: 
+• 
+connector requirements; 
+• 
+digital data word semantics; 
+• 
+message or block formats and semantics. 
+Connector requirements are not covered because these are normally mission or 
+project  specific.  The  goal  of  this  standard  is  to  establish  a  single  set  of 
+definitions for these interfaces and to promote generic implementations that can 
+be re‐used throughout different missions.  
+When  referred,  the  present  standard  is  applicable  as  a  complement  of  the 
+already  existing  interface  standards  ANSI/TIA/EIA‐422B‐1994  and  ITU‐T 
+Recommendation V.11 (Previously “CCITT Recommendation”) – (03/93). 
+Guidance for tailoring of the present standard can be found in Annex A. 
+This Standard may be tailored for the specific characteristics and constraints of 
+a space project in conformance with ECSS‐S‐ST‐00. 
+
+8 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+2 
+Normative references 
+
+The  following  normative  documents  contain  provisions  which,  through 
+reference  in  this  text,  constitute  provisions  of  this  ECSS  Standard.  For  dated 
+references,  subsequent  amendments 
+these 
+publications, do not apply. However, parties to agreements based on this ECSS 
+Standard  are  encouraged  to  investigate  the  possibility  of  applying  the  most 
+recent  editions  of  the  normative  documents  indicated  below.  For  undated 
+references the latest edition of the publication referred to applies. 
+ 
+
+to,  or  revisions  of  any  of 
+
+ECSS‐S‐ST‐00‐01 
+ANSI/TIA/EIA‐422B‐1994  
+
+ITU‐T Recommendation V.11 
+(Previously “CCITT 
+Recommendation”) – (03/93) 
+
+ECSS system ‐ Glossary of terms 
+Electrical characteristics of balanced voltage 
+digital interface circuits 
+Electrical characteristics for balanced double‐
+current interchange circuits operating at data 
+signalling rates up to 10 Mbit/s 
+
+NOTE  
+
+This  document 
+ANSI/TIA/EIA/422B‐1994. 
+
+is 
+
+technically  equivalent 
+
+to 
+
+9 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+3 
+Terms, definitions and abbreviated terms 
+
+3.1  Terms from other standards 
+
+For the purpose of this Standard, the terms and definitions from ECSS‐ST‐00‐01 
+apply. 
+
+3.2  Terms specific to the present standard 
+
+accuracy 
+
+3.2.1 
+closeness of a measurement to the actual quantity being measured  
+
+NOTE  
+
+For the purposes of this Standard it is expressed as 
+percentage of the full measurement range or as an 
+absolute value. 
+
+circuit  
+
+3.2.2 
+conducting  path  which  conveys  a  signal  across  the  interface  from  the  signal 
+source to the signal destination 
+NOTE   A  circuit 
+
+includes  the  cable  conductor,  any 
+intervening  connectors,  and  any  circuit  elements 
+such  as  protection 
+coupling 
+capacitors, which make up the signal path.  
+
+resistors  and 
+
+DHS data interchange bus 
+
+3.2.3 
+underlying communication medium which connects the DHS core elements 
+
+NOTE  
+
+This can consist of more than one physical bus. 
+
+DHS core element 
+
+3.2.4 
+component of a data handling system which has a direct connection to the DHS 
+data interchange bus 
+
+NOTE  
+
+E.g.: bus controllers and remote terminals. 
+
+DHS peripheral element 
+
+3.2.5 
+component of a data handling system which does not have a direct connection 
+to the DHS data interchange bus 
+
+NOTE  
+
+E.g.: sensors and actuators. 
+
+10 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+ground displacement voltage 
+
+3.2.6 
+voltage difference between source and receiver ground references 
+
+NOTE   Users are encouraged to use this definition instead 
+of ‘common mode voltage’ that is not correct when 
+referring to the academic definition. 
+
+time reference point 
+
+3.2.7 
+point at which a time interval starts or ends 
+
+NOTE  
+
+It is the mid point between the nominal high and 
+nominal low signal voltages. 
+
+3.3  Abbreviated terms 
+
+For the purpose of this standard, the abbreviated terms of ECSS‐S‐ST‐00‐01 and 
+the following apply: 
+Abbreviation 
+A/D 
+ADC 
+ASM 
+BDM 
+BSD 
+BSM 
+CM 
+DHS 
+HPC 
+HC‐HPC 
+HV‐HPC 
+ISD 
+LPC 
+LPC‐P 
+LPC‐S 
+LSB 
+LV‐HPC 
+MSB 
+OBDH 
+OSD 
+TSM 
+
+Meaning 
+analogue to digital 
+analogue digital converter 
+analogue signal monitor  
+bi‐level discrete monitor 
+bi‐directional serial digital 
+bi‐level switch monitor 
+common mode 
+data handling system  
+high power command  
+high current high power command 
+high voltage high power command 
+input serial digital 
+low power command 
+low power command, pulsed 
+low power command, static 
+least significant bit 
+low voltage high power command 
+most significant bit 
+on‐board data handling 
+output serial digital 
+temperature sensors monitor 
+
+11 
+
+3.4  Conventions 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+Bit numbering convention 
+
+3.4.1 
+The most significant bit of an n‐bit field is: 
+• 
+numbered bit 0 (zero), 
+• 
+the first bit transmitted, and 
+• 
+the leftmost bit on a format diagram. 
+The least significant bit of an n‐bit field is: 
+• 
+• 
+• 
+This convention is illustrated in Figure 3‐1. 
+
+numbered bit n‐1, 
+the last bit transmitted, and 
+the rightmost bit on a format diagram. 
+
+Bit 0 (MSB)
+
+Bit n-1 (LSB)
+
+n-bit Data Field
+
+First Bit Transmitted
+
+ 
+
+Figure 3‐1: Bit numbering convention 
+
+Timing diagram conventions 
+
+3.4.2 
+Timing diagrams are always drawn with the earliest time on the left and time 
+advancing to the right. 
+Where an event, such as a transition, in one signal causes an event in another, 
+the two events are linked by an arrow with the tail of the arrow on the causal 
+event and the head of the arrow on the resultant event. 
+Where an event in one signal is the result of an event in another signal and a 
+qualifying  condition  in  one  or  more  other  signals,  the  connecting  arrow  is 
+associated with the governing condition using a bull’s eye. 
+These conventions, together with other timing diagram symbols, are shown in 
+Figure 3‐2. 
+
+12 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+Figure 3‐2: Timing diagram conventions 
+
+ 
+
+3.4.3 
+Signal and signal event naming convention 
+Signals are named in a manner which indicates the function of that signal. For 
+example, a clock used for data bit sampling can be called DATA_CLK. 
+Control  signal  naming  is  meaningful  with  the  function  of  the  signal,  its 
+direction, and its assertion levels all indicated. The direction is indicated with 
+respect to the DHS core element so that an OUT signal is an output, i.e. driven 
+from  the  core  element.  An  IN  signal  is  an  input  to  the  core  element.  For 
+example, a signal carrying data out of the core element is named DATA_OUT. 
+Control  signal  assertion  or  validity  levels  are  indicated  within  brackets.  For 
+example,  a  gate  output  signal  which  is  asserted  when  low  is  named 
+GATE_OUT(L). Similarly, an input signal which indicates that a device is ready 
+when it is high is named READY_IN(H). 
+Signal events such as transitions and pulses are also named symbolically using 
+“UP“ and “DOWN“ indication. For example, STARTUP indicates a rising edge event 
+on  the  start  signal,  and  STOPDOWN  indicates  a  falling  edge  on  the  stop  signal. 
+RUNUPDOWN  indicates  a  positive  going  pulse  on  the  run  signal,  while 
+HALTDOWNUP indicates a negative going pulse on the halt signal.  
+
+13 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+Signal timing and measurement references 
+
+3.4.4 
+Signal rise and fall times, which are shown in Figure 3‐3, are measured between 
+10 %  and  90 %  of  the  difference  between  the  nominal  low  and  nominal  high 
+signal voltages, as it can be seen in the mentioned figure. 
+
+Timing Reference Points
+
+90%
+
+50%
+
+10%
+
+tfall
+
+90%
+
+50%
+
+10%
+
+trise
+
+ 
+
+Figure 3‐3: Signal timing and measurement references 
+
+14 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+4 
+General 
+
+4.1 
+
+Introduction 
+
+This standard defines electrical interfaces for use onboard spacecraft to connect 
+simple devices such as sensors and actuators to the data handling system. The 
+interfaces defined are: 
+• 
+
+analogue signal interfaces (clause 5) 
+
+• 
+
+• 
+
+⎯ 
+
+⎯ 
+
+analogue signal monitor 
+temperature sensor monitor  
+
+bi‐level discrete input interfaces (clause 6) 
+
+⎯ 
+
+⎯ 
+
+bi‐level discrete monitor 
+bi‐level switch status monitor 
+
+command interfaces (clause 7) 
+
+⎯ 
+
+⎯ 
+
+high power pulse command  
+low power command  
+
+serial digital interfaces (clause 8). 
+
+• 
+Each interface is defined in terms of the electrical and timing characteristics of 
+the  signals  comprising  that  interface.  Connectors  for  the  interfaces  are  not 
+defined  because 
+these  are  often  highly  project  dependent.  Cabling 
+characteristics are defined where appropriate. 
+For  the  serial  digital  interfaces,  the  data  content  of  the  digital  words  is  not 
+defined since this is the subject of higher level protocol standards beyond the 
+scope of this Standard. 
+Unless  otherwise  stated,  specified  performances  are  applicable  when  both 
+source and receiver are powered.  
+
+4.2  Architectural concepts 
+
+4.2.1  Overview 
+The  interfaces  specified  in  this  Standard  are  intended  to  connect  DHS  core 
+elements to DHS peripheral elements as shown in Figure 4‐1. However, there 
+are  no  technical  reasons  to  prevent  these  interfaces  being  used  between  core 
+
+15 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+elements where it is appropriate to do so, and this Standard does not preclude 
+such a configuration.  
+A  peripheral  element  can  have  more  than  one  user  interface  and  also  user 
+interfaces of different types, depending on its function and design. For example, 
+some sensors can set threshold levels or sensitivities by means of data written to 
+them. In this case that sensor can use an output serial digital interface to write 
+the data in addition to an input serial digital interface to read the sensor value. 
+Alternatively, some devices are signalled to indicate that they are commanded 
+to  acquire  a  data  sample.  In  that  case  they  can  use  a  serial  digital  interface 
+together with a pulse interface. 
+
+Figure 4‐1: Architectural context of interfaces defined in this standard 
+
+ 
+
+4.2.2  General failure tolerance 
+
+Input interfaces 
+
+Among other failure cases, receivers shall: 
+1. 
+
+4.2.2.1 
+a. 
+
+2. 
+
+Not be stressed and not show degraded performance when input 
+is open circuit except on the input I/F that is open circuit. 
+Not be stressed and not show degraded performance when input 
+is  short  circuit  to  ground  except  on  the  input  I/F  that  is  short 
+circuit. 
+NOTE   No 
+
+requirements 
+
+are 
+
+specific  performance 
+imposed while in this status. 
+
+16 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+4.2.2.2  Output interfaces 
+a. 
+
+Among other failure cases, transmitters shall: 
+1. 
+
+Not be stressed and not show degraded performance when output 
+is open circuit except on the output I/F that is open circuit. 
+Not be stressed when output is short circuit to ground. 
+NOTE   No specific performances requirement is imposed 
+
+2. 
+
+while in this status. 
+
+4.2.3 
+
+Interface control during power cycling 
+
+Input interfaces 
+
+4.2.3.1 
+a. 
+
+b. 
+
+Input interfaces shall not be damaged or harmed during power cycling 
+conditions taking the transmitting side state into account in any normal 
+state or applicable failure condition. 
+Receivers shall not deliver power to the other circuits or be stressed when 
+the unit is OFF while connected to an active driver. 
+
+NOTE   No 
+
+specific  performance 
+imposed while in this status. 
+
+requirements 
+
+are 
+
+4.2.3.2  Output interfaces 
+a. 
+
+Output interfaces shall not be damaged or harmed during power cycling 
+conditions  when  the  receiving  side  state  is  in  any  normal  state  or 
+specified failure condition. 
+
+NOTE   No 
+
+specific  performance 
+imposed while in this status. 
+
+requirements 
+
+are 
+
+b. 
+
+For pulse commands it shall be ensured that spurious commands are not 
+emitted  during  power  cycling  that  exceed  activation  limits  for  the 
+receivers. 
+
+NOTE 1  For pulse commands, see Clause 7. 
+NOTE 2  This  requirement  does  not  specify  the  prevention 
+
+of spurious pulses, but ensures either that: 
+•  spurious pulses are below the threshold for the 
+
+• 
+
+receiver, or 
+the spurious pulse duration is short enough to 
+not drive the load into activation (for example a 
+relay coil or opto‐coupler diode). 
+
+17 
+
+4.2.4 
+
+Cross-strapping 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+4.2.4.1  General 
+a. 
+
+For  2  units  (UNIT_1  &  UNIT_2),  that  can  be  used  in  redundancy,  the 
+cross‐strapping  of  drivers  and  receivers  shall  be  as  specified  in  Figure 
+4‐2, and meet the following conditions: 
+1. 
+
+The UNIT_2_A I/F is capable to receive: 
+(a)  A signal from the UNIT_1_A I/F through a dedicated link 
+(b)  A signal from the UNIT_1_B I/F through a dedicated link 
+The UNIT_2_B I/F shall is capable to receive: 
+(a)  A signal from the UNIT_1_A I/F through a dedicated link 
+(b)  A signal from the UNIT_1_B I/F through a dedicated link 
+The UNIT_1_A I/F is capable to deliver: 
+(a)  A signal to the UNIT_2_A I/F through a dedicated link 
+(b)  A signal to the UNIT_2_B I/F through a dedicated link 
+The UNIT_1_B I/F is capable to deliver: 
+(a)  A signal to the UNIT_2_A I/F through a dedicated link. 
+(b)  A signal to the UNIT_2_B I/F through a dedicated link. 
+
+2. 
+
+3. 
+
+4. 
+
+b. 
+
+To  achieve  full  cross‐strapping  benefits,  in  terms  of  reliability,  any 
+potential  common  failure  of  UNIT_1_A  and  UNIT_1_B  drivers  and 
+UNIT_2_A and UNIT_2_B receivers shall be avoided.  
+
+UNIT_1_A
+
+1_A_A
+
+1_A_B
+
+UNIT_1_B
+
+1_B_B
+
+1_B_A
+
+UNIT_1
+
+D
+
+D
+
+D
+
+D
+
+R
+
+R
+
+R
+
+R
+
+UNIT_2_A
+
+2_A_A
+
+2_A_B
+
+UNIT_2_B
+
+2_B_B
+
+2_B_A
+
+UNIT_2
+
+D = Driver
+R = Receiver
+
+Figure 4‐2: General scheme of redundant unit’s cross‐strapping 
+
+ 
+
+18 
+
+4.2.4.2 
+a. 
+
+Immunity at UNIT_2 level  
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+Under  the  condition  (Receiver  =  ON  linked  to  Transmitter  =  OFF  of 
+UNIT_1), in the configuration where UNIT_1 driver is OFF and UNIT_2 
+receiver is ON, the information received by this receiver shall not disturb 
+the  valid  information  received  by  the  other  receiver  (linked  to  a 
+Transmitter ON). 
+
+NOTE  
+
+In this configuration the electrical status at receiver 
+output  is  stable  (due  to  hysteresis)  but  possibly 
+unknown (logical ʺ1ʺ or ʺ0ʺ). 
+
+b. 
+
+c. 
+
+It should be ensured that any input signal is in a known (inactive) stable 
+state when driver is OFF.  
+If 4.2.4.2b is not met, a validation / inhibition stage at the receiver output 
+of UNIT_2 should be implemented. 
+
+NOTE  
+
+For  example,  the  validation  of  the  path  can  be 
+made  by  a  dedicated  direct  command  arriving 
+from UNIT_1, which inhibits the UNIT_2 receiver 
+output  unused  (if  such  a  configuration  has  been 
+thoroughly designed with respect to failure cases). 
+
+Protections at UNIT_1 driver level  
+
+Under  the  condition  (Transmitter  =  OFF  linked  to  Receiver  =  ON  of 
+UNIT_2), whether powered or not, UNIT_1 drivers shall withstand any 
+receiver characteristics as described in Clauses 5 to 8. 
+
+4.2.4.3 
+a. 
+
+4.2.4.4 
+a. 
+
+Protections at UNIT_2 receiver level  
+
+Under  the  condition  (Receiver  =  OFF  linked  to  Transmitter  =  ON  of 
+UNIT_1), whether powered or not, UNIT_2 receivers shall withstand any 
+driver characteristics as described in Clauses 5 to 8. 
+
+4.2.5 
+
+Harness cross-strapping 
+
+4.2.5.1  Overview 
+Harness cross‐strapping is applied when heritage units, without classical cross‐
+strapping  interfaces,  are  used,  in  the  case  that  a  single  redundant  unit  is 
+interfaced to both a nominal and redundant system. If the spacecraft is severely 
+mass‐limited, harness cross‐strapping can be used instead. 
+Harness cross‐strapping can be used in two configurations: 
+• 
+• 
+The  Single  source  –  Dual  receiver  configuration  is  typically  applied  for  BSM 
+interfaces as described in clause 6.2. 
+The  Dual source  –  Single  Receiver  configuration  is  typically  applied  for  HPC 
+interfaces as described in clause 7.1. 
+
+Single source – Dual receiver configuration, as shown in Figure 4‐3. 
+Dual source – Single receiver configuration, as shown in Figure 4‐4. 
+
+19 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+Note  that  this  harness  cross‐strapping  can  be  performed  by  galvanic 
+connections in harness, as indicated in Figure 4‐3 and Figure 4‐4. However, the 
+equivalent  configuration  applies  in  case  the  physical  inter‐connection  is 
+performed either within the source or within the receiver unit. The general rules 
+and protections as mentioned in this clause 4.2.5 apply then also for those cases. 
+Possible  problems  that  can  be  introduced  by  harness  cross‐strapping  include 
+failure  propagation,  loading  and  leakage  injection  of  the  active  I/F  by  the 
+redundant,  inactive  circuit  such  that  the  active  circuit  does  not  meet  its 
+performance  requirements,  incompatibility  of  protection  circuitry  of  a  given 
+circuit  with  either  the  Receiver  I/F  circuit  or  the  Driver  (see  Figure  4‐4)  I/F 
+circuit.  Note  that  in  general  it  is  important  to  consider  loading  by  the 
+redundant, inactive circuit also when powered off, even if the inactive circuit is 
+normally powered (hot redundancy). 
+
+UNIT_1_A
+
+1_A
+
+D
+
+UNIT_1_B
+
+1_B
+
+D
+
+UNIT_1
+
+R
+
+R
+
+R
+
+R
+
+UNIT_2_A
+
+2_A_A
+
+2_A_B
+
+UNIT_2_B
+
+2_B_B
+
+2_B_A
+
+UNIT_2
+
+D = Driver
+R = Receiver
+
+ 
+Figure 4‐3: Example scheme for Single source – Dual receiver cross‐strapping 
+
+20 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+UNIT_2_A
+
+R
+
+2_A
+
+UNIT_2_B
+
+D = Driver
+R = Receiver
+
+R
+
+2_B
+
+UNIT_2
+
+UNIT_1_A
+
+1_A_A
+
+1_A_B
+
+UNIT_1_B
+
+1_B_B
+
+1_B_A
+
+UNIT_1
+
+D
+
+D
+
+D
+
+D
+
+ 
+Figure 4‐4: Example scheme for Dual source – Single receiver cross‐strapping 
+
+Provisions 
+
+4.2.5.2 
+a. 
+
+If harness cross‐strapping is used, there shall be no mechanism whereby 
+the failure of either the receiver or unit interface can propagate to the I/F 
+of another, unrelated unit.  
+
+NOTE  
+
+This requirement refers to a common mode failure 
+where  a  failure  of  one  interface  then  propagates 
+inside 
+thereby  affecting  units 
+unrelated to the original failure.  
+
+receiver 
+
+the 
+
+b. 
+
+If  harness  cross‐strapping  is  used,  the  calculation  of  the  overall  system 
+reliability shall include the potential degradation or damage of the I/F of 
+a redundant unit due to the failure of other interface.  
+
+NOTE  
+
+This requirement refers to the failure on a nominal 
+unit  causing  the  inoperability  of  the  cross‐strap. 
+This means that there is a reduction in the possible 
+reliability of the cross‐strap. 
+
+c. 
+
+If harness cross‐strapping is used, the capability shall be provided to shut 
+down the inoperable unit regardless of the failure mode 
+
+NOTE  
+
+This implies that  the power can be removed from 
+the  unit  by  independent  means  such  as  disabling 
+the power interface at the power distribution unit 
+(e.g. with the means described in clause  4.2.4.2) 
+
+d. 
+
+Under  the  condition  (Transmitter  =  OFF  linked  to  Receiver  =  ON  of 
+UNIT_2), whether powered or not, UNIT_1 drivers shall withstand any 
+receiver characteristics as described in Clauses 5 to 8. 
+
+21 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+e. 
+
+Under  the  condition  (Receiver  =  OFF  linked  to  Transmitter  =  ON  of 
+UNIT_1), whether powered or not, UNIT_2 receivers shall withstand any 
+driver characteristics as described in Clauses 5 to 8. 
+
+Cable capacitance 
+
+4.2.6 
+It is important that the DHS interfaces consider the capacitive loading by the 
+harness. Figure 4‐5 defines the capacitances involved for a twisted shielded pair 
+cable. 
+
+C1
+
+C2
+
+C2
+
+Figure 4‐5: Cable capacitance definitions 
+
+Effective capacitances can then be calculated according to: 
+
+ 
+
+• 
+
+• 
+
+• 
+
+Core to core capacitance  
+
+CCC
+
+=
+
+1 C
+2
+C
++
+2
+
+  
+
+Core to shield capacitance  
+
+CCS
+
+=
+
+C
+
+2
+
++
+
+CC
+2
+1
+⋅
+CC
+1
+2
++
+
+  
+
+Core 
+CCT
+=
+
+to  core  capacitance  with  shield  connected 
+1 CC
+
+2
+
++
+
+  
+
+to  one  core  
+
+Note that the latter case applies typically when either the source or the receiver 
+is single ended, which implies that both the shield and one of the core wires are 
+grounded. 
+
+22 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+5 
+Analogue signal interfaces 
+
+5.1  Overview 
+
+The analogue signal interfaces are used for direct connection to a device which 
+produces  a  continuous  variable  analogue  voltage  to  indicate  the  value  of  the 
+parameter being measured.  
+Usually, the analogue voltage produced by the sensor or a peripheral element is 
+converted into a digital value within the core element to which it is connected. 
+This  Standard  specifies  the  electrical  characteristics  of  the  analogue  signal 
+interfaces. 
+Two types of analogue interfaces are specified: 
+• 
+• 
+
+Analogue signal monitor interface, ASM (see 5.2) 
+Temperature sensors monitor interface, TSM (see 5.3) 
+
+5.2  Analogue signal monitor (ASM) interface 
+
+5.2.1  General 
+
+5.2.1.1  Overview 
+The  analogue  signal  monitor  interface  is  based  on  differential  receiver  circuit 
+where both the high and low analogue signal lines are floating with respect to 
+the  receiver  signal  ground;  the  source  interface  can  be  either  single  ended  or 
+differential. 
+The analogue voltage provided is sampled intermittently by the core element. 
+The precise frequency and the duration of the sampling interval depend on the 
+A/D  conversion  service  being  used.  However,  the  input  impedance  and 
+capacitance exhibited by an analogue signal interface can differ when the input 
+signal  is  actually  being  sampled  compared  with  when  it  is  not.  As  a 
+consequence,  different  input  impedance  and  capacitance  requirements  are 
+provided for the different configurations. 
+In  addition,  the  impedance  seen  when  the  receiver  element  is  powered  off  is 
+specified.  
+
+23 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+5.2.1.2  Basic application scenario 
+The interface specified in this clause 5.2.1.2 is defined on the basis of a typical 
+analogue signal monitoring application scenario, i.e. 
+• 
+• 
+
+differential voltage range: 0 to 5 V or optionally 0 to 5,12 V; 
+signal bandwidth: ≤ 1 Hz; 
+
+NOTE  
+
+This  means 
+that  accuracy  requirements  are 
+specified  here  assuming  only  slowly  changing 
+(quasi‐static)  signals.  That  does  not  prohibit,  for 
+instance, rapid transitions in signals, but accuracy 
+is unspecified during such events. 
+
+• 
+
+• 
+
+ground displacement voltage: ≤ ±1 V in the frequency range 0 to 1 kHz, 
+falling at 20 dB per decade up to 1 MHz;  
+conversion resolution: 12 bits. 
+
+NOTE 1  The specified 12 bits resolution is not incompatible 
+with  use  of  ADC  having  14  or  even  16  bits 
+resolution. In that case, LSB are ʺnot significantʺ. 
+
+NOTE 2  Even  if  the  overall  channel  accuracy  requirement 
+in 5.2.1.4 can be met also with an 8 bit ADC, it is 
+important  to  note  that  in  this  case  the  ADC 
+quantization error contributes ±0,2 % to the overall 
+channel accuracy, thus normally a good practice is 
+to use a 12 bit ADC. 
+
+5.2.1.3  Applications other than the basic scenario 
+a. 
+
+If the actual scenario differs from the one defined in 5.2.1.2, the interface 
+shall not be directly used. 
+
+NOTE 1  For example, if the specific application uses higher 
+conversion  accuracy  or  has different  operational 
+conditions, e.g. higher displacement. 
+In particular, ground displacement heavily affects 
+the  achievable  conversion  accuracy.  Different 
+scenario  or  specified  performances  can, 
+for 
+instance, ask for source impedance balancing.  
+
+NOTE 2 
+
+b. 
+
+The modified interface shall be supported by an analysis of the overall 
+system,  including  both  interface  source  and  receiver  as  well  as 
+interconnecting wiring. 
+
+5.2.1.4  Acquisition of the analogue channels by the core 
+
+element 
+
+a. 
+
+The  errors  introduced  by  the  DHS  receiver  analogue  acquisition  chain, 
+including  temperature,  ground  displacement  voltage  rejection,  A/D 
+conversion  inaccuracy,  herein  specified  source  impedance  and  cable 
+capacitance, supply voltage variations, lifetime and radiation effects shall 
+be less than 1 % of the full scale.  
+
+24 
+
+5.2.2 
+
+Analogue signal monitor interface  
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+Source circuit  
+
+5.2.2.1 
+a. 
+
+The source circuit shall meet the characteristics specified in Table 5‐1. 
+
+Table 5‐1: Analogue signal monitor source circuit characteristics 
+
+Reference  Characteristic 
+5.2.2.1 a.1 
+5.2.2.1 a.2 
+
+Circuit type 
+Transfer 
+
+5.2.2.1 a.3 
+
+Zero reference 
+
+5.2.2.1 a.4(a) 
+5.2.2.1 a.4(b) 
+5.2.2.1 a.5 
+
+Nominal output voltage range, Vout 
+
+Output impedance, Zout 
+
+5.2.2.1 a.6 
+
+Fault voltage tolerance, Vsft 
+
+Value 
+Single ended or differential 
+DC coupled 
+Signal ground – in case of differential source 
+(ref Figure 5‐2), the return signal’s potential 
+shall be equal to unit’s chassis ground. 
+0 V to +5 V a 
+0 V to +5,12 V 
+≤ 5 kΩ 
+‐17,5 V to +17,5 V with an overvoltage source 
+impedance > 1,0 kΩ 
+‐16,5 V to +16,5 V 
+
+5.2.2.1 a.7 
+a  The range 0 V – 5 V is the preferred one. 5,12 V can be used if straightforward A/D conversion is necessary. 
+
+Fault voltage emission, Vsfe 
+
+ 
+
+25 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+5.2.2.2  Receiver circuit  
+a. 
+
+The receiver circuit shall meet the characteristics specified in Table 5‐1. 
+
+Table 5‐2 Analogue signal receiver circuit characteristics 
+
+Reference 
+5.2.2.2 a.1 
+5.2.2.2 a.2 
+5.2.2.2 a.3(a) 
+5.2.2.2 a.3(b) 
+
+Characteristic 
+Circuit type 
+Transfer 
+
+Nominal input voltage range, Vin 
+
+5.2.2.2 a.4 
+
+Ground displacement voltage, VGD 
+
+Value 
+Differential 
+DC coupled 
+differential: 0 V to +5 V a 
+differential: 0 V to +5,12 V 
+‐1 V to 1 V up to 1 kHz rolling‐off at 
+20 dB/decade up to 1 MHz 
+≥ 1 MΩ 
+
+≥ 10 MΩ 
+
+≥ 10 kΩ 
+
+5.2.2.2 a.5 
+
+5.2.2.2 a.6 
+
+5.2.2.2 a.7 
+
+5.2.2.2 a.8 
+
+5.2.2.2 a.9 
+
+5.2.2.2 a.10 
+
+Differential input impedance (sampling), Zis 
+Differential input impedance (not sampling), 
+Zins 
+Differential input impedance (powered off), 
+Zioff 
+Differential input capacitance (sampling), Cis  ≤ 1,5 μF 
+Differential input capacitance (not sampling), 
+Cins 
+Differential input capacitance (powered off), 
+Cioff 
+
+≤ 1,5 μF 
+
+≤ 1,5 μF 
+
+5.2.2.2 a.11 
+
+Fault voltage emission, Vrfe 
+
+‐16,5 V to +16,5 V with a series 
+impedance ≥ 1,0 kΩ 
+
+5.2.2.2 a.12 
+
+Fault voltage tolerance, Vrft 
+
+‐17,5V to +17,5 V 
+
+a  The range 0 V – 5 V is the preferred one. 5,12 V can be used if straightforward A/D conversion is necessary  
+NOTE  When prime and (cold) redundant configurations are used and implemented by cross‐strapping as 
+
+defined in clause 4.2.5, care should be taken to ensure that the impendence of the off device does not 
+unduly influence that of the powered device.  
+
+ 
+
+5.2.2.3  Harness 
+
+5.2.2.3.1  Wire type 
+a. 
+b. 
+c. 
+
+The wire type should be twisted shielded lines. 
+If 5.2.2.3.1a is not met, n‐tuples shall be used. 
+The shield shall be connected to the structure ground both on source and 
+receiver sides. 
+
+5.2.2.3.2  Core to shield capacitance 
+a. 
+
+The capacitance CCT shall be less than 2 nF. 
+
+26 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+Interface arrangement 
+
+5.2.2.4 
+The  electrical  interface  arrangement  is  depicted  in  Figure  5‐1  and  Figure  5‐2, 
+which  show  specific  implementation  to  be  taken  as  examples,  but  other 
+implementations compliant to requirements are not excluded. 
+
+ 
+
+SOURCE
+
+V
++
+
+RECEIVER
+
+V
++
+
+Figure 5‐1: Analogue signal monitor (single ended source)  
+
+interface arrangement 
+
+ 
+
+SOURCE
+
+V+
+
+V-
+
+RECEIVER
+
++
+
+-
+
+V+
+
+V-
+
+Figure 5‐2: Analogue signal monitor (differential source)  
+
+interface arrangement 
+
+ 
+
+5.3  Temperature sensors monitor (TSM) interface 
+
+5.3.1  Overview 
+Temperature  monitor  channels  are  resistance  measurement  channels  used  for 
+resistive temperature sensor acquisition.  
+The  word  ʺthermistorʺ  is  derived  from  the  description  ʺthermally  sensitive 
+ʺPositive  Temperature 
+resistorʺ.  Thermistors  are 
+
+further  classified  as 
+
+27 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+Coefficientʺ  devices  (PTC  devices)  or  ʺNegative  Temperature  Coefficientʺ 
+devices (NTC devices): 
+• 
+
+PTC devices are devices whose resistance increases as their temperature 
+increases. 
+NTC devices are devices whose resistance decreases as their temperature 
+increases. 
+
+• 
+
+Two types of temperature monitor channels are addressed herein, referring to 
+the two main classes of transducers available on the market: 
+• 
+
+TSM1:  Wide  range  resistance  acquisition,  suitable  for  NTC  thermistors 
+(negative temperature characteristic). 
+TSM2:  Limited  range  resistance  acquisition,  suitable  for  platinum  (PT) 
+type. 
+
+• 
+
+The  conditioning  configuration  to  be  used  depends  on  the  transducer  used. 
+Both  TSM1  and  TSM2 
+in  terms  of  resistance 
+measurement accuracy. 
+
+interfaces  are  specified 
+
+NOTE  
+
+TSM1 can be used for platinum type sensors (PT), 
+but  that  generally  shows  worse  accuracy  than  a 
+well  adapted  TSM2.  Also,  TSM2  can  be  used  for 
+NTC type of sensor, but the temperature range is 
+then restricted.  
+
+Examples  of  corresponding  measurement  error  in  terms  of  temperature  are 
+given in clause 5.3.5.5. 
+
+TSM acquisition layout 
+
+The thermistors shall be powered by the receiver, and  
+The  resulting  voltage  shall  be  utilised  to  feed  a  dedicated  analogue 
+channel. 
+
+NOTE  
+
+The  objective  of  these  requirements  is  that  the 
+receiver is able to directly interface with a passive 
+thermistor: 
+
+TSM acquisition resolution 
+
+At least 12‐bit resolution shall be used. 
+
+5.3.2 
+a. 
+b. 
+
+5.3.3 
+a. 
+
+5.3.4 
+a. 
+
+NOTE  
+
+Even  if  the  overall  channel  accuracy  requirement 
+can be met also with an 8‐bit ADC, it is important 
+to note that in this case the ADC quantization error 
+alone  contributes  ±0,2%  to  the  overall  channel 
+accuracy. 
+
+TSM wire configuration 
+
+Dedicated  input  and  return  line  from  the  current  source  to  each 
+thermistor channel shall be provided. 
+
+28 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+5.3.5 
+
+TSM electrical characteristics 
+
+5.3.5.1 
+
+TSM1 
+
+5.3.5.1.1  Overview 
+The TSM1 interface has the following features: 
+• 
+• 
+
+The measurable resistance range is specified from 0 to ∞ Ω. 
+The interface is normalized with a parameter RNORM (Ω), selectable within 
+a  specific  range,  where  RNORM  is  the  resistance  of  the  thermistor  at  a 
+specified 
+temperature 
+measurement accuracy is needed (the centre of the measurement range). 
+
+temperature  point,  where 
+
+the  highest 
+
+NOTE  
+
+RNORM  is  selected  per  group  of  channels  as  a 
+function  of  the  sensor  type  and  the  temperature 
+range of interest. 
+
+• 
+• 
+
+• 
+
+The specified accuracy is expressed as a maximum error ±Δx. 
+The specified accuracy in terms of resistance is obtained from a formula 
+including RNORM and Δx.  
+The  resistance  accuracy  is  specified  at  the  DHS  unit  terminals,  i.e. 
+excluding any error contribution from the thermistor or harness. 
+
+5.3.5.1.2  TSM1 error model  
+a. 
+
+The maximum error in Rth, ΔRth, shall be calculated as follows: 
+
+R
+Δ
+th
+
+=
+
+(
+
+R
+
+NORM
+
+R
+R
++
+th
+Rx
+(
+⋅Δ−
+th
+
+NORM
++
+
+)
+2
+R
+
+)
+
+NORM
+
+x
+Δ⋅
+
+,  
+
+if RNORM > Δx⋅(Rth + RNORM),  
+
+Δ thR
+
+∞=
+
+   
+
+NOTE  
+
+ 
+
+ 
+
+ 
+
+otherwise 
+
+This calculation is based on the model of the TSM1 
+interface  shown  in  Figure  5‐3.  Rth(T)  symbolizes 
+the  resistance  of  the  thermistor  as  a  function  of 
+temperature T.  
+The output from the ADC, x, has the range 0 to 1. 
+The formula to express x as a function of Rth(T) is 
+then: 
+
+ 
+
+x
+
+=
+
+V
+in
+V
+ref
+
+=
+
+TR
+)(
+th
+R
+TR
+)(
++
+th
+
+NORM
+
+ 
+
+Figure  5‐4  shows  how  the  relative  error  in  Rth, 
+ΔRth/Rth,  varies  with  Rth  with  examples  of  RNORM 
+and Δx. 
+Examples  have  been  evaluated  for  some  specific 
+thermistor  types  in  clause  5.3.5.5,  showing  the 
+error in terms of temperature. 
+
+29 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+Vcond
+
+RNORM
+
+Rth(T)
+
+Vref
+ADC
+
+Vin
+
+Vout
+
+x
+
+x
+
++
+
+x +
+
+x
+
+Figure 5‐3: TSM1 reference model 
+
+ 
+
+1.E+03
+
+1.E+04
+
+1.E+05
+
+Rnorm=1kohm, deltax=0,01
+Rnorm=10kohm, deltax=0,01
+Rnorm=1kohm, deltax=-0,01
+Rnorm=10kohm, deltax=-0,01
+
+0.2
+
+0.15
+
+0.1
+
+0.05
+
+h
+t
+
+/
+
+R
+h
+t
+
+R
+a
+t
+l
+
+e
+d
+
+0
+1.E+02
+
+-0.05
+
+-0.1
+
+-0.15
+
+-0.2
+
+Rth
+
+Figure 5‐4: Requirement for ΔRth/Rth as a function of RNORM and Rth.  Δx = ±0,01 
+
+5.3.5.1.3  TSM1 source electrical characteristics 
+a. 
+The characteristics in Table 5‐3 shall be provided. 
+
+Table 5‐3: TSM1 source circuit characteristics 
+
+Reference 
+5.3.5.1.3 a.1 
+5.3.5.1.3 a.2 
+5.3.5.1.3 a.3 
+5.3.5.1.3 a.4 
+
+Characteristic 
+Circuit type 
+Transfer 
+Resistance range, Rs 
+Fault voltage tolerance, Vsft 
+
+ 
+
+Value 
+Floating Resistive sensor 
+DC coupled 
+0 to ∞ Ω 
+‐17,5 V to +17,5 V with an overvoltage source 
+impedance ≥ 1 kΩ 
+
+ 
+
+30 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+5.3.5.1.4  TSM1 receiver electrical characteristics 
+a. 
+The characteristics in Table 5‐4 shall be provided. 
+
+Table 5‐4: TSM1 receiver circuit characteristics 
+
+Reference 
+
+Characteristic 
+
+5.3.5.1.4 a.1 
+
+Circuit type 
+
+5.3.5.1.4 a.2 
+5.3.5.1.4 a.3 
+5.3.5.1.4 a.4  Measurement error, Δx 
+
+Transfer 
+Sensor injected power, Pi 
+
+5.3.5.1.4 a.5 
+
+Parameterized resistance range, RNORM 
+
+5.3.5.1.4 a.6 
+
+Fault voltage emission, Vrfe 
+
+Value 
+Single ended receiver with multiplexed 
+inputs 
+DC coupled 
+≤ 1 mW 
+< ±0,01 
+1 kΩ, to 10 kΩ, to be specified per group 
+of channels 
+‐16,5 V to +16,5 V with a source 
+impedance of ≥ 1kΩ 
+Short circuit to ground 
+
+5.3.5.1.4 a.7 
+NOTE 
+
+Fault resistance tolerance, Rrft 
+
+The  low  resistance  range  of  RNORM  is  suitable  for  TSM  receiver  systems  using  power  switched 
+thermistor conditioning, where low impedance is of special interest to achieve fast settling.  
+The  high  resistance  range  of  RNORM  is  more  suitable  for  TSM  receiver  systems  using  continuous 
+thermistor conditioning, where low power is crucial, but fast settling is of less concern 
+
+ 
+
+ 
+
+5.3.5.1.5  Harness 
+a. 
+b. 
+
+The wiring type shall be twisted n–tuple. 
+The capacitance CCC measured between the two core wires shall be less 
+than or equal to 1 nF. 
+
+Interface arrangement 
+
+5.3.5.1.6 
+The electrical I/F arrangement is specified in Figure 5‐5. 
+
+NOTE 1  Circuitry  and  resistors  are  indicative  only;  other 
+implementations  meeting  the  above  requirements 
+are not excluded. 
+In  practical 
+ground in the receiver is often used.  
+
+implementations  a  resistance 
+
+NOTE 2 
+
+to 
+
+31 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+RECEIVER
+
+MUX
+
+A
+
+SOURCE
+
+NTC
+
+Thermistor
+
+Figure 5‐5: TSM1 interface arrangement 
+
+5.3.5.2 
+
+TSM2 
+
+ 
+
+5.3.5.2.1  Overview 
+The TSM2 interface has the following features: 
+• 
+
+The measurable resistance range is specified from 0 Ω to up to RMAX. 
+RMAX can be seen as the maximum resistance of the 
+thermistor in the temperature range of interest. 
+
+NOTE  
+
+• 
+
+• 
+• 
+• 
+
+RMAX  can  be  chosen  as  characteristic  of  a  group  of  channels  within  a 
+specific range. 
+The specified accuracy is expressed as a maximum error ±Δx. 
+The specified accuracy in terms of resistance is expressed as Δx⋅RMAX.  
+The  resistance  accuracy  is  specified  at  the  DHS  unit  terminals,  i.e. 
+excluding any error contribution from the thermistor or harness.  
+
+5.3.5.2.2  TSM2 error model 
+a. 
+
+The maximum error in Rth, ΔRth, expressed as a function of Δx, shall be: 
+
+R
+Δ
+th
+
+=
+
+R
+
+MAX
+
+Δ⋅
+
+x
+
+ 
+
+32 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+5.3.5.2.3  TSM2 source electrical characteristics  
+a. 
+
+The source shall meet the characteristics specified in Table 5‐5.  
+
+Table 5‐5: TSM2 source characteristics 
+
+Reference 
+5.3.5.2.3 a.1 
+5.3.5.2.3 a.2 
+
+Characteristic 
+Circuit type 
+Transfer 
+
+5.3.5.2.3 a.3 
+
+Resistance range, Rs 
+
+5.3.5.2.3 a.4 
+
+Fault voltage tolerance, Vsft 
+
+ 
+
+Value 
+Floating Resistive sensor 
+DC coupled 
+0 Ω to RMAX 
+Rs is selected per group of channels as a function of 
+the sensor type and the temperature range of interest 
+‐17,5 V to +17,5 V with an overvoltage source 
+impedance ≥ 1 kΩ 
+
+5.3.5.2.4  TSM2 receiver electrical characteristics 
+a. 
+
+The receiver shall meet the characteristics specified in Table 5‐6.  
+
+Table 5‐6: TSM2 receiver characteristics 
+
+Reference 
+
+Characteristic 
+
+Value 
+
+5.3.5.2.4 a.1 
+5.3.5.2.4 a.2 
+5.3.5.2.4 a.3 
+5.3.5.2.4 a.4  Measurement error, Δx 
+
+Circuit type 
+Transfer 
+Sensor injected power, Pi 
+
+5.3.5.2.4 a.5 
+
+Parameterized resistance 
+range, RMAX 
+
+Single ended receiver with multiplexed inputs 
+DC coupled 
+≤ 1 mW  
+< ±0,01 
+
+1 kΩ to 5 kΩ, to be specified per group of channels  
+
+5.3.5.2.4 a.6 
+
+Fault voltage emission, Vrfe 
+
+5.3.5.2.4 a.7 
+
+Fault tolerance, Rrft 
+
+‐16,5 V to +16,5 V with a source impedance of ≥ 1,0 
+kΩ 
+Short circuit to ground 
+
+ 
+
+5.3.5.3  Harness 
+
+5.3.5.3.1  Wire type 
+a. 
+
+The wire type shall be twisted n‐tuple. 
+
+5.3.5.3.2  Core to core capacitance 
+a. 
+
+The capacitance CCC measured between the two core wires shall be less 
+than or equal to 1 nF. 
+
+33 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+Interface arrangement 
+
+5.3.5.4 
+The electrical interface arrangement is specified in Figure 5‐6. 
+
+NOTE  
+
+Circuitry is indicative only; other implementations 
+meeting the above requirements are not excluded.  
+
+RECEIVER
+
+MUX
+
+A
+
+SOURCE
+
+PT1000
+
+ 
+
+Figure 5‐6: TSM2 interface arrangement 
+
+5.3.5.5 
+
+TSM examples 
+
+5.3.5.5.1  TSM1 examples 
+All thermistors of NTC type show a quasi‐exponential temperature sensitivity 
+in ΔRth/Rth of roughly 4 %/°C or one decade per 60 °C. That means that when 
+using  an  NTC  thermistor  for  a  TSM1  channel,  Figure  5‐4  can  be  used  as  a 
+general indication of accuracy in temperature by: 
+• 
+• 
+
+rescaling the y‐axis by a factor 1°C/0,04,  
+exchanging the logarithmic x‐axis with a linear temperature scale where 
+minimum  point  of  |ΔRth/Rth|  is  set  to  thermistor  temperature  at  RNORM 
+and one decade corresponds to 60°C. 
+
+4K3A354  (ESCC  Detail  Specification  No.  4006/013,  variant  04)  is  a  thermistor 
+with nominally 4 kΩ resistance at 25°C. Figure 5‐7 shows temperature accuracy 
+specifically  of  a  4K3A354  thermistor  connected  to  a  TSM1  channel  specified 
+with RNORM = 4 kΩ . The figure does not include any inaccuracy of the sensor 
+itself 
+YSI44907 is a thermistor with nominally 10 kΩ  resistance at 25 °C. Figure 5‐8 
+shows temperature accuracy specifically of a YSI44907 thermistor connected to 
+a TSM1 channel specified with RNORM = 10 kΩ . 
+As shown in the two examples, the accuracy in terms of temperature becomes 
+quite similar for different NTC thermistor types, provided that RNORM is selected 
+per type for the same temperature range. 
+
+34 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+Rnorm=4kohm, deltax=0,01
+Rnorm=4kohm, deltax=-0,01
+
+10
+
+8
+
+6
+
+4
+
+2
+
+0
+
+-60
+
+-40
+
+-20
+
+0
+
+20
+
+40
+
+60
+
+80
+
+100
+
+-2
+
+-4
+
+-6
+
+-8
+
+-10
+
+ 
+
+r
+o
+r
+r
+e
+p
+m
+e
+T
+
+)
+
+C
+r
+g
+e
+d
+(
+
+ 
+
+T(degrC)
+
+Figure 5‐7: Example TSM1 and 4K3A354 thermistor 
+
+ 
+
+r
+o
+r
+r
+e
+p
+m
+e
+T
+
+)
+
+C
+r
+g
+e
+d
+(
+
+ 
+
+10
+
+8
+
+6
+
+4
+
+2
+
+0
+
+-60
+
+-40
+
+-20
+
+0
+
+20
+
+40
+
+60
+
+80
+
+100
+
+-2
+
+-4
+
+-6
+
+-8
+
+-10
+
+T(degrC)
+
+Rnorm=10kohm, deltax=0,01
+Rnorm=10kohm, deltax=-0,01
+
+Figure 5‐8: Example TSM1 and YSI44907 thermistor 
+
+ 
+
+ 
+
+35 
+
+r
+o
+r
+r
+e
+ 
+p
+m
+e
+T
+
+)
+
+C
+r
+g
+e
+d
+(
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+5.3.5.5.2  TSM2, PT1000 
+The platinum temperature sensors show fairly constant temperature sensitivity 
+in Rth of roughly 0.004⋅R0/°C, where R0 is the nominal resistance (at 0 °C).  
+PT1000 is a platinum sensor with nominally 1000 Ω resistance at 0 °C. Figure 5‐9 
+shows  temperature  accuracy  specifically  of  a  PT1000  connected  to  a  TSM2 
+channel  specified  with  RMAX  =  1700  Ω.  The  figure  does  not  include  any 
+inaccuracy of the sensor itself. 
+RMAX  =  1700  Ω  for  the  PT1000  sensor  covers  the  temperature  range  up  to 
++183 °C. 
+
+-150
+
+-100
+
+-50
+
+10
+
+8
+
+6
+
+4
+
+2
+
+0
+
+-2
+
+-4
+
+-6
+
+-8
+
+0
+
+50
+
+100
+
+150
+
+Rmax=1700, deltax=0,01
+Rmax=1700, deltax=-0,01
+
+-10
+
+Temp (degrC)
+
+ 
+
+Figure 5‐9: Example TSM2 and PT1000 thermistor 
+
+36 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+6 
+Bi-level discrete input interfaces 
+
+6.1  Bi-level discrete monitor (BDM) interface  
+
+6.1.1  Overview 
+The  bi‐level  discrete  monitor  (BDM)  interfaces  are  used  for  reasonably  static, 
+discrete  status  and  telemetry  monitoring  by  the  core  element.  The  monitored 
+signal  is  bi‐level  discrete  in  that  it  can  take  only  two  values,  high  or  low, 
+indicated by the signal voltage. 
+The  bi‐level  discrete  interface  consists  of  a  signal,  BL_DATA_IN,  which  is 
+generated by the peripheral element. This signal is sampled periodically by the 
+core element. 
+In  a  practical  implementation,  a  number  of  bi‐level  discrete  interfaces  can  be 
+aggregated to form a multiple bit data word in the core element. 
+The bi‐level discrete input interface consists of a signal, BL_DATA_IN, which 
+can assume two values, high or low, with respect to the signal reference. This 
+signal  is  maintained  continuously  by  the  peripheral  element  and  can  be 
+sampled at any time by the core element. 
+On  sampling,  the  core  element  encodes  the  BL_DATA_IN  value  into  a  single 
+binary bit of data which can be embedded in a larger data word. 
+interface.  The 
+There  are  no 
+this 
+BL_DATA_IN signal is maintained continuously by the peripheral element and 
+can  generally  be  regarded  as  static.  However,  if  the  BL_DATA_IN  signal  is 
+sampled during a transition from one level to the other, the result determined 
+by the core element can be invalid. 
+
+timing  parameters  associated  with 
+
+6.1.2 
+
+Bi-level discrete monitor interface 
+
+6.1.2.1  Bi-level discrete monitor input interface - 
+
+BL_DATA_IN signal 
+
+a. 
+
+The peripheral element shall  
+1. 
+2. 
+
+provide a BL_DATA_IN signal, and  
+continually  maintain  such  signal  in  one  of  two  states,  high 
+(logical ‘1’) or low (logical ‘0’). 
+
+37 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+6.1.2.2  BDM electrical characteristics 
+
+6.1.2.2.1  Source circuit 
+a. 
+
+The source circuit shall meet the characteristics specified in Table 6‐1. 
+
+Table 6‐1: BDM source characteristics 
+
+Reference 
+6.1.2.2.1 a.1 
+6.1.2.2.1 a.2 
+6.1.2.2.1 a.3 
+6.1.2.2.1 a.4 
+
+Characteristic 
+Circuit type 
+Transfer 
+Zero reference 
+Low output voltage, VLout 
+
+6.1.2.2.1 a.5 
+
+High output voltage, VHout 
+
+6.1.2.2.1 a.6 
+6.1.2.2.1 a.7 
+
+Output impedance, Zout 
+Fault voltage emission, Vsfe 
+
+6.1.2.2.1 a.8 
+
+Fault voltage tolerance, Vsft 
+
+Value 
+Single ended 
+DC coupled 
+Signal ground 
+0 V to +0,5 V 
+2,4 V to +5,5 V, 
+into a load of 100 kΩ or greater 
+≤ 5 kΩ 
+‐1 V to +7 V 
+‐17,5 V to +17,5 V with an overvoltage source 
+impedance of 1,0 kΩ 
+
+ 
+
+6.1.2.2.2  Receiver circuit 
+a. 
+
+The receiver circuit shall meet the characteristics specified in Table 6‐2. 
+
+Table 6‐2: BDM receiver characteristics 
+
+Reference 
+6.1.2.2.2 a.1 
+6.1.2.2.2 a.2 
+
+6.1.2.2.2 a.3 
+
+6.1.2.2.2 a.4 
+
+6.1.2.2.2 a.5 
+
+Characteristic 
+Circuit type 
+Transfer 
+Low level differential input 
+voltage, VLin 
+High level differential input 
+voltage, VHin 
+Ground displacement 
+voltage, VGD 
+
+6.1.2.2.2 a.6 
+
+Input impedance, Zin 
+
+6.1.2.2.2 a.7 
+6.1.2.2.2 a.8 
+
+Fault voltage emission, Vrfe 
+Fault voltage tolerance, Vrft 
+
+ 
+
+Value 
+Differential receiver with multiplexed inputs 
+DC coupled 
+
+0 V to 0,9 V 
+
+2,0 V to 5,5 V 
+
+‐1 V to 1 V up to 1 kHz rolling‐off at 20 dB/decade up 
+to 1 MHz 
+During acquisition: ≥ 100 kΩ 
+Outside acquisition: ≥ 100 kΩ 
+DHS with power off: ≥ 10 kΩ 
+‐16,5 V to +16,5 V with a series impedance of ≥ 1,0 kΩ 
+‐2 V to +8 V 
+
+38 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+6.1.2.3  Harness 
+
+6.1.2.3.1  Wire type 
+a. 
+b. 
+
+Both twisted pair and twisted shielded pair lines may be used. 
+Shields  shall  be  connected  to  structure  ground  on  source  and  receiver 
+side. 
+
+6.1.2.3.2  Core to shield capacitance 
+a. 
+
+If shielded pair is used, the capacitance CCS measured between the core 
+wire and the shield shall be  ≤ 2 nF. 
+
+6.1.2.3.3  Core to core capacitance 
+a. 
+
+If unshielded pair is used, the capacitance CCC measured between the two 
+core wires shall be ≤ 1 nF. 
+
+Interface arrangement 
+
+6.1.2.4 
+The electrical interface arrangement is depicted in Figure 6‐1. The figure shows 
+a specific implementation as example, but other implementations conforming to 
+the requirements are not excluded. 
+
+SOURCE
+
+V
++
+
+RECEIVER
+
+V
++
+
+ 
+
+ 
+
+Figure 6‐1: BDM Interface configuration 
+
+6.2  Bi-level switch monitor (BSM) interface 
+
+6.2.1  General principles 
+The  bi‐level  switch  monitor  (BSM)  interface  is  used  by  the  core  element  to 
+determine  the  status  of  a  switch  in  the  peripheral  element.  The  peripheral 
+element  of  this  interface  is  entirely  passive,  consisting  only  of  a  single  pole 
+switch electrically isolated from all other components of the peripheral element. 
+
+39 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+This interface is used by the core element to determine the status of switches 
+and  relays  in  the  peripheral  element  and  has  the  advantage  that  it  can  be 
+operated even when the peripheral element is powered down. 
+The switch status interface is entirely driven and operated by the core element. 
+The  core  element  provides  a  continuous  reference  voltage  signal,  and 
+periodically  samples  the  input  signal  and  compares  it  to  the  reference.  The 
+result is encoded into a binary bit to indicate whether the switch was closed or 
+open. 
+There are no timing constraints related to this interface since the switch status 
+being  monitored  is  normally  static  or  changing  infrequently.  However,  if  the 
+input signal is sampled while the switch status is changing, the result can be 
+invalid. 
+The signal interface receiver is similar to a bi‐level discrete (BDM) input with 
+the following exceptions: 
+• 
+• 
+
+Ground is referred to receiver (instead of source) ground. 
+It is biased to a high level, when it is not being driven, by the connection 
+of the input to a reference voltage through a resistance. When the switch 
+contact  is  closed,  the  input  signal  is  forced  to  a  low level  by  presented 
+low impedance. 
+
+The  interface  receiver  converts  such  input  signal  in  one  of  two  digital  states, 
+high  (logical  ‘1’)  for  switch  source  open  status,  or  low  (logical  ‘0’)  for  switch 
+source closed status. 
+In  case  of  specific  needs,  opto‐couplers  can  be  used.  In  that  case  the  specific 
+interfaces  are  defined  on  a  system  basis,  thus  they  are  not  covered  by  this 
+Standard.  
+
+6.2.2 
+
+Bi-level switch monitor interface 
+
+Source circuit 
+
+6.2.2.1 
+a. 
+
+The source circuit shall meet the characteristics specified in Table 6‐3. 
+
+Table 6‐3: Switch source characteristics 
+
+Reference  Characteristic 
+6.2.2.1 a.1 
+6.2.2.1 a.2 
+6.2.2.1 a.3 
+6.2.2.1 a.4 
+6.2.2.1 a.5 
+6.2.2.1 a.6 
+
+Circuit type 
+Transfer 
+Operating current, Iop 
+Operating voltage (open circuit), Vop  Up to 15 V 
+Switch closed resistance, RC 
+Switch open resistance, RO 
+
+Value 
+Floating Relay contact 
+DC coupled 
+Up to 10 mA 
+
+6.2.2.1 a.7 
+
+Fault voltage tolerance, Vsft 
+
+ 
+
+≤ 50 Ω 
+≥ 1 MΩ 
+‐17,5 V to +17,5 V with an overvoltage source 
+impedance of 1,0 kΩ 
+
+40 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+6.2.2.2  Receiver circuit 
+a. 
+
+The receiver circuit shall meet the characteristics specified in Table 6‐4. 
+
+Table 6‐4: Switch receiver characteristics 
+
+Reference  Characteristic 
+6.2.2.2 a.1 
+6.2.2.2 a.2 
+6.2.2.2 a.3 
+6.2.2.2 a.4 
+6.2.2.2 a.5 
+6.2.2.2 a.6 
+
+Circuit Type 
+Transfer 
+Zero reference 
+Output current, Iout 
+Output voltage, Vout 
+Fault voltage emission, Vrfe 
+
+6.2.2.2 a.7 
+
+Fault tolerance, Vrft 
+
+ 
+
+Value 
+Single ended receiver with pull‐up resistor  
+DC coupled 
+Signal ground 
+0,1 mA to 10 mA (when contacts closed) 
+< 15 V (when contacts open) 
+‐16,5 V to +16,5 V with a source impedance of 
+≥ 1,0 kΩ 
+Short circuit to ground 
+
+6.2.2.3  Harness 
+
+6.2.2.3.1  Wire type 
+a. 
+
+The wire type shall be twisted n–tuple type. 
+
+6.2.2.3.2  Core to core capacitance 
+a. 
+
+The  capacitance  CCC  measured  between  the  two  core  wires  shall  be 
+≤ 1 nF. 
+
+Interface arrangement 
+
+6.2.2.4 
+The  electrical  interface  arrangement  is  depicted  in  Figure  6‐2,  which  shows 
+specific  implementation  to  be  taken  as  example,  but  other  implementations 
+conforming to requirements are not excluded. 
+
+ 
+
+SOURCE
+
+V+
+
+RECEIVER
+
+TP
+
+TP
+
+MUX
+
+Figure 6‐2: Switch status circuit interface arrangement 
+
+ 
+
+41 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+7 
+ Pulsed command interfaces 
+
+7.1  High power command (HPC) interfaces 
+
+7.1.1  General principles 
+The high power pulse (HPC) command interfaces are intended for load driving 
+interfaces and, for example, can be used to switch relays or similar loads. The 
+high current capabilities of these interfaces lead to their protection against short 
+circuiting and against failure in a high current mode. 
+The  high  power  pulse  command  consists  of  a  single  signal,  HPC_OUT(H), 
+generated by the core element. This is connected by a single ended circuit to the 
+input  at  the  peripheral  element.  The  interface  is  entirely  controlled  from  the 
+core element. 
+Three classes of  HPC are defined here: 
+• 
+• 
+• 
+
+LV‐HPC : low voltage HPC (clause 7.1.3), 
+HV‐HPC : high voltage HPC (clause 7.1.4), and 
+HC‐HPC : high current HPC (clause 7.1.5).  
+
+7.1.2 
+
+High power command interface 
+
+7.1.2.1  High power pulse command - HPC_OUT(H) signal 
+a. 
+
+The core element shall  
+1. 
+2. 
+
+provide an HPC_OUT(H) signal, and  
+drive such a signal. 
+
+7.1.2.2  High power pulse command - HPC_OUT(H) signal 
+
+passive state 
+
+a. 
+
+The passive state of the HPC_OUT(H) signal shall be low. 
+
+7.1.2.3  High power pulse command - HPC_OUT(H) signal 
+
+active state 
+
+a. 
+
+The active state of the HPC_OUT(H) signal shall be high. 
+
+42 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+7.1.2.4  High power pulse command output – driver 
+
+unpowered 
+
+a. 
+
+The HPC_OUT(H) output signal shall be in passive state when the driver 
+is unpowered. 
+
+7.1.2.5  High power pulse command output - failure mode 
+a. 
+
+The design of the high power pulse command interface shall ensure that 
+no  failure  mode  results  in  the  output  being  permanently  active  (high 
+state). 
+
+7.1.2.6  High power command configuration 
+a. 
+
+The  high  power  discrete  pulse  command  source  shall  be  referenced  to 
+source signal ground.  
+The load shall be isolated from any user electrical reference. 
+
+b. 
+
+7.1.2.7  High power command transient protection 
+a. 
+
+Both  the  high  power  pulse  command  source  and  receiver  shall  be 
+equipped with circuits to suppress any switching transients. 
+
+NOTE  
+
+important 
+
+to 
+
+is  particularly 
+
+suppress 
+This 
+transients  due  to  inductive  loads  such  as  relays, 
+which can cause the current drive capability, or the 
+overvoltage  capability  of 
+to  be 
+exceeded. 
+
+the  source 
+
+7.1.2.8  High power command short circuit protection 
+a. 
+
+The  high  power  pulse  command  source  shall  be  short  circuit  proof  for 
+short circuits to source or receiver signal ground and structure. 
+
+7.1.3 
+
+Low voltage high power command (LV-HPC) 
+electrical characteristics 
+
+Source circuit 
+
+7.1.3.1 
+a. 
+
+The source circuit shall meet the characteristics specified in Table 7‐1. 
+
+43 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+Table 7‐1: LV‐HPC source characteristics 
+
+Reference  Characteristics 
+7.1.3.1 a.1 
+7.1.3.1 a.2 
+7.1.3.1 a.3 
+7.1.3.1 a.4 
+
+Circuit type 
+Transfer 
+Active state output voltage, VAout 
+Passive state output leakage current, IPout 
+
+7.1.3.1 a.5 
+
+Pulse width, tP 
+
+7.1.3.1 a.6 
+
+Output voltage rise and fall times, tr, tf 
+
+7.1.3.1 a.7 
+
+7.1.3.1 a.8 
+
+7.1.3.1 a.9 
+7.1.3.1 a.10 
+7.1.3.1 a.11 
+
+Active current drive capability, IAout 
+Free‐wheeling current capability (in 
+Passive state) 
+Short circuit output current, ISC 
+Fault voltage tolerance, Vsft 
+Fault voltage emission, Vsfe 
+
+ 
+
+Value 
+Single ended driver return over wire 
+DC coupled 
+12 V to 16 V 
+< 100 μA 
+4 ms to 1024 ms (system design 
+selectable depending on receiver 
+characteristics) 
+50 μs to 2 ms when connected to a 
+resistive load of 100 Ω 
+180 mA 
+
+IAout during tP 
+
+≤ 400 mA  
+0 V to +20 V 
+0 V to +19 V 
+
+7.1.3.2  Receiver circuit  
+a. 
+
+The receiver circuit shall meet the characteristics specified in Table 7‐2. 
+
+Table 7‐2: LV‐HPC receiver characteristics 
+
+Reference  Characteristics 
+7.1.3.2.a.1 
+7.1.3.2 a.2 
+7.1.3.2 a.3 
+
+Circuit type 
+Transfer 
+Active level at unit input terminal, VAin 
+Passive current at unit input terminal (no 
+activation), IPin 
+
+7.1.3.2 a.4 
+
+7.1.3.2 a.5 
+
+Passive level transient immunity, tPtran 
+
+7.1.3.2 a.6 
+7.1.3.2 a.7 
+7.1.3.2 a.8 
+7.1.3.2 a.9 
+
+Load current, Iload 
+Inputs to chassis isolation, Ziso 
+Fault voltage emission, Vrfe 
+Fault voltage tolerance, Vrft 
+
+ 
+
+Value 
+Relay or opto‐coupler 
+DC coupled 
+11 V to 16 V 
+
+200 μA 
+
+No activation for pulses up to the 
+active level 100 μs wide 
+≤ 180 mA (at 16 V) 
+> 1 MΩ 
+0 V to +19 V 
+0 V to +20 V 
+
+44 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+7.1.4 
+
+High voltage high power command (HV-
+HPC) electrical characteristics  
+
+7.1.4.1  HV-HPC source circuit 
+a. 
+
+The  HV‐HPC  source  circuit  shall  meet  the  characteristics  specified  in 
+Table 7‐3. 
+
+Table 7‐3: HV‐HPC source characteristics 
+
+Reference 
+7.1.4.1 a.1 
+7.1.4.1 a.2 
+7.1.4.1 a.3 
+7.1.4.1 a.4 
+
+Characteristic 
+Circuit type 
+Transfer 
+Active state output voltage, VAout 
+Passive state output leakage current, IPout  < 100 μA 
+
+Value 
+Single ended driver return over wire 
+DC coupled 
+22 V to 29 V 
+
+7.1.4.1 a.5 
+
+Pulse width, tP 
+
+7.1.4.1 a.6 
+
+Output voltage rise and fall times, tr, tf 
+
+7.1.4.1 a.7 
+
+7.1.4.1 a.8 
+
+7.1.4.1 a.9 
+7.1.4.1 a.10 
+7.1.4.1 a.11 
+
+Active current drive capability, IAout 
+Free‐wheeling current capability (in 
+passive state) 
+Short circuit output current, ISC 
+Fault voltage tolerance, Vsft 
+Fault voltage emission, Vsfe 
+
+ 
+
+4 ms to 1024 ms (system design 
+selectable depending on receiver 
+characteristics) 
+50 μs to 2 ms when connected to a 
+resistive load of 200 Ω 
+180 mA 
+
+IAout during tP 
+
+≤ 400 mA 
+0 V to +33 V 
+0 V to +32 V 
+
+7.1.4.2  HV-HPC receiver circuit 
+a. 
+
+The  HV‐HPC  receiver  circuit  shall  meet  the  characteristics  specified  in 
+Table 7‐4. 
+
+45 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+Reference 
+7.1.4.2 a.1 
+7.1.4.2 a.2 
+7.1.4.2 a.3 
+
+7.1.4.2 a.4 
+
+Table 7‐4: HV‐HPC receiver characteristics 
+
+Characteristic 
+Circuit type 
+Transfer 
+Active level at unit input terminal, VAin 
+Passive current at unit input terminal (no 
+activation), IPin 
+
+Value 
+Relay or opto‐coupler 
+DC coupled 
+21 V to 29 V 
+
+200 μA 
+
+7.1.4.2 a.5 
+
+Passive level transient immunity, tPtran 
+
+7.1.4.2 a.6 
+7.1.4.2 a.7 
+7.1.4.2 a.8 
+7.1.4.2 a.9 
+
+Load current, Iload 
+Inputs to chassis isolation, Ziso 
+Fault voltage emission, Vrfe 
+Fault voltage tolerance, Vrft 
+
+No activation for pulses up to the active 
+level 100 μs wide 
+≤ 180 mA (at 29 V) 
+> 1 MΩ 
+0 V to +32 V 
+0 V to +33 V 
+
+ 
+
+7.1.5 
+
+High current high power command (HC-
+HPC) electrical characteristics  
+
+7.1.5.1  HC-HPC source circuit 
+a. 
+
+The  HC‐HPC  source  circuit  shall  meet  the  characteristics  specified  in 
+Table 7‐5. 
+
+Table 7‐5: HC‐HPC source characteristics 
+
+Reference  Characteristic 
+7.1.5.1 a.1 
+7.1.5.1 a.2 
+7.1.5.1 a.3 
+7.1.5.1 a.4 
+
+Circuit type 
+Transfer 
+Active state output voltage, VAout 
+Passive state output leakage current, IPout 
+
+7.1.5.1 a.5 
+
+Pulse width, tP 
+
+7.1.5.1 a.6 
+
+Output voltage rise and fall times, tr, tf 
+
+7.1.5.1 a.7 
+
+7.1.5.1 a.8 
+
+7.1.5.1 a.9 
+7.1.5.1 a.10 
+7.1.5.1 a.11 
+
+Active current drive capability, IAout 
+Free‐wheeling current capability (in 
+passive state) 
+Short circuit output current, ISC 
+Fault voltage tolerance, Vsft 
+Fault voltage emission, Vsfe 
+
+ 
+
+Value 
+Single ended driver return over wire 
+DC coupled 
+22 V to 29 V 
+< 1 mA 
+4 ms to 1024 ms (system design 
+selectable depending on receiver 
+characteristics) 
+50 μs to 2 ms when connected to a 
+resistive load of 50 Ω 
+600 mA 
+
+IAout during tP 
+
+≤ 1 A 
+0 V to +33 V 
+0 V to +32 V 
+
+46 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+7.1.5.2  HC-HPC receiver circuit 
+a. 
+
+The  HC‐HPC  receiver  circuit  shall  meet  the  characteristics  specified  in 
+Table 7‐6. 
+
+Table 7‐6: HC‐HPC receiver characteristics 
+
+Reference  Characteristic 
+7.1.5.2 a.1 
+7.1.5.2 a.2 
+7.1.5.2 a.3 
+
+Circuit type 
+Transfer 
+Active level at unit input terminal, VAin 
+Passive level at unit input terminal (no 
+activation), IPin 
+
+7.1.5.2 a.4 
+
+Value 
+Relay 
+DC coupled 
+20 V to 29 V 
+
+2 mA 
+
+7.1.5.2 a.5 
+
+Passive level transient immunity, tPtran 
+
+7.1.5.2 a.6 
+7.1.5.2 a.7 
+7.1.5.2 a.8 
+7.1.5.2 a.8 
+
+Load current, Iload 
+Inputs to chassis isolation, Ziso 
+Fault voltage emission, Vrfe 
+Fault voltage tolerance, Vrft 
+
+ 
+
+No activation for pulses up to the active 
+level 1 ms wide 
+≤ 600 mA (at 29 V) 
+> 1 MΩ 
+0 V to +32 V 
+0 V to +33 V 
+
+7.1.6  Wiring type 
+a. 
+b. 
+
+Both twisted n‐tuples and twisted shielded n‐tuples lines may be used. 
+Shield  shall  be  connected  to  structure  ground  on  source  and  receiver 
+side. 
+
+7.1.7 
+High power command interface arrangement 
+The  interface  arrangement  is  presented  in  Figure  7‐1,  which  shows  a  specific 
+implementation taken as an example, but other implementations conforming to 
+requirements are not excluded. 
+
+V+
+
+Source
+
+Receiver
+
+Figure 7‐1: HPC interface arrangement  
+
+ 
+
+47 
+
+7.2  Low power command (LPC) interface 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+7.2.1  General 
+The  low  power  (LPC)  command  interfaces  are  intended  for  driving  opto‐
+coupler channels. 
+Two  types  of  opto‐coupler  interfaces  are  considered  namely  the  opto‐coupler 
+pulse interface, LPC‐P, and the opto‐coupler static bi‐level interface, LPC‐S. 
+The low power command consists of a single signal, LPC_OUT(H), generated 
+by the core element. This is connected by a single ended circuit to the input at 
+the  peripheral  element.  The  interface  is  entirely  controlled  from  the  core 
+element. 
+
+7.2.2 
+
+Low power command interface 
+
+Low power command - LPC_OUT(H) signal 
+
+7.2.2.1 
+a. 
+
+The core element shall  
+1. 
+2. 
+
+provide an LPC_OUT(H) signal, and  
+drive such a signal. 
+
+7.2.2.2 
+
+Low power command - LPC_OUT(H) signal passive 
+state 
+
+a. 
+
+The passive state of the LPC_OUT(H) signal shall be low. 
+
+7.2.2.3 
+
+Low power command - LPC_OUT(H) signal active 
+state 
+
+a. 
+
+The active state of the LPC_OUT(H) signal shall be high. 
+
+Low power command output – driver unpowered 
+
+The LPC_OUT(H) output signal shall be in passive state when the driver 
+is unpowered. 
+
+Low power command configuration 
+
+The  low  power  discrete  pulse  command  source  shall  be  referenced  to 
+source signal ground.  
+The load shall be isolated from any user electrical reference. 
+
+7.2.2.4 
+a. 
+
+7.2.2.5 
+a. 
+
+b. 
+
+7.2.2.6 
+a. 
+
+Low power command short circuit protection 
+
+The  low  power  pulse  command  source  shall  be  short  circuit  proof  for 
+short circuits to source or receiver signal ground and structure. 
+
+48 
+
+7.2.3 
+
+LPC electrical characteristics 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+Source circuit 
+
+7.2.3.1 
+a. 
+
+The  source  circuit  shall  meet  the  characteristics  specified  in  Figure  7‐2 
+and Table 7‐7. 
+
+NOTE  
+
+Figure 7‐2 shows the LPC source high level output 
+voltage vs. load current. A typical load is indicated 
+as a dashed line. 
+
+Table 7‐7: LPC source characteristics 
+
+Reference  Characteristics 
+7.2.3.1 a.1 
+7.2.3.1 a.2 
+7.2.3.1 a.3 
+
+7.2.3.1 a.4 
+
+7.2.3.1 a.5 
+
+7.2.3.1 a.6 
+7.2.3.1 a.7 
+7.2.3.1 a.8 
+
+Circuit type 
+Transfer 
+Output resistance, Rout 
+Active signal open circuit output voltage, 
+VAout 
+Passive signal open circuit output voltage, 
+VPout 
+Fault voltage emission, Vsfe 
+Fault tolerance 
+Pulse width for LPC‐P 
+
+Value 
+Single ended driver return over wire 
+DC coupled 
+370 Ω to 430 Ω 
+
+4,4 V to 5,5 V 
+
+0 V to 0,5 V 
+
+7 V with a source impedance ≥ 350 Ω 
+Continuous short circuit 
+4 ms ≤ td ≤ 120 ms 
+
+ 
+
+Vout
+
+5.5V
+
+4.4V
+
+Rout,min =
+370 ohm
+
+Rout,max =
+430 ohm
+
+Typical load line
+
+Figure 7‐2: LPC active signal output voltage vs. load current 
+
+10.2mA
+
+Iout
+
+14.9mA
+
+ 
+
+49 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+7.2.3.2  Receiver circuit 
+a. 
+
+The receiver circuit shall meet the characteristics specified in Table 7‐8. 
+
+Table 7‐8: LPC receiver characteristics 
+
+Reference  Characteristics 
+7.2.3.2 a 
+7.2.3.2 b 
+
+Circuit type 
+Transfer 
+
+7.2.3.2 c 
+
+Active input signal, VAin 
+
+7.2.3.2 d 
+7.2.3.2 e 
+7.2.3.2 f 
+
+Passive input signal, VPin 
+Fault voltage tolerance, Vrft 
+Input to chassis isolation, Ziso 
+
+ 
+
+Value 
+Opto‐coupler, passive load 
+DC coupled 
+4,4 V to 5,5 V through a 370 Ω to 450 Ω 
+source resistance 
+0 V to 0,5 V 
+7 V with a source impedance of ≥ 350 Ω 
+ >1 MΩ 
+
+7.2.4  Wiring type 
+a. 
+b. 
+
+Both twisted n‐tuples and twisted shielded n‐tuples lines may be used. 
+Shield  shall  be  connected  to  structure  ground  on  source  and  receiver 
+side. 
+
+Interface arrangement 
+
+7.2.5 
+The scheme depicted in Figure 7‐3 is applicable to both LPC‐P and LPC‐S. The 
+figure  shows  a  specific  implementation  taken  as  an  example,  but  other 
+implementations compliant to requirements are not excluded. 
+
+Figure 7‐3: LPC‐P and LPC‐S interface arrangement 
+
+ 
+
+50 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+8 
+Serial digital interfaces 
+
+8.1  Foreword 
+
+This  clause  refers  to  the  implementation  of  16‐bit  serial  digital  point  to  point 
+interfaces as specified in clause 8.2. 
+Other serial digital point to point interfaces may be used in space applications. 
+They  are  not  covered  by  this  Standard.  However,  all  digital  interfaces 
+referencing  RS‐422  as  the  physical  layer  (e.g.  synchronization  pulses)  are 
+recommended to comply with this specification for electrical characteristics as 
+in clause 8.8.  
+
+8.2  General principles of serial digital interfaces 
+
+8.2.1  Overview 
+
+ 
+
+8.2.1.1 
+The  serial  digital  interfaces  are  used  to  exchange  digital  data  words  between 
+core  and  peripheral  elements.  The  interface  timing  and  clocking  signals  are 
+controlled by the core element. 
+A serial digital interface which reads data from the peripheral element into the 
+core  element  is  called  an  input  serial  digital  (ISD)  interface.  A  serial  digital 
+interface which writes data out from the core element to the peripheral element 
+is called an output serial digital (OSD) interface. A third class of serial digital 
+interface  is  also  introduced  in  this  standard,  namely  the  bi‐directional  serial 
+digital (BSD) interface. 
+For  space  applications,  serial  digital  interfaces  shall  be  implemented  in 
+balanced  differential  form.  In  this  form  each  signal  is  carried  by  a  pair  of 
+conductors and the level of the signal is determined by the differential voltage 
+between those conductors. 
+
+51 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+ 
+
+8.2.1.2 
+The serial digital interfaces are based on five signals, namely: 
+• 
+
+GATE_WRITE  provided  by  the  core  element  which  indicates  when  a 
+write transfer (from core to peripheral) is underway, 
+GATE_READ provided by the core element which indicates when a read 
+transfer (from peripheral to core) is underway, 
+DATA_CLK_OUT provided by the core element which controls the data 
+transfer timing, 
+DATA_OUT provided by the core element in the case of output and bi‐
+directional interfaces, and 
+DATA_IN provided by the peripheral element in the case of input and 
+bi‐directional interfaces.  
+
+• 
+
+• 
+
+• 
+
+• 
+
+In a practical implementation, the DATA_CLK_OUT and, for output interfaces, 
+the  DATA_OUT  signal  can  be  distributed  to  several  devices.  However,  each 
+device has its own unique GATE_WRITE (READ) signal. 
+Signals in Figure 8‐2 and Figure 8‐4 indicate the expected TRUE line waveform 
+of the differential interface. DATA_OUT and DATA_IN low denotes a logic ‘0’ 
+and the corresponding HIGH denotes a logic ‘1’. 
+The serial interface timing in this standard is specified in proportion to the bit 
+period  (tb),  which  is  implementation  dependent:  once  it  is  specified  by  the 
+designer, the other characteristics are defined as a function of tb. 
+As specified in 8.2.2, it is important that the peripheral element is designed to 
+be compatible with any tb specified in this Standard. 
+In addition the standard provides some recommended implementation options.  
+These  interfaces  correspond  to  the  16‐bit  digital  channel  telemetry  interfaces 
+and the 16‐bit memory load commands described in TTC‐B‐01 but with some 
+modifications.  Most  significantly,  none  of  these  word  exchanges  need  be 
+aligned with the OBDH bus interrogation slot interval.  
+
+NOTE 1  This is a relaxation of requirements and is in line 
+with the philosophy of supporting systems which 
+use MIL‐STD‐1553B instead of the ESA OBDH bus.  
+NOTE 2  Where  an  ESA  OBDH  bus  is  being  used,  this 
+standard  does  not  preclude  synchronisation  with 
+the  interrogation  slot  intervals,  but  does  not 
+specify its use. 
+
+NOTE 3  16‐bit transfers are now preferably performed in a 
+
+single burst rather than in two 8‐bit. 
+
+8.2.2  General requirements 
+a. 
+
+The  physical  layer  of  serial  digital  interfaces  shall  conform  to  the 
+requirements in ANSI/TIA/EIA‐422 and those specified in this clause 8 of 
+this Standard.  
+The peripheral element should be designed to be compatible with any tb 
+specified in 8.3.4.8 and 8.4.4.9. 
+
+b. 
+
+52 
+
+8.3  16-bit input serial digital (ISD) interface 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+8.3.1 
+
+16-bit input serial digital interface 
+description 
+
+The signal arrangement for the 16‐bit input serial digital interface is shown in 
+Figure 8‐2.  
+The  16‐bit  input  serial  digital  interface  consists  of  three  signals,  namely 
+GATE_READ,  DATA_CLK_OUT,  and  DATA_IN.  The  GATE_READ  and 
+DATA_CLK_OUT  are  used  to  control  the  operation  of  the  interface  and  are 
+driven by the core element. The DATA_IN signal is used to carry the data to be 
+transferred and is driven by the peripheral element. 
+
+CORE
+
+PERIPHERAL
+
+GATE_READ
+
+DATA_CLK_OUT
+
+DATA_IN
+
+Figure 8‐1: 16‐bit input serial digital (ISD) interface signal arrangement 
+
+ 
+
+8.3.2 
+
+Signals skew 
+
+Introduction 
+
+8.3.2.1 
+In  the  values  listed  in  Table  8‐1  a  skew  is  considered  between  any  pair  of 
+signals  or  subsequent  edges  of  the  same  signal  to  account  for  components 
+characteristics and/or harness routing asymmetry.  
+
+Provisions 
+
+8.3.2.2 
+a.  Maximum skew measured at core side shall be Δt = 0,02 × tb .  
+b.  Maximum skew measured at peripheral side shall be Δt = 0,04 × tb .  
+
+ISD interface timing specification 
+
+8.3.3 
+The timing diagram shown in Figure 8‐2 and the timing parameters in Table 8‐1 
+specify the signal timing of the operational requirements specified in 8.3.4 for 
+the 16‐bit input serial digital interface.  
+
+53 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+line  on 
+
+the 
+
+the  DATA_IN 
+
+A  data  transfer  is  initiated  by  the  core  element  asserting  GATE_READ.  In 
+response to this the peripheral element places the value of the most significant 
+bit (bit 0) of the data word on the DATA_IN line. 
+After the GATE_READ falling edge (tcd), the core element generates a sequence 
+of  sixteen  low  going  pulses  out  onto  the  DATA_CLK_OUT  line.  The  core 
+element  samples 
+falling  edge  of  each 
+DATA_CLK_OUT pulse. This same falling edge causes the peripheral element 
+to output the next bit of the data word on the DATA_IN line. 
+The DATA_IN line state is not sampled after the last DATA_CLK_OUT falling 
+edge and can return to its quiescent ʹdonʹt careʹ state. 
+Sometime  after  the  last  DATA_CLK_OUT  falling  edge  the  core  element  de‐
+asserts the GATE_READ signal indicating the end of the data transfer (tgd).  
+GATE_READUP  can  occur  at  the  same  time,  or  even  slightly  before,  the  last 
+DATA_CLK_OUTUP. The GATE_READ signal is subsequently kept de‐asserted 
+for a short period (trec) to enable the peripheral element to recover ready for the 
+next data transfer. 
+
+ts
+
+trec
+
+GATE_READ
+
+DATA_CLK_OUT
+
+tb0
+
+DATA_IN
+
+tcd
+
+1
+
+tdh
+
+tch
+
+tb8
+
+tb
+
+tgd
+
+8
+
+9
+
+16
+
+tdv
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+Figure 8‐2: 16‐bit input serial digital (ISD) interface 
+
+ 
+
+54 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+Table 8‐1: 16‐bit input serial digital (ISD) interface characteristics 
+
+Reference  Parameter Description 
+
+Maximum  Minimum 
+
+8.3.3 a.1 
+
+tb 
+
+Bit sampling interval 
+
+tb (MAX) 
+
+tb (MIN) 
+
+8.3.3 a.2 
+
+ts 
+
+Repeated transfer period a 
+
+∞ 
+
+tb × 17 
+
+8.3.3 a.3.(a) 
+
+8.3.3 a.3.(b) 
+
+tb0 
+
+8.3.3 a.4 
+
+tcd 
+
+GATE_READDOWN to bit 0 data valid,  
+measured at peripheral element 
+
+GATE_ READDOWN to bit 0 data valid,  
+measured at core element 
+
+tb × 0,2 
+
+tb × 0,3 
+
+‐ 
+
+‐ 
+
+Clock delay, GATE_ READDOWN to first 
+DATA_CLK_OUTDOWN 
+
+tb × 7 + Δt 
+
+tb/2 – Δt 
+
+8.3.3 a.5 
+
+tdh 
+
+Data hold after DATA_CLK_OUTDOWN  
+
+‐ 
+
+8.3.3 a.6.(a) 
+
+8.3.3 a.6.(b) 
+
+8.3.3 a.7.(a) 
+
+8.3.3 a.7.(b) 
+
+tdv 
+
+tch 
+
+8.3.3 a.8 
+
+tgd 
+
+8.3.3 a.9 
+
+trec 
+
+0 
+
+‐ 
+
+‐ 
+
+Next data valid after DATA_CLK_OUTDOWN,  
+measured at peripheral element  
+
+tb × 0,7 
+
+Next data valid after DATA_CLK_OUTDOWN,  
+measured at core element 
+
+tb × 0,8 
+
+Time DATA_CLK_OUT high (clock duty 
+cycle) measured at core element 
+
+tb/2 × 1,1 
+
+tb/2 × 0,9 
+
+Time DATA_CLK_OUT high (clock duty 
+cycle) measured at peripheral element 
+
+tb/2 × 1,2 
+
+tb/2 × 0,8 
+
+Gating delay, last DATA_CLK_OUT DOWN to 
+GATE_READUP 
+
+tb × 4 + Δt 
+
+tb/2 – Δt 
+
+Recovery interval, GATE_READUP to 
+GATE_READ DOWN 
+
+∞ 
+
+tb – Δt 
+
+8.3.3 a.10 
+
+tb8 
+
+Extension of gap b between clock pulse 8 and 9 tb × 8 
+
+0 
+
+a The transfer period is calculated as follows: ts = tcd + tgd + trec + 15·tb 
+b This is to allow 8‐bit bursts in TTC‐B‐01 fashion 
+
+ 
+
+55 
+
+8.3.4 
+
+8.3.4.1 
+a. 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+16-bit input serial digital interface: signal 
+description 
+16-bit input serial digital - signals 
+
+The  16‐bit  input  serial  digital  interface  shall  consist  of  three  signals 
+named GATE_READ, DATA_CLK_OUT, and DATA_IN.  
+
+NOTE 1  GATE_READ  and  DATA_CLK_OUT  are  active 
+
+low signals. 
+
+NOTE 2  Signals are differential signals. 
+
+8.3.4.2 
+
+16-bit input serial digital - GATE_READ signal 
+quiescent state 
+
+a. 
+
+During  quiescence,  i.e.  when  no  data  transfer  is  taking  place,  the 
+GATE_READ signal shall be maintained at a high logic level by the core 
+element. 
+
+8.3.4.3 
+a. 
+
+b. 
+
+16-bit input serial digital - DATA_CLK_OUT signal 
+
+The  DATA_CLK_OUT  signal  shall  comprise  sixteen  low  going  pulses 
+during each data transfer operation. 
+The  DATA_CLK_OUT  burst  shall  last  16  times  the  bit  sampling 
+pseudoperiod (tb) plus the optional extension of the clock gap between 
+clock pulse 8 and 9 (tb8). 
+
+8.3.4.4 
+
+16-bit input serial digital - DATA_CLK_OUT signal 
+quiescent state 
+
+a. 
+
+Peripheral elements shall ignore the DATA_CLK_OUT signal when the 
+GATE_READ signal is not asserted. 
+
+NOTE  
+
+The reason is that during quiescence, i.e. when no 
+data transfer is taking place, the DATA_CLK_OUT 
+signal  can  oscillate  (e.g.  if  it  is  shared  with  other 
+peripheral elements).  
+
+16-bit input serial digital - DATA_IN signal 
+
+The peripheral element shall provide a DATA_IN signal.  
+The peripheral element shall ensure that the data on this signal is valid 
+and stable on every DATA_CLK_OUT falling edge when GATE_READ is 
+asserted. 
+
+8.3.4.5 
+a. 
+b. 
+
+8.3.4.6 
+
+16-bit input serial digital - DATA_IN signal 
+quiescent state 
+
+a. 
+b. 
+
+During quiescence, the core element shall disregard the DATA_IN signal.  
+Peripheral element should maintain the DATA_IN signal in a stable state.  
+
+NOTE  
+
+The actual level used by the peripheral element is 
+not mandated. 
+
+56 
+
+8.3.4.7 
+a. 
+
+16-bit input serial digital - data transfer 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+b. 
+
+c. 
+
+d. 
+
+Data  transfer  on  the  16‐bit  ISD  shall  be  started  by  the  core  element, 
+asserting the GATE_READ signal. 
+In response to the GATE_READDOWN the peripheral element shall set the 
+DATA_IN signal to the value of the most significant bit, bit 0, of the data 
+word. 
+The core element shall then sample the DATA_IN signal on each falling 
+edge of the DATA_CLK_OUT (DATA_CLK_OUTDOWN ). 
+After  each  DATA_CLK_OUT  falling  edge  (DATA_CLK_OUTDOWN  ),  the 
+peripheral element shall set the value of the DATA_IN signal to the value 
+of the next most significant bit.  
+
+NOTE  
+
+That means that if the current value of DATA_IN 
+is bit n, the new value of DATA_IN is bit n+1. 
+
+e.  When the 8th clock pulse on DATA_CLK_OUT has been generated, the 
+
+gap to the next clock pulse may be increased by up to tb × 8.  
+
+f.  When bit 15 of DATA_IN is reached, DATA_IN may be set to any value;  
+
+NOTE  
+
+The  reason  is  that  the  next  value  of  DATA_IN  is 
+not  important  since  the  DATA_IN  signal  is  not 
+sampled after this. 
+
+16-bit input serial digital - bit sampling interval, tb 
+
+The  bit  sampling  interval,  tb,  i.e.  the  interval  between  successive 
+DATA_CLK_OUT  rising  edges,  should  be  selected  from  the  options 
+shown in Table 8‐2. 
+
+8.3.4.8 
+a. 
+
+Table 8‐2: tb values 
+
+Reference tb (MIN) 
+
+tb (MAX) 
+
+Maximum 
+sustainable data 
+
+8.3.4.8 a 
+
+7,95 μs 
+
+8.3.4.8 b 
+
+7,59 μs 
+
+8.3.4.8 c 
+
+3,95 μs  
+
+8.3.4.8 d 
+
+3,78 μs 
+
+8,05 μs 
+
+7,67 μs 
+
+4,05 μs 
+
+3,85 μs 
+
+ 
+
+t
+
+(Kb )
+
+118,387 
+
+124,002 
+
+238,273 
+
+248,988 
+
+8.3.4.9 
+a. 
+
+16-bit input serial digital - sampling period, ts 
+
+The  sampling  period,  ts,  defined  as  the  minimum  period  between  one 
+GATE_READDOWN  and  the  next  opportunity  for  a  GATE_READDOWN, 
+shall be not less than tb × 17.  
+
+NOTE  
+
+The transfer period is calculated as follows:   
+ts = tcd + tgd + trec + 15∙tb. 
+
+57 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+8.3.4.10  16-bit input serial digital - data hold after 
+
+DATA_CLK_OUTUP, tdh 
+
+a. 
+
+The data hold time after the DATA_CLK_OUT falling edge, tdh, shall be 
+not less than 0. 
+
+NOTE  
+
+This  ensures  that  the  propagation  delay  always 
+gives enough margin to hold the data.  
+
+8.4  16-bit output serial digital (OSD) interface description 
+
+8.4.1 
+
+16-bit output serial digital interface 
+description 
+
+The signal arrangement for the 16‐bit output serial digital interface is shown in 
+Figure  8‐2.  Unless  otherwise  specified,  signal  properties  are  measured  at  the 
+core interface. 
+The  16‐bit  output  serial  digital  interface  consists  of  three  signals,  namely 
+GATE_WRITE, DATA_CLK_OUT, and DATA_OUT. All of three these signals 
+are driven by the core element. The GATE_WRITE and DATA_CLK_OUT are 
+used to control the operation of the interface and the DATA_OUT signal is used 
+to carry the data to be transferred.  
+
+CORE
+
+PERIPHERAL
+
+GATE_WRITE
+
+DATA_CLK_OUT
+
+DATA_OUT
+
+Figure 8‐3: 16‐bit output serial digital (OSD) interface signal arrangement 
+
+ 
+
+8.4.2 
+
+Signals skew 
+
+8.4.2.1  Overview 
+In  the  values  listed  in  Table  8‐3  a  skew  is  considered  between  any  pair  of 
+signals  or  subsequent  edges  of  the  same  signal  to  account  for  component 
+characteristics and/or harness routing asymmetry.  
+
+58 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+Provisions 
+
+8.4.2.2 
+a.  Maximum skew measured at core side shall be Δt = 0,02 × tb .  
+b.  Maximum skew measured at peripheral side shall be Δt = 0,04 × tb .  
+
+8.4.3  OSD interface timing specification 
+The timing diagram shown in Figure 8‐4 and the timing parameters in Table 8‐3 
+specify the timing of the operational requirements specified in 8.4.4 for the 16‐
+bit output serial digital interface.  
+A data transfer is started by the core element asserting the GATE_WRITE signal 
+to  indicate  that  a  data  transfer  is  underway.  After  this  (tb0)  the  core  element 
+places the value of the most significant data bit (bit 0) on the DATA_OUT line. 
+Some time after the GATE_WRITEDOWN, 16 low going pulses are output on the 
+DATA_CLK_OUT  signal.  Each  bit  of  the  data  word,  including  bit‐0  is 
+guaranteed valid on the DATA_CLK_OUT falling edge and for a given period 
+before, data set up time tsu, and after it, data hold time tdh. 
+GATE_WRITE  is  de‐asserted  after  the  last  GATE_CLK_OUTDOWN.  This  de‐
+assertion  can  thus  occur  before  the  final  GATE_CLK_OUTUP.  GATE_WRITE 
+then is not reasserted before the interface recovery period has expired. 
+
+ts
+
+trec
+
+GATE_WRITE
+
+DATA_CLK_OUT
+
+tb0
+
+DATA_OUT
+
+tcd
+
+1
+
+tdh
+
+tch
+
+tb8
+
+tb
+
+tgd
+
+8
+
+9
+
+16
+
+tdv
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+15
+
+Figure 8‐4: 16‐bit output serial digital (OSD) interface 
+
+ 
+
+59 
+
+Table 8‐3: 16‐bit output serial digital (OSD) interface characteristics 
+
+Reference  Parameter Description 
+
+Maximum  Minimum
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+8.4.1 a.1 
+
+8.4.1 a.2 
+
+tb 
+
+ts 
+
+Repeated transfer period a 
+
+Bit sampling interval 
+
+tb (MAX) 
+
+tb (MIN) 
+
+8.4.1 a.3 
+
+tb0 
+
+Bit 0 data valid after GATE_WRITEDOWN 
+
+8.4.1 a.4 
+
+tcd 
+
+Clock delay, GATE_WRITEDOWN to first 
+DATA_CLK_OUTDOWN 
+
+8.4.1 a.5 
+
+tdh 
+
+Data hold after DATA_CLK_OUTDOWN 
+
+8.4.1 a.6 
+
+tsu 
+
+Data valid before DATA_CLK_OUTDOWN 
+
+∞ 
+
+tb/4 
+
+tb × 17 
+
+‐ 
+
+tb × 7 + Δt 
+
+tb/2 – Δt 
+
+‐ 
+
+‐ 
+
+tb/8 – Δt 
+
+tb/4 – Δt 
+
+8.4.1 a.7.(a) 
+
+8.4.1 a.7.(b) 
+
+tch 
+
+8.4.1 a.8 
+
+tgd 
+
+8.4.1 a.9 
+
+trec 
+
+Time DATA_CLK_OUT high (clock duty cycle) 
+measured at core element 
+
+tb/2 × 1,1 
+
+tb/2 × 0,9 
+
+Time DATA_CLK_OUT high (clock duty cycle) 
+measured at peripheral element 
+
+tb/2 × 1,2 
+
+tb/2 × 0,8 
+
+Gating delay, last DATA_CLK_OUTDOWN to 
+GATE_WRITEUP 
+
+tb × 4 + Δt 
+
+tb/2 – Δt 
+
+Recovery interval, GATE_WRITEUP to 
+GATE_WRITEDOWN 
+
+∞ 
+
+tb – Δt 
+
+8.4.1 a.10 
+
+tb8 
+
+Extension of gap b between clock pulse 8 and 9 
+
+tb × 8 
+
+0 
+
+a   The transfer period is calculated as follows: ts = tcd + tgd + trec + 15·tb 
+b   This is to allow 8‐bit bursts in TTC‐B‐01 fashion 
+
+ 
+
+8.4.4 
+
+8.4.4.1 
+a. 
+
+b. 
+
+8.4.4.2 
+a. 
+
+16-bit output serial digital interface signal 
+description 
+
+16-bit output serial digital - signals 
+
+The  16‐bit  output  serial  digital  interface  shall  consist  of  three  signals 
+named GATE_WRITE, DATA_CLK_OUT, and DATA_OUT.  
+Signals shall be differential. 
+
+16-bit output serial digital - GATE_WRITE signal 
+
+The  core  element  shall  provide  a  GATE_WRITE  signal  asserted  by  the 
+core element during a data transfer operation. 
+
+60 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+8.4.4.3 
+
+16-bit output serial digital - GATE_WRITE signal 
+quiescent state 
+
+a. 
+
+During  quiescence,  i.e.  when  no  data  transfer  is  taking  place,  the 
+GATE_WRITE signal shall be maintained at a high logic level by the core 
+element. 
+
+8.4.4.4 
+a. 
+b. 
+
+c. 
+
+16-bit output serial digital - DATA_CLK_OUT signal 
+
+The core element shall provide a DATA_CLK_OUT signal.  
+The  DATA_CLK_OUT  signal  shall  comprise  sixteen  low  going  pulses 
+during each data transfer operation. 
+The  DATA_CLK_OUT  burst  shall  last  16  times  the  bit  sampling 
+pseudoperiod  (tb)  plus  the  optional  extension  of  the  clock  gap  between 
+clock pulses 8 and 9 (tb8). 
+
+8.4.4.5 
+
+16-bit output serial digital - DATA_CLK_OUT signal 
+quiescent state 
+
+a. 
+
+Peripheral elements shall ignore the DATA_CLK_OUT signal when the 
+GATE_WRITE signal is not asserted. 
+
+NOTE  
+
+The reason is that during quiescence, i.e. when no 
+data transfer is taking place, the DATA_CLK_OUT 
+signal  can  oscillate  (e.g.  if  it  is  shared  with  other 
+peripheral elements).  
+
+16-bit output serial digital - DATA_OUT signal 
+
+8.4.4.6 
+a. 
+
+The core element shall provide a DATA_OUT signal used to transfer the 
+data word bit serially. 
+
+8.4.4.7 
+
+16-bit output serial digital - DATA_OUT signal 
+quiescent state 
+
+a. 
+
+Peripheral  elements  shall  ignore  the  DATA_OUT  signal  when  the 
+GATE_WRITE signal is not asserted. 
+
+NOTE  
+
+The reason is that during quiescence, i.e. when no 
+data  transfer  is  taking  place,  the  DATA_OUT 
+signal  can  change  (e.g.  if  it  is  shared  with  other 
+peripheral elements).  
+
+16-bit output serial digital - data transfer 
+
+Data  transfer  on  the  16‐bit  OSD  shall  be  started  by  the  core  element, 
+asserting the GATE_WRITE signal. 
+Shortly  after  the  GATE_WRITEDOWN  the  core  element  shall  set  the 
+DATA_OUT signal to the value of the most significant bit, bit 0, of the 
+data word to be transferred. 
+
+8.4.4.8 
+a. 
+
+b. 
+
+61 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+c. 
+
+d. 
+
+e. 
+
+The  core  element  shall  ensure  that  the  DATA_OUT  signal  is  valid  on 
+each falling edge of the DATA_CLK_OUT (DATA_CLK_OUTDOWN) when 
+GATE_WRITE is asserted.  
+The  DATA_OUT  signal  shall  meet  the  data  set‐up  and  hold  times  as 
+specified in Table 8‐3.  
+Shortly  after 
+(after 
+falling  edge 
+(DATA_CLK_OUTDOWN), the core element shall update the value of the 
+DATA_OUT signal to the value of the next most significant bit.  
+
+tdh)  each  DATA_CLK_OUT 
+
+NOTE  
+
+that 
+
+That  means 
+the  current  value  of 
+DATA_OUT is bit n, the new value of DATA_OUT 
+is bit n+1. 
+
+if 
+
+f.  When  the  8th  clock  pulse on  DATA_CLK_OUT  has  been  generated,  the 
+
+gap to the next clock pulse may be increased by up to tb × 8.  
+g.  When bit 15 of DATA_IN is reached, any value may be used; 
+
+NOTE  
+
+The reason is that the next value of DATA_OUT is 
+not  important  since  the  peripheral  element  does 
+not sample the DATA_OUT signal after this.  
+
+8.4.4.9 
+a. 
+
+16-bit output serial digital - bit sampling interval, tb 
+The  bit  sampling  interval,  tb,  i.e.  the  interval  between  successive 
+DATA_CLK_OUT  rising  edges,  should  be  selected  from  the  options 
+shown in Table 8‐2. 
+
+8.4.4.10  16-bit output serial digital - sampling period, ts 
+a. 
+
+The  sampling  period,  ts,  defined  as  the  minimum  period  between  one 
+GATE_WRITEDOWN  and  the  next  opportunity  for  a  GATE_WRITEDOWN, 
+shall be not less than tb × 17.  
+
+NOTE  
+
+The transfer period is calculated as follows:   
+ts = tcd + tgd + trec + 15∙tb. 
+
+8.5  16-bit bi-directional serial digital (BSD) interface 
+
+description 
+
+GATE_WRITE, 
+GATE_READ, 
+DATA_CLK_OUT, 
+DATA_OUT, and 
+DATA_IN. 
+
+The  16‐bit  bi‐directional serial  digital  interface  provides  a  bi‐directional serial 
+digital data transfer capability using five signals as shown in Figure 8‐5: 
+• 
+• 
+• 
+• 
+• 
+The GATE_WRITE and GATE_READ signals are used to indicate the direction 
+of the transfer. The signal timing during output transfers is identical to that for 
+the 16‐bit output serial digital interface and during input transfers it is identical 
+to the 16‐bit input serial digital interface.  
+
+62 
+
+CORE
+
+GATE_WRITE
+
+GATE_READ
+
+DATA_CLK_OUT
+
+DATA_OUT
+
+DATA_IN
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+PERIPHERAL
+
+(OSD)
+
+(ISD)
+
+(OSD + ISD)
+
+(OSD)
+
+(ISD)
+
+ 
+
+Figure 8‐5: 16‐bit bi‐directional serial digital interface signal arrangement 
+
+• 
+
+There are two advantages offered by this interface.  
+• 
+
+Firstly, it offers the possibility of writing a data value out to a peripheral 
+element and then reading the same value back in order to verify that the 
+write operation was performed correctly. 
+Secondly,  the  interface  can  be  expanded  to  address  more  than  one 
+register location within a peripheral element using only two extra signals 
+for  each  additional  register.  The  extra  signals  used  are  a  dedicated 
+GATE_WRITE(READ) signal for each new register to be accessed. All of 
+the  other  signals  can  be  common  to  all  registers.  This  means  that  n 
+registers  can  be  accessed  using  only  2n  +  3  signals  which  can  lead  to 
+significant savings in terms of cables and connectors. 
+
+During  an  input  transfer  the  data  is  input  via  the  DATA_IN  signal  and  the 
+DATA_OUT signal assumes its quiescence state. During a data output transfer 
+the data is output on the DATA_OUT signal and the DATA_IN signal assumes 
+its quiescence state. 
+
+8.6  Serial digital interface electrical circuits description 
+
+The serial digital interface circuits are the conducting paths which convey the 
+data  and  control  signals  which  make  up  the  interface  between  the  core  and 
+peripheral elements. Each circuit consists of the conductors and any connectors 
+or other components which comprise the electrical path. 
+Two circuits are used for each signal. These circuits operate in a balanced mode 
+with reference to the core element differential ground potential, i.e. when one 
+circuit carries a positive voltage, the complementary circuit carries a negative 
+voltage of the same magnitude.  
+Figure  8‐6  shows  the  relationship  between  circuits,  signals,  and  the  interface 
+definition point for balanced differential serial digital interfaces. 
+
+63 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+Peripheral
+Element
+
+Output
+Signal
+
+Core
+
+Element
+
+Input
+Signal
+
+Point of
+Interface
+Definition
+
+VOL
+
++ve
+-ve
+Output
+Circuits
+
+VOH
+
+IOH
+IOL
+
+IOH
+IOL
+
+Input
+Circuits
+
++ve
+-ve
+
+*
+
+VIH
+
+I
+IH
+IIL
+
+VIL
+
+I
+IH
+I IL
+
+Local
+
+Connection
+
+Points
+
+*
+
+*Reference potential for balanced  voltage measurements
+
+ 
+
+Figure 8‐6: Balanced differential circuits for serial digital interfaces  
+
+8.7  Balanced differential serial digital interface signals 
+
+8.7.1 
+
+Balanced differential serial digital interface - 
+GATE_WRITE circuits 
+
+a. 
+
+b. 
+
+A  balanced  differential  pair  of  circuits  called  GATE_WRITE+  and 
+GATE_WRITE‐ shall be provided.  
+The balanced differential pair specified in 8.7.1a shall  
+1. 
+2. 
+
+be driven by the core element, and  
+carry the GATE_WRITE signal. 
+
+8.7.2 
+
+Balanced differential serial digital interface - 
+DATA_CLK_OUT circuits 
+
+a. 
+
+b. 
+
+A  balanced  differential  pair  of  circuits  called  DATA_CLK_OUT+  and 
+DATA_CLK_OUT‐ shall be provided.  
+The balanced differential pair specified in 8.7.2a. shall  
+1. 
+2. 
+
+be driven by the core element, and  
+carry the DATA_CLK_OUT signal. 
+
+8.7.3 
+
+Balanced differential serial digital interface - 
+DATA_OUT circuits 
+
+a. 
+
+For output serial digital interfaces, a balanced differential pair of circuits 
+called DATA_OUT+ and DATA_OUT‐ shall be provided.  
+
+64 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+b. 
+
+The balanced differential pair specified in 8.7.3a shall  
+1. 
+2. 
+
+be driven by the peripheral element, and  
+carry the DATA_OUT signal. 
+
+8.7.4 
+
+Balanced differential serial digital interface - 
+DATA_IN circuits 
+
+a. 
+
+b. 
+
+For input serial digital interfaces, a balanced differential pair of circuits 
+called DATA_IN+ and DATA_IN‐ shall be provided.  
+The balanced differential pair specified in 8.7.4a shall  
+1. 
+2. 
+
+be driven by the peripheral element, and  
+carry the DATA_IN signal. 
+
+8.7.5 
+
+Balanced differential serial digital interface - 
+GATE_READ circuits 
+
+a. 
+
+b. 
+
+For bi‐directional serial digital interfaces, a balanced differential pair of 
+circuits called GATE_READ+ and GATE_READ‐ shall be provided.  
+The balanced differential pair specified in 8.7.5a shall  
+1. 
+2. 
+
+be driven by the core element, and  
+carry the GATE_READ signal. 
+
+8.8  Serial digital interface circuit electrical characteristics 
+
+Introduction 
+
+8.8.1 
+ANSI/TIA/EIA‐422  (hereafter  briefly  RS‐422)  defines  a  balanced  (differential) 
+interface; specifying a single, unidirectional driver with multiple receivers (up 
+to  32).  RS‐422  will  support  Point‐to‐Point,  Multi‐Drop  circuits,  but  not  Multi‐
+Point.  
+Although the EIA standard does not show circuit grounding in either of the RS‐
+422 circuits, this Standard includes recommendation on grounding in 8.8.2a.  
+
+Provisions 
+
+8.8.2 
+a. 
+
+2. 
+
+Serial digital interface circuits should be grounded as follows: 
+1. 
+
+The  drivers  and  receivers  should  be  connected  directly  to  circuit 
+ground.  
+The circuit ground should be connected to chassis ground.  
+NOTE 1  Cabling is not specified in RS‐422 but information 
+
+can be found in [V11]. 
+
+NOTE 2  Figure 8‐7 illustrates this provision.  
+
+65 
+
+b. 
+
+Serial  digital  interface  circuit  electrical  characteristics  shall  meet  the 
+requirements specified in Table 8‐4. 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+NOTE 1  Table 8‐4 includes characteristics for compatibility 
+with  RS‐422  (indicated  with  the  number  (422)  in 
+the table), and specific characteristics 
+
+NOTE 2  The  values 
+
+specified  here‐in  grant  correct 
+
+operations in the following conditions: 
+•  maximum signal frequency: 1 MHz; 
+•  maximum cable length: 16 m; 
+•  cable  type:  Twisted  Shielded  Pair  120  Ω 
+
+Impedance. 
+
+NOTE 3  Compliance  to  the  parameters  indicated  by  the 
+note  (422)  in  Table  8‐4  can  be  achieved  by  use  of 
+the following circuits: 
+HS‐26C(T)31RH 
+HS‐26C(T)32RH 
+HS‐26CLV31RH 
+HS‐26CLV32RH 
+Items 1 and 2 are 5 V supplied devices, items 3 and 
+4  are  3,3  V  supplied  devices.  These  devices  can 
+interoperate  and  comply  with  the  specification  in 
+Table 8‐4. 
+
+c. 
+
+d. 
+
+Serial  digital  interface  shall  be  compliant  to  the  interface  arrangement 
+specified in Figure 8‐7.  
+Compliance  to  microcircuits  characteristics  others  than  the  parameters 
+indicated by the note (422) in Table 8‐4., shall be verified on the project by 
+Review of Design or Test. 
+
+Figure 8‐7: Example of serial digital interface arrangement 
+
+ 
+
+66 
+
+Table 8‐4: Serial digital interface electrical characteristics 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+Value 
+
+Type 
+
+Notes 
+
+Differential 
+
+1,8 V ≤ |VOC| ≤ 6,0 V 
+
+Ve ≤ 6 V 
+
+(422) 
+
+Specific 
+
+(422) 
+
+ 
+
+ 
+
+ 
+
+105 Ω ≤ Zout ≤ 135 Ω 
+
+Specific 
+
+Note 1 
+
+Reference  Characteristics 
+SOURCE CIRCUIT 
+8.8 a.1 
+
+8.8 a.2 
+
+8.8 a.3 
+
+8.8 a.4 
+
+8.8 a.5 
+
+Electrical characteristics 
+Differential output 
+voltage open circuit, VOC 
+Output voltage TRUE and 
+COMP lines, Ve 
+Differential output 
+impedance, Zout 
+Short circuit output 
+current, IA 
+
+8.8 a.6 
+
+Rise time, tr 
+
+8.8 a.7 
+
+8.8 a.8 
+
+8.8 a.9 
+
+Output leakage current in 
+power off, IO 
+Fault voltage emission, 
+Vsfe 
+Fault voltage tolerance, 
+Vsft 
+
+RECEIVER CIRCUIT 
+8.8 a.10 
+8.8 a.11 
+
+Electrical characteristics 
+Series protection, Ris 
+Max input voltage (each 
+input w.r.t. ground), VI 
+Common mode 
+acceptance (V1+V2)/2, VCM 
+
+8.8 a.12 
+
+8.8 a.13 
+
+8.8 a.14 
+
+8.8 a.15 
+
+8.8 a.16 
+
+|IA| ≤ 150 mA for each terminal 
+to ground 
+tr ≤ 0,1 × tb 
+tr ≤ 20 ns if tb ≤ 200 ns 
+
+if tb ≥ 200 ns 
+
+|IO| ≤ 100 μA  
+
+0 V to 7 V (through 50 Ω minimum series 
+resistance) 
+‐1,5 V to 7 V (applied through 1 kΩ series 
+resistance Ris) 
+
+Differential 
+2 * 1 kΩ 
+
+± 10 V 
+
+– 4 V to + 7 V 
+
+(422) 
+
+ 
+
+(422) 
+
+Note 2 
+
+(422) 
+
+Note 3 
+
+Specific 
+
+Specific 
+
+(422) 
+Specific 
+
+ 
+
+ 
+
+ 
+ 
+
+(422) 
+
+Note 4 
+
+Specific 
+
+Note 5 
+
+Specific 
+
+Note 6 
+
+Specific 
+
+Specific 
+
+ 
+
+ 
+
+Differential input voltage, 
+VDI 
+
+Fault voltage emission, 
+Vrfe 
+Fault voltage tolerance, 
+Vrft 
+
+± |600 mV to 6 V| 
+each voltage in this range must be 
+interpreted as valid signal 
+0 V to 5,5 V (through 1 kΩ series resistance Ris) 
+
+‐1,5 V to 8,5 V 
+
+Note 1:  Output impedance to be matched with 120 Ω cable impedance. Recommended range of the Ros resistors 
+
+between 50 Ω and 60 Ω, considering 10 Ω typical driver output impedance, when using HS‐
+26C(T)31RH. 
+tb time duration of the unit interval at the applicable data rate (normally 0,5 * period duration). 
+–0,25 V to +6 V applied at the output terminals. 
+
+Note 2: 
+Note 3: 
+Note 4:  RS‐422 standard parameters given for reference only. 
+Note 5: 
+Note 6:  Minimum threshold considering 1 kΩ series resistors (the devices commonly used have a threshold of 
+
+This figure is compatible with both performances of 5 V and 3,3 V devices (HS26CLV32RH). 
+
+±400 mV, for reference see Figure 8‐8). 
+
+67 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+Figure 8‐8: Threshold levels for ECSS‐E‐50‐14 differential circuits 
+
+ 
+
+68 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+Annex A (informative) 
+Tailoring guidelines 
+
+Tailoring  for  this  Standard  is  limited  to  the  adoption  of  specific  discrete 
+interfaces listed hereby: 
+• 
+
+Analogue signal interfaces 
+
+⎯ 
+
+⎯ 
+
+Analogue signal monitor (ASM) interface 
+Temperature sensors monitor (TSM) interfaces 
+
+• 
+
+• 
+
+• 
+
+Bi‐level discrete input interfaces 
+
+⎯ 
+
+⎯ 
+
+Bi‐level discrete monitor (BDM) interface 
+Bi‐level switch monitor (BSM) interface 
+
+Pulsed command interfaces 
+
+⎯ 
+
+⎯ 
+
+High power command (HPC) interfaces 
+Low power command (LPC) interface 
+
+Serial digital interfaces 
+
+⎯ 
+
+⎯ 
+
+⎯ 
+
+16‐bit input serial digital (ISD) interface 
+16‐bit output serial digital (OSD) interface description 
+16‐bit bi‐directional serial digital (BSD) interface description 
+
+Modification of existing or addition of requirements within a specific interface 
+definition should not be done. 
+ 
+
+69 
+
+ECSS‐E‐ST‐50‐14C 
+31 July 2008 
+
+Bibliography 
+
+ECSS‐S‐ST‐00   
+
+ECSS system ‐ Description, implementation and 
+general requirements 
+
+ 
+
+70 
+
+
