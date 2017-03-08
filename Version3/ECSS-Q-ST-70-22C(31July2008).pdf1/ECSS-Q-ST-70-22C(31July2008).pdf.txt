@@ -1,0 +1,657 @@
+ECSS-Q-ST-70-22C 
+31 July 2008 
+
+ 
+
+Space product 
+assurance 
+Control of limited shelf-life materials 
+
+ 
+
+ECSS Secretariat 
+ESA-ESTEC 
+Requirements & Standards Division 
+Noordwijk, The Netherlands 
+
+ECSS‐Q‐ST‐70‐22C 
+31 July 2008 
+
+Foreword 
+This  Standard  is  one  of  the  series  of  ECSS  Standards  intended  to  be  applied  together  for  the 
+management,  engineering  and  product  assurance  in  space  projects  and  applications.  ECSS  is  a 
+cooperative  effort  of  the  European  Space  Agency,  national  space  agencies  and  European  industry 
+associations for the purpose of developing and maintaining common standards. Requirements in this 
+Standard are defined in terms of what shall be accomplished, rather than in terms of how to organize 
+and  perform  the  necessary  work.  This  allows  existing  organizational  structures  and  methods  to  be 
+applied where they are effective, and for the structures and methods to evolve as necessary without 
+rewriting the standards. 
+This Standard has been prepared by the ECSS Executive Secretariat, endorsed by the Document and 
+Discipline Focal points, and approved by the ECSS Technical Authority. 
+
+Disclaimer 
+ECSS does not provide any warranty whatsoever, whether expressed, implied, or statutory, including, 
+but not limited to, any warranty of merchantability or fitness for a particular purpose or any warranty 
+that  the  contents  of  the  item  are  error‐free.  In  no  respect  shall  ECSS  incur  any  liability  for  any 
+damages, including, but not limited to, direct, indirect, special, or consequential damages arising out 
+of, resulting from, or in any way connected to the use of this Standard, whether or not based upon 
+warranty, business agreement, tort, or otherwise; whether or not injury was sustained by persons or 
+property or otherwise; and whether or not loss was sustained from, or arose out of, the results of, the 
+item, or any services that may be provided by ECSS. 
+
+Published by:  
+ 
+ 
+ 
+Copyright:  
+
+ESA Requirements and Standards Division 
+ESTEC, P.O. Box 299, 
+2200 AG Noordwijk 
+The Netherlands 
+2008 © by the European Space Agency for the members of ECSS 
+
+2 
+
+ECSS‐Q‐ST‐70‐22C 
+31 July 2008 
+
+Change log 
+
+ECSS‐Q‐70‐22A 
+21 January 2000 
+ECSS‐Q‐70‐22B 
+ECSS‐Q‐ST‐70‐22C 
+31 July 2008 
+
+First issue 
+Transforming ESA‐PSS‐01‐722 into an ECSS Standard 
+Never issued 
+Second issue 
+Redrafting of ECSS‐Q‐70‐22A according to new ECSS drafting rules and 
+template. 
+In particular: 
+•  The content of the original clause 4 was moved to the clause 4.1. 
+•  The first sentence of the original requirement 4.3a was deleted because it 
+is covered by the requirement 4.1.2.1a. The second sentence was moved 
+to a note after the requirement 4.1.2.2a. 
+
+•  The original requirement 4.3d was moved to a note after the 
+
+requirement 4.1.3d. 
+
+•  The content of the original clause 4.6.2 was moved to the informative 
+
+Annex B and referenced in the clause 4.1.6. 
+
+•  The content of the original clause 5 was moved to the clause 4.2 and 
+
+consolidated during the on‐site meeting. 
+
+•  A DRD for evaluation reports was created in the normative Annex A. 
+
+3 
+
+ECSS‐Q‐ST‐70‐22C 
+31 July 2008 
+
+Table of contents 
+
+Change log.................................................................................................................3 
+
+1 Scope.......................................................................................................................5 
+
+2 Normative references.............................................................................................6 
+
+3 Terms, definitions and abbreviated terms............................................................7 
+3.1  Terms defined in other standards...............................................................................7 
+3.2  Terms specific to the present standard ......................................................................7 
+3.3  Abbreviated terms ......................................................................................................7 
+
+4 Requirements..........................................................................................................8 
+4.1  Control of material life ................................................................................................8 
+4.1.1  Hazards, health and safety precautions .......................................................8 
+4.1.2  Material control.............................................................................................8 
+Assessment of shelf-life................................................................................9 
+4.1.3 
+4.1.4 
+Extension of shelf-life (re-certification) .......................................................10 
+4.1.5  Disposal of materials ..................................................................................10 
+Acceptance criteria, re-certification testing.................................................10 
+4.1.6 
+4.2  Quality assurance.....................................................................................................10 
+4.2.1  Data............................................................................................................10 
+4.2.2  Calibration ..................................................................................................11 
+
+Annex A (normative) Shelf-life material evaluation report - DRD........................12 
+
+Annex B (informative) Examples of properties to be measured .........................13 
+
+Bibliography.............................................................................................................14 
+ 
+
+4 
+
+ECSS‐Q‐ST‐70‐22C 
+31 July 2008 
+
+1 
+Scope 
+
+Several classes of materials depend on a chemical reaction for their application 
+and their final properties are sensitive to the exact composition of the reactants. 
+The final properties vary with the reactants’ age and storage condition.  
+This Standard defines the requirements for the identification, handling, storage 
+and  control  of  limited  shelf‐life  materials  employed  in  the  fabrication  of 
+spacecraft and associated equipment. 
+This standard may be tailored for the specific characteristic and constrains of a 
+space project in conformance with ECSS‐S‐ST‐00. 
+
+5 
+
+ECSS‐Q‐ST‐70‐22C 
+31 July 2008 
+
+2 
+Normative references 
+
+The  following  normative  documents  contain  provisions  which,  through 
+reference  in  this  text,  constitute  provisions  of  this  ECSS  Standard.  For  dated 
+references, subsequent amendments to, or revision of any of these publications 
+do not apply, However, parties to agreements based on this ECSS Standard are 
+encouraged to investigate the possibility of applying the more recent editions of 
+the  normative  documents  indicated  below.  For  undated  references,  the  latest 
+edition of the publication referred to applies. 
+ 
+
+ECSS‐S‐ST‐00‐01 
+ECSS‐Q‐ST‐10‐09 
+
+ECSS‐Q‐ST‐40 
+ECSS‐Q‐ST‐70 
+
+ECSS system – Glossary of terms 
+Space product assurance – Nonconformance control 
+system 
+Space product assurance ‐ Safety 
+Space product assurance ‐ Materials, mechanical parts 
+and processes 
+
+6 
+
+ECSS‐Q‐ST‐70‐22C 
+31 July 2008 
+
+3 
+Terms, definitions and abbreviated terms 
+
+3.1  Terms defined in other standards 
+the 
+
+the  purpose  of 
+
+For 
+ECSS‐S‐ST‐00‐01 and ECSS‐Q‐ST‐70 apply. 
+
+this  Standard, 
+
+terms  and  definitions 
+
+from 
+
+3.2  Terms specific to the present standard 
+
+batch 
+
+3.2.1 
+quantity produced at one operation 
+
+NOTE   One batch can be subdivided into several lots. 
+
+shelf-life 
+
+3.2.2 
+period  of  time  during  which  a  material  can  be  processed  to  produce  final 
+properties with consistently stable parameters 
+
+3.3  Abbreviated terms 
+
+For the purpose of this Standard, the abbreviated terms from ECSS‐S‐ST‐00‐01 
+and the following apply: 
+ 
+
+Abbreviation  Meaning 
+RH 
+
+relative humidity 
+
+ 
+
+7 
+
+ECSS‐Q‐ST‐70‐22C 
+31 July 2008 
+
+4 
+Requirements 
+
+4.1  Control of material life 
+
+Hazards, health and safety precautions 
+
+4.1.1 
+a.  Materials and parts with hazardous characteristics shall be identified and 
+manage in conformance with the “Safety programme plan” specified in 
+ECSS‐Q‐ST‐40. 
+Procedures to control hazards, health and safety to personnel, equipment 
+or materials shall be defined and implemented. 
+
+b. 
+
+4.1.2  Material control 
+
+4.1.2.1 
+a. 
+
+Procurement document 
+
+For  procurement  specifications  and  purchase  orders,  the  date  of 
+manufacture,  storage  conditions  and  shelf‐life  of  the  products  shall  be 
+declared. 
+
+4.1.2.2 
+a.  Materials  shall  be  labelled  with  the  shelf‐life  and  the  date  of  the 
+
+Identification 
+
+beginning of life or the date of manufacture (see clause 4.1.3). 
+
+NOTE  
+
+shelf‐life  as  originally 
+
+In some critical applications, the project can reduce 
+the 
+the 
+to  meet 
+manufacturer  or  supplier 
+particularly 
+assurance 
+requirements. 
+
+stringent 
+
+stated  by 
+
+in  order 
+product 
+
+b. 
+
+For  quantities  which  are  split  from  a  batch,  it  shall  be  ensured  that 
+materials  are  fully  traceable  to  it  and  bear  the  same  date  and  life 
+indications. 
+
+Storage 
+
+4.1.2.3 
+a.  Materials shall be stored in a nominally clean area at (22 ± 3) °C with a 
+relative  humidity  of  (55  ±  10) %  unless  specified  otherwise  by  the 
+manufacturer or supplier. 
+
+8 
+
+ECSS‐Q‐ST‐70‐22C 
+31 July 2008 
+
+NOTE   A  wide  range  of  pre‐impregnated  composites, 
+adhesives and related materials which are used in 
+the  fabrication  of  spacecraft  structures  at  lower 
+temperatures to preserve their shelf‐lives. Refer to 
+clause 4.1.3. 
+
+b. 
+
+Storage  areas  shall  be  organized  and  controlled  in  such  a  way  that 
+limited shelf‐life items are identified. 
+
+NOTE  
+
+The reason is to avoid the possibility of over‐aged 
+material being used. 
+
+4.1.2.4  Handling 
+a.  Materials  shall  be  handled  with  clean  lint‐free  or  nylon  gloves  unless 
+
+their use is precluded for reasons of safety. 
+
+NOTE  
+
+For  example,  when  handling  corrosive,  toxic  and 
+oxidizing substances. 
+
+4.1.3 
+a. 
+
+Assessment of shelf-life 
+
+If  the  shelf‐life  cannot  be  obtained,  the  following  steps  shall  be 
+performed: 
+1. 
+
+Certify the material at incoming inspection. 
+
+NOTE  
+
+Perform tests relevant to the application of the 
+material to ensure that the properties are within 
+the 
+those  values  either  specified  within 
+procurement 
+in 
+the 
+manufacturer’s 
+no 
+(where 
+procurement specification exists). 
+
+specification 
+
+or 
+
+data 
+
+sheet 
+
+2.  Where satisfactory results are obtained, state that the material has 
+
+3. 
+4. 
+
+spent half its shelf‐life at the time of delivery. 
+If the results are not satisfactory, reject the material. 
+Put the date of manufacture and shelf‐life on the label attached to 
+limited shelf‐life material in conformance with clause 4.1.2.2. 
+
+b. 
+
+The quantity in each container shall be compatible with the planned short 
+term usage. 
+NOTE  
+
+The  reason  is  that  the  number  of  container 
+openings is kept to the minimum possible. 
+
+c.  Materials shall be decanted from larger into smaller containers if there is 
+
+d. 
+
+large air space above the material. 
+For materials which are stored at temperature below zero, a system shall 
+be  defined  and  implemented  to  record  the  time  exposed  to  room 
+temperature and the consequent reduction in shelf‐life when returned to 
+low temperature storage. 
+
+NOTE  
+
+For materials normally stored at low temperature 
+(below  zero),  exposure  to  room  temperature  can 
+dramatically reduce the shelf‐life. 
+
+e. 
+
+It shall be ensured that all materials stored at temperatures below room 
+temperature are allowed to attain room temperature prior to use. 
+
+9 
+
+4.1.4 
+a. 
+
+Extension of shelf-life (re-certification) 
+
+ECSS‐Q‐ST‐70‐22C 
+31 July 2008 
+
+To extend the shelf‐life of a material that has exceeded its shelf‐life, the 
+following activities shall be performed: 
+1. 
+
+Re‐certify the material for the first time by using the relevant tests 
+in conformance with clause 4.1.6; 
+If the first re‐certification is successful, extend the shelf‐life equal to 
+half the initial shelf‐life; 
+Re‐certify the material for the second time on a case‐by‐case basis 
+depending on product, application, storage and user experience; 
+If  the  second  re‐certification  is  successful,  extend  the  shelf‐life  to 
+half of the first extension. 
+
+2. 
+
+3. 
+
+4. 
+
+b. 
+
+c. 
+
+If  a  fully  traceable,  non‐over‐aged  batch  is  suspect,  for  any  reason,  the 
+user shall submit it for re‐certification. 
+Batches awaiting results of a re‐certification process separately and shall 
+be labelled as “suspended”. 
+
+Disposal of materials 
+
+In  case  further  re‐certification  is  not  permitted  or  traceability  has  been 
+lost for a batch, or part of a batch, the user shall dispose the material in 
+conformance with the product assurance rules applicable to the project. 
+
+4.1.5 
+a. 
+
+4.1.6 
+a. 
+
+b. 
+
+c. 
+
+Acceptance criteria, re-certification testing 
+
+Re‐certification  of  material  shelf‐life  shall  be  achieved  by  retesting  the 
+material to verify that its properties are still within their specified limits. 
+Retesting  shall  include  those  properties  specified  in  the  procurement 
+specification or performed during incoming inspection. 
+
+NOTE  
+
+The  choice  of  properties  to  be  measured  is  based 
+on  a  combination  of  the  final  application  of  the 
+material and its processing. 
+
+The  choice  of  properties  to  be  measured  and  test  methods  to  be  used 
+shall be subject to the approval of product assurance. 
+
+NOTE  
+
+For  examples  of  properties  to  be  measured  see 
+Annex B. 
+
+4.2  Quality assurance 
+
+4.2.1 
+a. 
+
+Data 
+
+Quality  records  shall  be  retained  for  ten  years  or  in  conformance  with 
+project business agreement requirements. 
+
+NOTE  
+
+E.g. logbooks. 
+
+b. 
+
+The quality records shall be in conformance with Annex A. 
+
+10 
+
+Calibration 
+
+ECSS‐Q‐ST‐70‐22C 
+31 July 2008 
+
+Any  measuring  equipment  shall  be  calibrated  to  traceable  reference 
+standards. 
+Any suspected or actual equipment failure shall be recorded as a project 
+nonconformance report according to the NCR DRD in ECSS‐Q‐ST‐10‐09. 
+
+4.2.2 
+a. 
+
+b. 
+
+NOTE  
+
+This 
+is  to  ensure  that  previous  results  are 
+examined to ascertain whether or not re‐inspection 
+and retesting is necessary. 
+
+11 
+
+ECSS‐Q‐ST‐70‐22C 
+31 July 2008 
+
+Annex A (normative) 
+Shelf-life material evaluation report - DRD 
+
+A.1  DRD identification 
+
+Requirement identification and source document 
+
+A.1.1 
+This DRD is called from ECSS‐Q‐ST‐70‐22, requirement 4.2.1b. 
+
+Purpose and objective 
+
+A.1.2 
+The purpose of the document is to describe the contents of the evaluation report 
+for the control of limited shelf‐life materials. 
+
+A.2  Expected response  
+
+A.2.1 
+a. 
+
+b. 
+
+c. 
+
+d. 
+
+Scope and content 
+
+The  evaluation  report  shall  contain  the  supplier’s  certification  and 
+definition of storage conditions. 
+The  evaluation  report  shall  contain  the  copy  of  incoming  inspection 
+documentation. 
+The  evaluation  report  shall  contain  the  nonconformance  reports  and 
+corrective action (if applicable). 
+The evaluation report shall contain the record of storage conditions and 
+re‐certification testing. 
+
+Special remarks 
+
+A.2.2 
+None. 
+
+12 
+
+ECSS‐Q‐ST‐70‐22C 
+31 July 2008 
+
+Annex B (informative) 
+Examples of properties to be measured 
+
+Properties which can be measured in order to gain re‐certification are: 
+a. 
+
+Properties related to the individual components and the cure process that 
+are particularly sensitive to the effects of ageing: 
+1. 
+
+molecular  weight  distribution  as  determined  by  gel  permeation 
+chromatography; 
+molecular structure as determined by infrared spectroscopy; 
+degree of cure, cure exotherm and glass transition temperature as 
+determined by differential scanning calorimetry; 
+measurement of pot life; 
+measurement  of  resin  flow  characteristics,  such  as  gel  time 
+(particularly important in the case of fibre reinforced materials); 
+measurement  of 
+pre‐impregnated materials. 
+
+the  degree  of 
+
+tackiness 
+
+2. 
+3. 
+
+4. 
+5. 
+
+6. 
+
+in 
+
+the  case  of 
+
+b. 
+
+Properties  related  to  the  materials  application  are  measured  on  cured 
+samples: 
+1. 
+2. 
+
+adhesives ‐ adhesive strength as determined by lap shear testing; 
+coatings (paints and varnishes) ‐ adhesion to the relevant substrate 
+using  measurements  of  peel  and  pull‐off  strength 
+(see 
+ECSS‐Q‐ST‐70‐13); 
+conformal coatings ‐ hardness, adhesion properties; 
+potting compounds ‐ hardness, electrical or thermal characteristics; 
+fibre‐reinforced materials ‐ resin/fibre/void content using chemical 
+digestion 
+techniques.  Measurement  of  relevant  mechanical 
+properties such as tensile strength or flexural strength. 
+
+3. 
+4. 
+5. 
+
+13 
+
+ECSS‐Q‐ST‐70‐22C 
+31 July 2008 
+
+Bibliography 
+
+ECSS‐S‐ST‐00 
+
+ECSS‐Q‐ST‐70‐13 
+
+ECSS system – Description, implementation and 
+general requirements 
+Space product assurance ‐ Measurement of the peel 
+and pull‐off strength of coatings and finishes using 
+pressure‐sensitive tapes 
+
+ 
+
+14 
+
+

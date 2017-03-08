@@ -1,0 +1,2264 @@
+ECSS-Q-ST-70-46C Rev.1 
+6 March 2009 
+
+ 
+
+Space product 
+assurance 
+Requirements for manufacturing 
+and procurement of threaded 
+fasteners 
+
+ 
+
+ECSS Secretariat 
+ESA-ESTEC 
+Requirements & Standards Division 
+Noordwijk, The Netherlands 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+Foreword 
+This  Standard  is  one  of  the  series  of  ECSS  Standards  intended  to  be  applied  together  for  the 
+management,  engineering  and  product  assurance  in  space  projects  and  applications.  ECSS  is  a 
+cooperative  effort  of  the  European  Space  Agency,  national  space  agencies  and  European  industry 
+associations for the purpose of developing and maintaining common standards. Requirements in this 
+Standard are defined in terms of what shall be accomplished, rather than in terms of how to organize 
+and  perform  the  necessary  work.  This  allows  existing  organizational  structures  and  methods  to  be 
+applied where they are effective, and for the structures and methods to evolve as necessary without 
+rewriting the standards. 
+This Standard has been prepared by the ECSS Executive Secretariat, endorsed by the Document and 
+Discipline Focal points, and approved by the ECSS Technical Authority. 
+
+Disclaimer 
+ECSS does not provide any warranty whatsoever, whether expressed, implied, or statutory, including, 
+but not limited to, any warranty of merchantability or fitness for a particular purpose or any warranty 
+that  the  contents  of  the  item  are  error‐free.  In  no  respect  shall  ECSS  incur  any  liability  for  any 
+damages, including, but not limited to, direct, indirect, special, or consequential damages arising out 
+of, resulting from, or in any way connected to the use of this Standard, whether or not based upon 
+warranty, business agreement, tort, or otherwise; whether or not injury was sustained by persons or 
+property or otherwise; and whether or not loss was sustained from, or arose out of, the results of, the 
+item, or any services that may be provided by ECSS. 
+
+Published by:  
+ 
+ 
+ 
+Copyright:  
+ 
+ 
+
+ESA Requirements and Standards Division 
+ESTEC, P.O. Box 299, 
+2200 AG Noordwijk 
+The Netherlands 
+2008 © by the European Space Agency for the members of ECSS 
+
+2 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+Change log 
+
+ECSS‐Q‐70‐46A 
+21 January 2000 
+ECSS‐Q‐ST‐70‐46C 
+31 July 2008 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+ 
+ 
+
+First issue 
+Transforming ESA PSS‐01‐746 into an ECSS Standard 
+Second issue 
+Redrafting of ECSS‐Q‐70‐22A according to new ECSS drafting rules and 
+template. 
+In particular: 
+•  The requirements of the original clauses 4, 5, 6 and 7 were moved to 
+
+the clauses 4.1 to 4.4. 
+
+•  From the sections 4.3.7and 4.3.8 the requirements which do not fit 
+
+there were moved to section 4.1.2 as requirements 4.1.2d and 4.1.2e. 
+•  From the original section 7.2.5 a DRD was created and moved to the 
+
+normative Annex B. 
+
+•  Table C‐ 1 was moved to the informative Annex C. 
+•  The section 4 “Principles” was deleted.. 
+Second issue revision1 
+Changes with respect to version C (31 July 2008) are identified with 
+revision tracking. 
+Main change concern the addition of a normative reference (DIN ISO 
+9152) and the addition of a new requirement (4.2.5.h) calling this 
+reference.  
+
+3 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+Table of contents 
+
+Change log.................................................................................................................3 
+
+1 Scope.......................................................................................................................6 
+
+2 Normative references.............................................................................................7 
+
+3 Terms, definitions and abbreviated terms............................................................9 
+3.1  Terms defined in other standards...............................................................................9 
+3.2  Terms specific to the present standard ......................................................................9 
+3.3  Abbreviated terms ....................................................................................................10 
+
+4 Requirements........................................................................................................11 
+4.1  Fabrication................................................................................................................11 
+4.1.1  General.......................................................................................................11 
+4.1.2  Raw material...............................................................................................11 
+4.1.3  Head forming..............................................................................................11 
+4.1.4  Heat treatment............................................................................................12 
+4.1.5  Head-to-shank fillet rolling..........................................................................12 
+Threads ......................................................................................................12 
+4.1.6 
+4.1.7 
+Identification marking..................................................................................13 
+4.1.8 
+Surface treatment.......................................................................................13 
+4.1.9  Workmanship, handling and packaging......................................................13 
+4.2  Dimensional and metallurgical requirements ...........................................................14 
+4.2.1  General.......................................................................................................14 
+4.2.2  Nominal dimensions ...................................................................................14 
+4.2.3  Head-to-shank fillet.....................................................................................14 
+4.2.4  Non-destructive inspections .......................................................................15 
+4.2.5  Metallurgical examination...........................................................................16 
+4.2.6  Measurement of hydrogen content.............................................................17 
+4.2.7  Outgassing and offgassing.........................................................................17 
+4.3  Mechanical testing....................................................................................................18 
+4.3.1  General.......................................................................................................18 
+4.3.2  Hardness test .............................................................................................18 
+
+4 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+Tensile test .................................................................................................19 
+4.3.3 
+Shear test ...................................................................................................20 
+4.3.4 
+4.3.5 
+Fatigue test.................................................................................................21 
+4.3.6  Creep test...................................................................................................21 
+4.3.7  Corrosion test .............................................................................................23 
+4.3.8 
+Stress-corrosion test...................................................................................23 
+4.4  Quality assurance.....................................................................................................24 
+4.4.1  General.......................................................................................................24 
+4.4.2  Quality requirements ..................................................................................24 
+
+Annex A (normative) Customer specification document for threaded 
+
+fasteners – DRD...................................................................................................27 
+
+Annex B (normative) Product conformance report (PCR) – DRD........................29 
+
+Annex C (informative) Inspection levels, acceptance quality limits (AQL) 
+
+and limiting quality levels (LQ) for inspection of fasteners.............................31 
+
+ 
+Figures 
+Figure 4-1: Tolerance of head-to-shank fillet profile...............................................................15 
+Figure 4-2: Location of microsections for metallurgical examination......................................16 
+Figure 4-3: Area delimiting interruptions in grain flow in the head-to-shank region ...............17 
+Figure 4-4: Example of a regular grain flow in a threaded surface.........................................17 
+Figure 4-5: Locations for hardness testing (indicated with cross symbol)..............................19 
+Figure 4-6: Loading schematic for tensile testing of threaded fasteners................................22 
+Figure 4-7: Schematic of an example of double-shear loading jigs........................................23 
+
+ 
+
+Tables 
+Table 4-1: Maximum allowed values of the extension C of the distorted area shown in 
+
+Figure 4-1 ............................................................................................................15 
+
+ 
+Table C- 1: Inspection levels, acceptance quality limits (AQL) and limiting quality levels 
+
+(LQ) for inspection of fasteners ...........................................................................31 
+
+ 
+
+5 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+1 
+Scope 
+
+the  requirements  for  manufacturing,  provision, 
+This  Standard  defines 
+inspection and quality control of high‐quality threaded fastening devices (bolts, 
+nuts, studs and screws) hereafter referred to as threaded fasteners or fasteners, 
+used in space hardware. 
+This Standard does not include a complete review of the factors relevant to the 
+fabrication of high quality threaded fasteners. It provides the definition of the 
+technical  requirements  and  quality  control  procedures  to  be  applied  in  the 
+fabrication and supply of threaded fasteners for spacecraft applications. 
+Fasteners for spacecraft applications are those aerospace standard fasteners (i.e. 
+in  accordance  with  LN,  DIN  or  other  national  or  international  aerospace 
+standards),  or  those  fasteners  meeting  or  exceeding  the  requirements  in 
+ISO 4759‐1 for “Product grade A”, which also fulfil the requirements for space 
+applications as specified in the present document. 
+
+6 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+2 
+Normative references 
+
+The  following  dated  normative  documents  are  called  by  the  requirements  of 
+this  ECSS  Standard  and  therefore  constitute  requirements  to  it.  Subsequent 
+amendments to, or revisions of any of these publications do not apply. 
+
+NOTE   However,  parties  to  agreements  based  on  this 
+ECSS  Standard  are  encouraged  to  investigate  the 
+possibility of applying the most recent editions of 
+the normative documents indicated below. 
+
+ECSS‐S‐ST‐00‐01C 
+ECSS‐E‐ST‐30‐01C 
+ECSS‐Q‐ST‐70C 
+
+ECSS‐Q‐ST‐70‐02C 
+
+ECSS‐Q‐ST‐70‐29C 
+
+ECSS‐Q‐ST‐70‐36C 
+
+ECSS‐Q‐ST‐70‐37C 
+
+ECSS‐Q‐ST‐70‐71C 
+
+ISO 204 
+
+ISO 225 
+
+ISO 1502 
+
+ISO 2859‐1 
+
+ECSS system – Glossary of terms 
+Space engineering — Fracture control 
+Space product assurance — Materials, parts and 
+processes 
+Space product assurance — Thermal vacuum 
+outgassing test for the screening of space materials 
+Space product assurance — The determination of 
+offgassing products from materials and assembled 
+articles to be used in a manned space vehicle crew 
+compartment 
+Space product assurance — Material selection for 
+controlling stress‐corrosion cracking 
+Space product assurance — Determination of the 
+susceptibility of metals to stress— corrosion 
+cracking 
+Space product assurance — Data for selection of 
+space materials 
+Metallic materials — Uninterrupted uniaxial creep 
+testing in tension — Method of test 
+Fasteners — Bolts, screws, studs and nuts — 
+Symbols and designations of dimensions 
+ISO general — purpose metric screw threads — 
+Gauges and gauging 
+Sampling procedures for inspection by attributes, 
+Part 1: Sampling schemes indexed by acceptance 
+quality limit (AQL) for lot‐by‐lot inspection 
+
+7 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+Sampling procedures for inspection by attributes, 
+Part 2: Sampling plans indexed by limiting quality 
+(LQ), for isolated lots inspection 
+Aerospace — Lead and runout threads — Part 1: 
+Rolled external threads 
+Threaded fasteners – Axial load fatigue testing – 
+Test methods and evaluation of results 
+Tolerances for fasteners — Part 1: Bolts, screws, 
+studs and nuts — Product grades A, B and C 
+Fasteners — Surface discontinuities – Part 2: Nuts 
+Fasteners – Surface discontinuities – Part 3: Bolts, 
+screws and studs for special requirements 
+Metallic materials — Brinell hardness test — Part 1: 
+Test method 
+Metallic materials — Brinell hardness test — Part 2: 
+Verification and calibration of testing machines 
+Metallic materials — Brinell hardness test — Part 3: 
+Calibration of reference blocks 
+Metallic materials — Vickers hardness test – Part 1: 
+Test method 
+Metallic materials — Vickers hardness test — Part 
+2: Verification and calibration of testing machines 
+Metallic materials — Vickers hardness test — Part 
+3: Calibration of reference blocks 
+Metallic materials — Rockwell hardness test — Part 
+1: Test method 
+Metallic materials — Rockwell hardness test — Part 
+2: Verification and calibration of testing machines 
+Metallic materials — Rockwell hardness test — Part 
+3: Calibration of reference blocks 
+Aerospace – Nuts, plain or slotted (castellated) – 
+Test methods 
+Aerospace – Bolts, with MJ Threads, in Titanium 
+alloys, strength class 1100 MPa – Procurement 
+specification 
+Standard practice for operating salt spray (fog) 
+apparatus 
+Standard practice for liquid penetrant testing 
+Standard practice for magnetic particle testing 
+
+ISO 2859‐2 
+
+ISO 3353‐1:2002 
+
+ISO 3800 
+
+ISO 4759‐1 
+
+ISO 6157‐2 
+ISO 6157‐3 
+
+ISO 6506‐1 
+
+ISO 6506‐2 
+
+ISO 6506‐3 
+
+ISO 6507‐1 
+
+ISO 6507‐2 
+
+ISO 6507‐3 
+
+ISO 6508‐1 
+
+ISO 6508‐2 
+
+ISO 6508‐3 
+
+ISO 9140 
+
+DIN ISO 9152 
+
+ASTM B 117‐07a 
+
+ASTM E 1417‐05e1 
+ASTM E 1444‐05 
+
+8 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+3 
+Terms, definitions and abbreviated terms 
+
+3.1  Terms defined in other standards 
+
+For the purpose of this Standard, the terms and definitions from ECSS‐S‐ST‐00‐01 
+and ECSS‐Q‐ST‐70 apply. 
+
+3.2  Terms specific to the present standard 
+
+bolt 
+
+3.2.1 
+cylindrical screwed bar provided with a head, generally not threaded along its 
+entire length 
+
+NOTE  
+
+For example: Shank plus threaded portion. 
+
+fail-safe 
+
+3.2.2 
+approach  in  which  the  structure  is  designed  with  sufficient  structural 
+redundancy to ensure that the failure of one structural element does not cause 
+general failure of the entire structure 
+
+fastener 
+
+3.2.3 
+device used to hold parts firmly together in an assembly 
+
+galling 
+
+3.2.4 
+condition  whereby  excessive  friction  between  high  spots  results  in  localized 
+welding with subsequent splitting and a further roughening of rubbing surfaces 
+of one or both or two mating parts 
+
+nut 
+
+3.2.5 
+metal collar, screwed internally, to fit a bolt 
+
+NOTE   Usually  hexagonal  in  shape  and  operated  by  a 
+
+spanner. 
+
+9 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+safe-life 
+
+3.2.6 
+approach which requires that the largest undetected defect that can exist in the 
+structure does not grow to failure when subjected to loads and environments 
+encountered in service 
+
+sampling plan 
+
+3.2.7 
+combination  of  sample  size  to  be  used  with  associated  batch  acceptability 
+criteria 
+
+shank 
+
+3.2.8 
+unthreaded portion of the cylindrical screwed bar of a bolt 
+
+stud 
+
+3.2.9 
+shank, or endless bolt, externally screwed from one end, both ends or along its 
+entire length 
+
+(screw) thread 
+
+3.2.10 
+helical ridge of approximately triangular, square or rounded section, formed on 
+a cylindrical core, the pitch and core diameter being standardised under various 
+systems 
+
+threaded fastener 
+
+3.2.11 
+device  composed  by  a  cylindrical  screwed  bar  provided  with  a  head  and  a 
+metal  collar,  screwed  internally,  to  fit  the  cylindrical  bar  that  is  used  to  hold 
+parts firmly together in an assembly 
+
+3.3  Abbreviated terms 
+
+For the purpose of this Standard, the abbreviated terms from ECSS‐S‐ST‐00‐01C 
+and the following apply: 
+Abbreviation 
+AQL 
+ASTM 
+HB 
+HRC 
+HV 
+ISO 
+LQ 
+PCR 
+PVC 
+RMC 
+UTS 
+
+Meaning 
+acceptance quality level 
+American Society for Testing and Materials 
+Brinell hardness 
+Rockwell hardness 
+Vickers hardness 
+International Organization for Standardization 
+limiting quality 
+product conformance report 
+polyvinyl chloride 
+raw material certificate 
+ultimate tensile strength 
+
+10 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+4 
+Requirements  
+
+4.1  Fabrication 
+
+4.1.1  General 
+a. 
+
+The  customer  shall  establish  a  specification  document  in  conformance 
+with the DRD in Annex A. 
+The manufacturer shall have a quality assurance system.  
+The  manufacturer  shall  verify  and  assure  conformance  during 
+production to the technical requirements specified in this clause.  
+
+b. 
+c. 
+
+b. 
+
+4.1.2 
+a. 
+
+Raw material 
+
+The raw material for threaded fasteners shall be selected in accordance 
+with the metallic materials requirements as per ECSS‐Q‐ST‐70‐71C, if not 
+otherwise specified in the customer specification document for threaded 
+fasteners.  
+Nut material shall be more ductile than bolt material. 
+
+NOTE  
+
+The  reason  is  that  during  tightening  nut  threads 
+can deflect to seat on the bolt threads.  
+
+c.  Materials for threaded fasteners shall be selected in order to avoid galling 
+
+of the mating surfaces. 
+
+NOTE   Galling in stainless steel fasteners can be prevented 
+by  using  two  different  steels  on  the  mating 
+surfaces and by specific surface treatments. 
+d.  Materials for threaded fasteners shall be corrosion resistant  
+e.  Materials  shall  possess  high  resistance  to  stress‐corrosion  cracking  as 
+
+specified in ECSS‐Q‐ST‐70‐36C.  
+
+4.1.3 
+a. 
+
+Head forming 
+
+Fastener  heads  shall  be  formed  by  hot  or  cold  forging  before  heat 
+treating.  
+
+NOTE   Driving  recesses  and  lightening  holes  in  double 
+
+hexagon design can be forged or machined. 
+
+11 
+
+4.1.4 
+a. 
+
+Heat treatment 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+Headed forged blanks shall be heat treated and cold worked by rolling or 
+drawing  methods 
+in  accordance  with  the  customer  specification 
+document  for  threaded  fasteners  and  the  specifications  in  clause  4.2  of 
+this Standard. 
+Forged blanks belonging to the same batch shall be heat treated in one 
+batch. 
+The manufacturer shall re‐treat a batch which, tested as in 4.3.3, did not 
+meet  the  mechanical  property  requirements,  no  more  than  twice  (three 
+times for Titanium alloys). 
+If  a  different  supplier  produces  the  blanks,  inspections  and  quality 
+control  shall  be  performed  as  specified 
+in  4.4.2.1  under  direct 
+responsibility of the original blanks’ supplier.  
+
+NOTE  
+
+This is done in the case where the manufacturer is 
+unable  to  carry  out  the  blank  fabrication  as 
+requested by the customer. 
+
+Grinding  of  shank  and  head  bearing  surfaces  of  blanks  to  obtain 
+roughness values as specified in 4.2.4 shall be carried out after any heat 
+treatment. 
+
+b. 
+
+c. 
+
+d. 
+
+e. 
+
+b. 
+
+c. 
+
+4.1.5 
+a. 
+
+Head-to-shank fillet rolling 
+
+Head‐to‐shank fillet rolling shall be carried out after any heat treatment 
+and machining processes.  
+Cold rolling shall remove from the fillet surface any evidence of previous 
+machining or etching process.  
+Geometrical  distortion  of  the  fillet  surface  shall  be  within  the  limits 
+specified in 4.2.3. 
+
+NOTE  
+
+In fasteners having compound radii between head 
+and  shank,  cold  rolling  can  be  extended  to  the 
+remaining part of the fillet surface.  
+
+d. 
+
+There shall be no machining or etching of the fillet radius after rolling. 
+
+Threads 
+
+4.1.6 
+a. 
+b. 
+
+External threads shall be formed by rolling process.  
+Thread  rolling  shall  be  carried  out  on  each  fastener  in  one  single 
+continuous operation.  
+
+c.  When  thread  rolling  on  each  fastener  is  not  performed  in  one  single 
+continuous  operation,  the  threaded  fasteners  shall  be  submitted  to  a 
+fatigue test in accordance with 4.3.5. 
+No evidence of machining shall be observed on the thread surface after 
+rolling. 
+
+d. 
+
+NOTE  
+
+This applies for fasteners of large diameter, where 
+threads 
+and 
+subsequently rolled. 
+
+can  be  machined  oversized 
+
+12 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+e. 
+
+f. 
+
+g. 
+
+h. 
+
+Thread rolling shall be carried out after heat treatment and machining of 
+fasteners. 
+Unless  otherwise  specified  in  the  customer  specification  document  for 
+threaded fasteners, a single right‐hand thread shall be obtained.  
+The thread run‐out portion of a bolt or stud shall consist in a progressive 
+and regular junction with the shank avoiding sharp changes in section.  
+Thread  lead  and  runout  portions  shall  conform  to  the  requirements  in 
+clause 4 of ISO 3353‐1:2002. 
+
+4.1.7 
+a. 
+
+b. 
+
+Identification marking 
+
+Fasteners  shall  be  marked  by  depressed  characters  only  with  character 
+size in accordance with the customer specification document for threaded 
+fasteners and drawings. 
+Characters for marking fasteners shall: 
+1. 
+2. 
+3. 
+
+be depressed no more than 0,25 mm from the surface; 
+have rounded root form; 
+be impressed on the upper surface of the fastener head. 
+
+c.  Marks shall univocally identify the fastener batch and manufacturer.  
+d. 
+
+identification  marked  separately  after 
+
+Safe‐life  fasteners  shall  be 
+non‐destructive inspection. 
+
+4.1.8 
+a. 
+
+Surface treatment 
+
+In surface plated fasteners, surface plating shall be applied to the entire 
+fastener surface including the threaded portion.  
+
+NOTE  
+
+Surface plating can cause tolerance variations.  
+
+b. 
+
+Silver plating shall not be used on titanium alloy fasteners. 
+
+NOTE  
+
+Silver and cadmium plating are not used because 
+they can cause embrittlement of titanium alloys, as 
+per requirement in ECSS‐Q‐ST‐70‐71C.  
+
+c. 
+
+Baking shall be carried out after plating. 
+
+NOTE  
+
+The  reason  is  to  prevent  hydrogen  embrittlement 
+since  electrolytic  plating  processes  generate 
+hydrogen. 
+
+d. 
+
+The  baking  temperature  shall  be  selected  such  that  the  plating  and 
+substrate materials are not deteriorated  
+
+4.1.9  Workmanship, handling and packaging 
+a. 
+
+Fasteners shall be free from burrs, tool marks, scale, other surface defects 
+and contaminants. 
+Fasteners shall be handled and packed during storage and transportation 
+in the following way:  
+1. 
+
+pack fasteners of the same batch in unit packages;  
+
+b. 
+
+13 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+2. 
+
+do not apply any protective lubricants or substances on fasteners 
+unless otherwise specified in the customer specification document 
+for threaded fasteners.  
+NOTE  
+
+to  prevent  mechanical  damage  and 
+
+is 
+
+This 
+contamination (e.g. from PVC or fibreboard). 
+
+c. 
+
+d. 
+
+Each individual package shall be univocally identified by a durable and 
+legible external marking indicating the product denomination, quantity, 
+batch  identification,  manufacturer,  product  conformance  report  as  in 
+4.4.2.5 and date of packing. 
+Fasteners for safe‐life applications shall be packed and stored separately. 
+
+4.2  Dimensional and metallurgical requirements 
+
+4.2.1  General 
+a. 
+
+Dimensional and metallurgical controls shall be carried out in accordance 
+with the sampling procedures and acceptance criteria specified in 4.4.2.1. 
+Designation  of  dimensions  and  symbols  shall  be  in  accordance  with 
+ISO 225. 
+Dimensional control of fasteners (bolts, nuts and studs) shall be carried 
+out at room temperature (22 ± 3) °C.  
+Gauges and measuring devices shall be in accordance with ISO 1502. 
+
+b. 
+
+c. 
+
+d. 
+
+b. 
+
+c. 
+d. 
+
+4.2.2 
+a. 
+
+Nominal dimensions 
+
+Nominal dimensions shall be in accordance with the detail drawings of 
+the customer specification document for threaded fasteners.  
+All  dimensions  shall  refer  to  the  final  product  and  include  any 
+dimensional  modification  subsequent 
+to  chemically  applied  or 
+electroplated coating. 
+ISO 1502 standards on thread geometry and dimensions shall apply.  
+Tolerances  for  fasteners  shall  be  in  accordance  with  national  or 
+international aerospace standards (e.g. LN, DIN aerospace standards) or 
+meet  or  exceed  tolerance  values  specified  in  ISO 4759‐1  for  “Product 
+grade A”. 
+
+4.2.3 
+a. 
+
+Head-to-shank fillet 
+
+The  value  of  distortion  shall  not  exceed  0,03 mm  above  and  below  the 
+profile lines at points A and B in Figure 4‐1.  
+
+NOTE  
+
+In  bolts,  cold  rolling  of  head‐to‐shank  fillets  can 
+cause distortion of fillet areas. Figure 4‐1 shows the 
+typical distortion of the head‐to‐shank fillet profile. 
+
+b. 
+
+The value of the extension C of the distorted area in Figure 4‐1 shall not 
+exceed the values indicated in Table 4‐1. 
+
+14 
+
+Non-destructive inspections 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+Fasteners shall be free from surface defects such as flaws and inclusions.  
+Inspections on bolts, studs and screws shall be carried out by using liquid 
+penetrant  or  magnetic  particles  in  accordance  with  ASTM E 1417‐05e1 
+and ASTM E 1444‐05, respectively.  
+Non‐destructive inspections shall be carried out by qualified personnel. 
+Fasteners for safe‐life applications shall be inspected as follows: 
+1. 
+2. 
+
+using a 100 % batch inspection plan;  
+by X‐ray, ultrasonic or eddy current inspection methods to obtain 
+95 % (minimum) confidence level and 90 % (minimum) probability 
+of defect detection. 
+
+For  fasteners  for  safe‐life  applications  the  results  of  NDI  shall  be 
+evaluated in accordance with clause 10.3 of ECSS‐E‐ST‐30‐01C. 
+Fasteners with detected surface defects shall be visually re‐examined at 
+×15 (minimum) magnification factor.  
+
+NOTE   An accurate measurement of the defect size can be 
+in 
+
+obtained  by  metallographic  examination 
+accordance with 4.2.5. 
+
+The following fasteners shall be declared as nonconformant: 
+1. 
+
+fasteners for fail‐safe applications if the size of any defect is larger 
+than the size specified in ISO 6157‐2 and ISO 6157‐3; 
+fasteners for safe‐life applications if the size of any defect is larger 
+than the size specified in clause 10.3 of ECSS‐E‐ST‐30‐01C. 
+
+C
+
+C
+
+B
+
+A
+
+A
+
+B
+
+A
+
+ 
+
+4.2.4 
+a. 
+b. 
+
+c. 
+d. 
+
+e. 
+
+f. 
+
+g. 
+
+2. 
+
+A
+
+C
+
+C
+
+Figure 4‐1: Tolerance of head‐to‐shank fillet profile 
+
+Table 4‐1: Maximum allowed values of the extension C of the 
+
+Nominal diameter, d (mm)  d < 5 
+
+distorted area shown in Figure 4‐1 
+11 ≤ d ≤ 16 
+
+5 ≤ d ≤ 7  8 ≤ d ≤ 10 
+
+17 ≤ d ≤ 24  d > 24 
+
+C maximum (mm) 
+
+1,00 
+
+1,5 
+
+2,5 
+
+3,5 
+
+4,5 
+
+5,0 
+
+15 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+4.2.5  Metallurgical examination 
+a. 
+
+Fasteners  selected  for  metallurgical  examination  shall  be  cut  and 
+prepared  for  observation  in  accordance  with  state‐of‐the‐art  standard 
+laboratory practice.  
+
+b. 
+
+c. 
+
+d. 
+
+e. 
+
+f. 
+
+g. 
+
+h. 
+
+NOTE  
+
+Figure 4‐2 shows the locations of microsections.  
+
+Fasteners when visually examined at a magnification of between ×10 and 
+×50  shall  exhibit  a  continuous  grain  flow  in  the  head  area  and 
+head‐to‐shank transition zone.  
+Z  values  shall  be  equal  to  or  less  than  the  maximum  fillet  radius 
+R (Z ≤ Rmax)  as  specified  in  the  detail  drawings  of  the  customer 
+specification document for threaded fasteners. 
+
+NOTE  
+
+Interruptions  in  grain  flow  within  the  area  are 
+defined by Z dimensions in Figure 4‐3. 
+
+Fasteners when visually examined at a magnification of ×50 shall exhibit 
+continuous  grain  flow  following  the  thread  profile  with  maximum 
+density of flow lines at thread roots. 
+
+NOTE  
+
+For details see Figure 4‐4. 
+
+Fastener microstructure shall be visually inspected for internal defects at 
+a magnification of ×100 or higher in un‐etched condition.  
+Fastener microstructure shall be free from internal defects. 
+
+NOTE  
+
+Internal defects are voids, cracks, inclusions, gross 
+alloy segregation and indication of overheating.  
+
+Surface  coated  or  plated  fasteners  shall  exhibit  adequate  thickness, 
+uniformity and integrity of the protective layer. 
+For  fasteners  in  Titanium  alloy  strength  class  1100  MPa,  DIN  ISO  9152 
+shall apply. 
+
+A
+
+B
+
+A
+
+B
+
+C
+
+C
+
+d
+
+d/2*
+
+d/2*
+
+(*) minimum required 
+
+Figure 4‐2: Location of microsections for metallurgical examination 
+
+ 
+
+16 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+Z 
+
+Z 
+
+Z
+
+Z
+
+Figure 4‐3: Area delimiting interruptions in grain flow in the head‐to‐shank region 
+
+ 
+
+Figure 4‐4: Example of a regular grain flow in a threaded surface 
+
+ 
+
+4.2.6  Measurement of hydrogen content  
+a. 
+Embrittlement by hydrogen absorption shall be prevented.  
+
+NOTE   Hydrogen contamination can cause embrittlement 
+and  degradation  of  mechanical  properties  of 
+metals. 
+
+b. 
+
+c. 
+
+Hydrogen  content  in  fasteners  shall  be  measured  by  an  approved 
+vacuum fusion or vacuum extraction method.  
+
+NOTE  
+
+Samples  of  material  can  be  extracted  from  the 
+fastener  head  after  the  removal  of  any  surface 
+coating. 
+
+Hydrogen  content  in  fully  finished  fasteners  made  of  Titanium  alloys 
+shall not exceed 0,0125 %. 
+
+NOTE  
+
+Titanium  alloys  are  particularly  prone 
+embrittlement by hydrogen absorption. 
+
+to 
+
+4.2.7  Outgassing and offgassing 
+a. 
+
+Thermal vacuum outgassing test in accordance with ECSS‐Q‐ST‐70‐02C 
+shall be carried out on fasteners with organic inserts or collars, lubricants 
+or protective substances if exposed to vacuum during service. 
+
+17 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+b. 
+
+Offgassing test in accordance with ECSS‐Q‐ST‐70‐29C shall be carried out 
+on  fasteners  with  organic  inserts  or  collars,  lubricants  or  protective 
+substances if used in crew compartments of manned space vehicles. 
+
+4.3  Mechanical testing 
+
+4.3.1  General 
+a.  With  the  exception  of  the  cases  covered  in  4.3.6,  4.3.7  and  4.3.8, 
+mechanical  testing  for  quality  control  purposes  shall  be  performed  at 
+room  temperature  (22 ± 3) °C  and  laboratory  air,  (55 ± 10) %  relative 
+humidity.  
+
+b.  Mechanical  properties  of  fasteners  shall  be  in  accordance  with  the 
+specifications  in  the  customer  specification  document  for  threaded 
+fasteners.  
+
+c.  Mechanical testing shall be carried out in accordance with the sampling 
+
+d. 
+
+procedures and acceptance criteria specified in 4.4.2.3.  
+Fasteners shall be retained in an approved quarantine facility for record 
+or  traceability  purposes  or  destroyed  in  accordance  with  company 
+practice after mechanical testing. 
+
+NOTE  
+
+The  test  methods  specified  in  this  Standard  are 
+intended  for  quality  control  and  acceptance  only, 
+ensuring  that  fastener  properties  are  within  the 
+limit values specified in the customer specification 
+document for threaded fasteners. 
+
+4.3.2 
+
+Hardness test 
+
+4.3.2.1  General 
+a. 
+
+2. 
+
+3. 
+
+Hardness tests shall be carried out in accordance with: 
+1. 
+
+the  Brinell  Hardness  Test  (HB)  in  accordance  with  ISO 6506  (all 
+parts); or 
+the  Vickers  Hardness  Test  (HV)  in  accordance  with  ISO 6507  (all 
+parts); or 
+the  Rockwell  Hardness  Test  (HRC)  in  accordance  with  ISO 6508 
+(all parts). 
+
+b.  Measured hardness values shall conform to the hardness values specified 
+
+in the customer specification document for threaded fasteners.  
+
+4.3.2.2  Method 
+a. 
+
+Hardness tests on fasteners shall be carried out on the circular surface at 
+the end of the threaded portion of the fastener shank after removing any 
+surface coating.  
+
+18 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+b. 
+
+c. 
+
+For  fasteners  with  nominal  diameter  greater  than 6 mm,  hardness  shall 
+be  measured  in  the  centre  of  the  circular  surface  and  at  two  other 
+locations at different distances from the centre of the surface, Figure 4‐5. 
+For  short  fasteners  which  cannot  be  tensile  tested  (usually  with  a  grip 
+length less than twice the nominal diameter), the following steps shall be 
+performed: 
+1. 
+
+carry  out  Vickers  hardness  measurements  on  a  longitudinal 
+microsection of the shank; 
+measure hardness along the shank longitudinal axis.  
+
+2. 
+
+d.  When deemed necessary to check the heat treatment batch homogeneity 
+by  hardness  testing,  hardness  tests  shall  be  carried  out  after  the 
+completion of any heat treatment and before any rolling operation. 
+
+A
+
+A
+
+ 
+
+Figure 4‐5: Locations for hardness testing (indicated with cross symbol) 
+
+4.3.3 
+
+Tensile test 
+
+4.3.3.1 
+a. 
+
+2. 
+
+Preconditions 
+
+The tensile test method in 4.3.3.2 shall apply to finished fasteners having: 
+1. 
+a protruding head with grip length equal or greater than twice the 
+nominal diameter, or 
+a  countersunk  head  and  an  overall  length  equal  or  greater  than 
+three times the nominal diameter, or  
+a minimum length of 18 mm. 
+
+3. 
+
+4.3.3.2  Method 
+a. 
+
+Test  jigs  shall  be  designed  and  manufactured  in  accordance  with 
+ISO 3800.  
+Test jigs shall ensure a tensile loading parallel to the fastener main axis. 
+No torsional stress shall be induced by the assembly.  
+Specimens  shall  be  assembled  freely  in  the  fixture  without  bending  or 
+forcing.  
+The bearing face of the threaded part of the jig, Figure 4‐6 (a), or of the 
+nut, Figure 4‐6 (b), shall be located at least four pitches of distance from 
+the unthreaded portion of the shank.  
+The nut threads shall be fully engaged.  
+A bolt length of at least two pitches shall protrude beyond the threaded 
+part of the jig, Figure 4‐6 (a), or the test nut, Figure 4‐6 (b). 
+Test nuts shall be used only once.  
+
+b. 
+c. 
+d. 
+
+e. 
+
+f. 
+g. 
+
+h. 
+
+19 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+i. 
+
+j. 
+
+k. 
+
+l. 
+m. 
+
+n. 
+
+o. 
+
+When tested separately, axial load test of nuts shall be in accordance with 
+clause 3.3 of ISO 9140. 
+Speed of testing shall be defined in terms of rate of separation of the two 
+heads of the testing machine during a test.  
+Speed of testing shall not exceed 25 mm/min. 
+
+NOTE  
+
+Best  practices  is  to  maintain  the  speed  of  testing 
+between 0,5 mm/min and 1,0 mm/min. 
+
+Static failure shall only be tolerated in the shank.  
+Fasteners with static failures occurring at the head‐to‐shank fillets shall 
+be identified as nonconformant.  
+The yield and ultimate tensile load of a tested fastener shall not be less 
+than  the  values  specified  in  the  customer  specification  document  for 
+threaded fasteners.  
+The  cross  sectional area, S,  used  in  the  interpretation  of  the  tensile  test 
+results, expressed in mm2, shall be assumed as the minimum of the two 
+values S1 and S2 given by: 
+
+s π
+(
+d
+=
+4
+
+1
+
+2
+
+)
+
+3
+
+2
+
+−
+
+⎡
+⎢
+⎢
+⎣
+
+⎛
+⎜⎜
+⎝
+
+d
+d
+
+2
+
+3
+
+⎞
+⎟⎟
+⎠
+
+2
+
+⎤
+⎥
+⎥
+⎦
+
+, or 
+
+=s
+2
+
+π
+4
+
+φ
+min
+
+2
+
+ 
+
+is the nominal pitch diameter in mm; 
+the thread root nominal diameter in mm; and  
+
+where: 
+d2 
+d3 
+φmin  the diameter of the minimum fastener cross sectional area if 
+not in the threaded portion. 
+
+4.3.4 
+
+Shear test 
+
+4.3.4.1 
+a. 
+
+2. 
+
+Preconditions 
+
+The shear test method in 4.3.4.2 shall apply to: 
+1. 
+
+finished  fasteners  of  all  sizes  which  meet  one  of  the  three 
+requirements as specified in 4.3.3.1; 
+fasteners with stepped threads (shouldered fasteners).  
+
+4.3.4.2  Method 
+a. 
+
+Shear test shall be carried out in double‐shear loading configuration. 
+Figure  4‐7  shows  an  example  of  double‐shear 
+loading jigs. 
+
+NOTE  
+
+b. 
+
+The  shear  loads  to  failure  shall  be  no  less  than  the  allowable  values 
+specified in the customer specification document for threaded fasteners. 
+
+20 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+4.3.5 
+
+Fatigue test 
+
+4.3.5.1  General 
+a. 
+
+Fatigue tests shall be carried out in accordance with ISO 3800.  
+
+4.3.5.2 
+a. 
+
+Preconditions 
+
+The fatigue test method in 4.3.5.3 shall apply to finished fasteners of all 
+sizes which meet one of the three requirements as specified in 4.3.3.1. 
+
+4.3.5.3  Method 
+a. 
+
+b. 
+
+c. 
+
+d. 
+
+e. 
+
+f. 
+
+g. 
+
+Fasteners shall be loaded in tension in accordance with one of the loading 
+schemes shown in Figure 4‐5. 
+The fatigue test conditions shall be specified in the customer specification 
+document for threaded fasteners in terms of:  
+1. 
+2. 
+3. 
+4. 
+5. 
+The frequency of load fluctuation shall be  
+1. 
+2. 
+
+type of load fluctuation (sinusoidal unless otherwise agreed); 
+stress range in MPa;  
+stress ratio (R);  
+frequency of load fluctuation in Hertz; 
+specified mean and minimum fatigue life in cycles.  
+
+between 4 Hz and 250 Hz; and  
+such that the temperature of the test specimen measured at the first 
+engaged thread is always less than 50°C. 
+
+Stress  calculation  shall  be  based  on  the  expressions  for  fastener  cross 
+sectional area given in 4.3.3.  
+Fatigue strength values shall be determined in the finite life range (failure 
+of  all  test  pieces  before  a  predetermined  number  of  stress  cycles  is 
+reached)  and  in  the  transition  range  where,  up  to  a  predetermined 
+number  (typically  5 × 106  to  5 × 107)  of  stress  cycles,  failure  as  well  as 
+non‐failure occurs.  
+All  the  tested  fasteners  shall  exceed  the  minimum  number  of  cycles 
+specified  for  each  applied  stress  range  in  the  customer  specification 
+document for threaded fasteners.  
+For fasteners with fatigue lives less than the expected mean fatigue life, 
+failure shall not occur in the head‐to‐shank fillet.  
+
+NOTE   No  restrictions 
+
+in  failure 
+
+location  apply  for 
+fasteners with fatigue lives exceeding the expected 
+mean fatigue life. 
+
+4.3.6 
+
+Creep test 
+
+4.3.6.1  General 
+a. 
+
+The creep tests shall be carried out in accordance with ISO 204.  
+
+21 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+b. 
+
+Calculations shall be based on the expressions for fastener cross sectional 
+area given in 4.3.3.2o. 
+
+NOTE 1  Creep  test  is  particularly  recommended  for 
+
+Titanium alloy fasteners.  
+NOTE 2  For details see Annex B. 
+
+4.3.6.2  Method 
+a. 
+
+The percent elongation after fracture, the reduction of area at failure and 
+the time to fracture shall be within the values specified in the customer 
+specification document for threaded fasteners. 
+
+(a)
+
+l
+
+m
+
+(b)
+
+l
+
+m
+
+ 
+
+(l ≥ four times the thread pitch and m ≥ two times the thread pitch) 
+
+Figure 4‐6: Loading schematic for tensile testing of threaded fasteners 
+
+22 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+upper loading plate
+
+bushings
+
+frames
+
+Figure 4‐7: Schematic of an example of double‐shear loading jigs 
+
+ 
+
+4.3.7 
+
+Corrosion test 
+
+4.3.7.1  General 
+a. 
+
+Fasteners 
+ASTM B 117‐07a.  
+
+shall  be 
+
+tested 
+
+for 
+
+corrosion 
+
+in  accordance  with 
+
+4.3.7.2  Method 
+a. 
+
+Sample geometry, exposure time and acceptance criteria shall conform to 
+the  requirements  specified  in  the  customer  specification  document  for 
+threaded fasteners.  
+
+b.  Metallic  fasteners  shall  not  be  in  contact  with  carbon  fibre  composite 
+
+materials. 
+
+NOTE  
+
+The reason is the considerable risk of corrosion. 
+
+4.3.8 
+a. 
+
+Stress-corrosion test 
+
+Stress‐corrosion  testing  shall  be  carried  out 
+ECSS‐Q‐ST‐70‐37C. 
+
+in  accordance  with 
+
+23 
+
+4.4  Quality assurance 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+4.4.1  General 
+a. 
+
+The  supplier  (contractor  or  subcontractor)  shall  implement  the  quality 
+assurance,  inspection  and  quality  control  procedures  specified  herein 
+before any supply activity.  
+The implementation of the procedures shall be maintained for the entire 
+duration of the business agreement. 
+
+b. 
+
+4.4.2  Quality requirements 
+
+4.4.2.1  General 
+a. 
+
+The  supplier  shall  establish  and  implement  adequate  quality  control 
+actions and inspections to provide evidence of conformity to the product 
+requirements.  
+
+NOTE   Quality  control  actions  and  inspections  may  be 
+performed  by 
+the  supplier  or  by  different 
+companies  (e.g.  manufacturers,  test  houses  and 
+external laboratories) entirely under the supplier’s 
+direct responsibility. 
+
+The  manufacturer  shall  have  a  quality  assurance  system  in  place  (e.g. 
+ISO 9001). 
+The  supplier  shall  not  use  fasteners  manufactured  more  than  10  years 
+before use in space hardware. 
+reasons 
+
+are  possible 
+
+NOTE  
+
+The 
+time‐dependent 
+degradation  phenomena  (e.g.  corrosion,  stress 
+corrosion,  design  modifications,  improvements  in 
+materials and manufacturing processes). 
+
+b. 
+
+c. 
+
+b. 
+
+c. 
+
+d. 
+
+4.4.2.2  Quality control of materials 
+a. 
+
+Selection and control of suitable materials for fastener fabrication shall be 
+based on the requirements defined in ECSS‐Q‐ST‐70‐71C.  
+The  supplier  shall  provide  evidence  that  only  materials  in  accordance 
+with the customer specification document for threaded fasteners are used 
+in the fabrication. 
+The  supplier  shall  issue  a  raw  material  certificate  (RMC)  specifying: 
+material standard designation, heat treatment, form, manufacturer, batch 
+number,  batch  chemical  analysis,  batch  tensile  test  results  (0,2 %  proof 
+stress, ultimate stress and elongation) and batch hardness value. 
+In  the  case  where  NDI  is  requested  in  the  customer  specification 
+document for threaded fasteners, the supplier shall include in the RMC 
+the date of the NDI, name of inspector, NDI results with description of 
+any nonconformance. 
+
+24 
+
+Sampling procedure 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+4.4.2.3 
+a. 
+
+ISO 2859‐1 for batch‐by‐batch inspections; or 
+ISO 2859‐2 for isolated batch inspections.  
+
+The supplier in agreement with the customer shall determine a sampling 
+procedure in accordance with: 
+1. 
+2. 
+The  supplier  shall  specify  the  selected  sampling  procedure  in  the 
+customer  specification  document  for  threaded  fasteners  by  defining  a 
+sampling plan.  
+The supplier shall define the batch acceptability criteria in terms of: 
+1. 
+
+acceptance  quality  limit  (AQL),  if  the  batch‐by‐batch  inspection 
+method is selected, or 
+limiting quality (LQ), if the isolated batch inspection is selected. 
+
+2. 
+The supplier shall define sample size in terms of inspection levels.  
+Table  C‐  1  gives  the  recommended  inspection 
+levels, LQ and AQL values to be used.  
+
+NOTE  
+
+The supplier shall draw the specified sample units at random from the 
+batch.  
+
+NOTE   A batch of fasteners is a set of fasteners of the same 
+type and diameter, obtained from the same batch 
+of raw material, manufactured by the same process 
+and heat treated as one batch. 
+
+The supplier shall accept the batch only if the number of nonconforming 
+units  is  less  or  equal  to  the  acceptance  level  specified  in  the  customer 
+specification document for threaded fasteners.  
+The  supplier  shall  reject  any  nonconforming  units  found  during  batch 
+inspection. 
+
+b. 
+
+c. 
+
+d. 
+
+e. 
+
+f. 
+
+g. 
+
+b. 
+
+c. 
+
+d. 
+
+e. 
+
+f. 
+
+g. 
+
+4.4.2.4  Nonconforming batches 
+a. 
+
+In the case where the number of nonconforming units is greater than the 
+acceptance  level  specified  in  the  customer  specification  document  for 
+threaded fasteners, the supplier shall reject the batch.  
+The supplier shall subject re‐submission for inspection of rejected batches 
+to the customer approval.  
+The customer shall determine the method of acceptance to be applied to 
+re‐submitted batches.  
+In re‐submitted batches, the supplier shall re‐examine or re‐test all units 
+in the batch. 
+The  supplier  shall  remove  all  nonconforming  units  or  replace  them  by 
+conforming units.  
+On re‐submission, the supplier shall indicate the nonconforming batches 
+as re‐submitted specifying the cause for previous nonconformance.  
+The supplier shall subject batches of fasteners for safe‐life applications to 
+NDI in all their units. 
+
+25 
+
+4.4.2.5 
+a. 
+
+Product conformance report 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+The  supplier  shall  issue  a  product  conformance  report  (PCR),  in 
+conformance  with  the  DRD  in  Annex  B,  for  each  delivered  batch  of 
+fasteners.  
+The  supplier  shall  deliver  the  PCR  to  the  customer  together  with  the 
+batch of fasteners.  
+
+b. 
+
+b. 
+
+c. 
+
+d. 
+
+e. 
+f. 
+g. 
+
+4.4.2.6 
+a. 
+
+Incoming inspection 
+
+On delivery the customer shall carry out an incoming inspection of the 
+batch.  
+The  customer  shall  establish  if  the  information  given  in  the  PCR  is 
+complete, clear and satisfactory. 
+The  customer  shall  verify  that  the  fastener  identification  marks  are 
+consistent with the information given in the PCR. 
+For  structural  fasteners  with  nominal  diameters  larger  than  4 mm  (M4) 
+which  are  not  directly  procured  from  a  fastener  manufacturer  (i.e. 
+procured through a distributor or vendor), the customer shall carry out: 
+dimensional  check,  tensile  test,  chemical  analysis,  hardness  test  and 
+non‐destructive inspections in accordance with 4.2.4.  
+
+NOTE   A structural fastener is a fastener used in either the 
+
+primary or secondary load path of a structure. 
+
+Sampling procedure shall be in accordance with 4.4.2.3. 
+Only qualified test laboratories shall carry out the tests. 
+The  supplier  shall  provide  evidence  that  the  batch  conforms  to  the 
+customer specifications. 
+
+26 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+Annex A (normative) 
+Customer specification document for 
+threaded fasteners – DRD 
+
+A.1  DRD identification 
+
+A.1.1 
+
+Requirement identification and source 
+document 
+
+This DRD is called from ECSS‐Q‐ST‐70‐46, requirement 4.1.1a. 
+
+Purpose and objective 
+
+A.1.2 
+Within  the  contractual  relation  between  the  customer  and  the  supplier,  the 
+customer specification document for threaded fasteners specifies the technical 
+and quality requirements, and the criteria and procedures to be used to assess 
+the fulfilment of such requirements. The customer specification document for 
+threaded  fasteners  is  prepared  by  the  customer,  who  sets  the  technical  and 
+quality  requirements,  in  collaboration  with  the  supplier,  who  agrees  to  the 
+requirements and procedures.  
+This DRD does not define format, presentation or delivery requirements of the 
+customer specification document for threaded fasteners. 
+
+A.2  Expected response 
+
+A.2.1 
+
+Scope and contents 
+
+<1> 
+a. 
+
+Specifications 
+
+The document shall specify the following items: 
+1. 
+
+The selected raw material in terms of: standard designation, heat 
+treatment, form, minimum mechanical properties (hardness, 0,2 % 
+proof stress, UTS, elongation and toughness).  
+
+27 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+2. 
+
+3. 
+
+4. 
+5. 
+
+The  complete  fastener  manufacturing  process  in  terms  of  all  the 
+single  operations  required  from  the  raw  material  to  obtain  the 
+finished product. 
+The  nominal  dimension,  tolerance  and  geometry  of  the  finished 
+fastener. 
+Indication of fastener designation and thread type. 
+Technical  drawings  enclosed 
+document for threaded fasteners. 
+Surface treatment of finished fasteners. 
+
+the  customer  specification 
+
+to 
+
+6. 
+7.  Minimum hardness values of finished fasteners. 
+8. 
+
+Tensile  mechanical  properties  of  finished  fasteners  in  terms  of: 
+load to yield, ultimate load and elongation to failure. 
+9.  Minimum shear load to failure of finished fasteners. 
+10.  Minimum and mean required fatigue strength of finished fasteners 
+in  terms  of  stress  range  versus  fatigue  cycles  (S‐N  curves)  at 
+specified constant stress ratios.  
+
+11.  Minimum  creep  properties  of  finished  fasteners  in  terms  of 
+
+elongation, reduction of area and time to failure. 
+
+in 
+
+requirements 
+
+12.  Corrosion 
+
+terms  of  exposure 
+
+time  and 
+acceptability criteria (maximum number and density of corrosion 
+pits). 
+Stress‐corrosion testing if requested. 
+
+13. 
+14.  Definition of mechanical test methods and conditions for e. f. g. h. 
+i. j. and k. in accordance with the relevant clauses of this Standard 
+and other applicable standards. 
+
+15.  Quality control plan in terms of: identification marking, sampling 
+procedure,  sampling  plan  and  non‐destructive  inspection  (NDI) 
+plan.  
+
+16.  Definition of procedures and time schedule for handling, storage, 
+
+transportation and delivery.  
+
+Special remarks 
+
+A.2.2 
+None. 
+
+28 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+Annex B (normative) 
+Product conformance report (PCR) – DRD 
+
+B.1  DRD identification 
+
+B.1.1 
+
+Requirement identification and source 
+document 
+
+This DRD is called from ECSS‐Q‐ST‐70‐46, requirement 4.4.2.5a. 
+
+Purpose and objective 
+
+B.1.2 
+This DRD defines the contents of the PCR. 
+
+B.2  Expected response 
+
+B.2.1 
+
+Scope and contents 
+
+<1> 
+a. 
+
+Contents 
+
+The PCR shall indicate: 
+1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+
+batch supplier name/code; 
+date of batch manufacturing; 
+purchase order form; 
+raw or semi‐finished material supplier name/code; 
+date of raw or semi‐finished material production; 
+batch identification number and fastener identification marks; 
+reference to fastener specifications; 
+the raw material certificate (RMC) including a report of quality the 
+inspections  (destructive  and  non‐destructive)  carried  out  on  the 
+raw or semi‐finished material as specified in this document; 
+report of the fasteners quality control inspections (destructive and 
+non‐destructive) as specified in this document; 
+
+9. 
+
+29 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+10. 
+11. 
+
+report of conformance/nonconformance and corrective actions;  
+any other relevant documentation. 
+
+Special remarks 
+
+B.2.2 
+None. 
+
+30 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+Annex C (informative) 
+Inspection levels, acceptance quality limits 
+(AQL) and limiting quality levels (LQ) for 
+inspection of fasteners 
+
+Table C‐ 1: Inspection levels, acceptance quality limits (AQL) and limiting quality 
+
+levels (LQ) for inspection of fasteners 
+
+Inspection 
+method 
+Hardness test 
+
+Dimensional and 
+surface control 
+
+Microstructural 
+examination and 
+chemical analysis 
+
+Inspection for 
+surface defects by 
+NDI 
+
+Inspection for 
+surface defects by 
+NDI – Safe‐life 
+applications 
+Tensile test 
+
+Shear test 
+
+Corrosion test 
+
+High‐strength 
+
+steel 
+
+Inspection level 
+S‐3, AQL 0,65 
+LQ 5,0 % 
+Inspection level II, 
+AQL 0,65 
+LQ 2,00 % 
+Inspection level 
+S‐1, AQL 1,5 
+LQ 12,5 % 
+Inspection level II, 
+AQL 0,065 
+LQ 0,5 % 
+100 % batch 
+inspection 
+
+Stainless steel 
+
+Inspection level 
+S‐3, AQL 0,65 
+LQ 5,0 % 
+Inspection level II, 
+AQL 0,65 
+LQ 2,00 % 
+Inspection level 
+S‐1, AQL 1,5 
+LQ 12,5 % 
+Inspection level II, 
+AQL 0,065 
+LQ 0,5 % 
+100 % batch 
+inspection 
+
+Titanium alloys 
+– 
+
+Inspection level II, 
+AQL 0,65 
+LQ 2,00 % 
+Inspection level 
+S‐1, AQL 1,5 
+LQ 12,5 % 
+Inspection level II, 
+AQL 0,065 
+LQ 0,5 % 
+100 % batch 
+inspection 
+
+Alloys for high 
+
+temperature 
+applications  
+Inspection level II, 
+AQL 0,65 
+LQ 2,0 % 
+Inspection level II, 
+AQL 0,65 
+LQ 2,0 % 
+Inspection level 
+S‐1, AQL 1,5 
+LQ 12,5 % 
+Inspection level II, 
+AQL 0,065 
+LQ 0,5 % 
+100 % batch 
+inspection 
+
+Inspection level 
+S‐1, AQL 1,5 
+LQ 12,5 % 
+As specified by the 
+customer 
+(*) 
+As specified by the  As specified by the  As specified by the  As specified by the 
+
+Inspection level 
+S‐1, AQL 1,5 
+LQ 12,5 % 
+As specified by the 
+customer 
+(*) 
+
+Inspection level 
+S‐3, AQL 1,0 
+LQ 8,0 % 
+As specified by the 
+customer 
+(*) 
+
+Inspection level 
+S‐1, AQL 1,5 
+LQ 12,5 % 
+As specified by the 
+customer 
+(*) 
+
+31 
+
+Inspection 
+method 
+
+Stress‐corrosion 
+test 
+Fatigue test 
+
+Creep test 
+
+High‐strength 
+
+steel 
+
+customer 
+(*) 
+As specified by the 
+customer 
+As specified by the 
+customer 
+(*) 
+As specified by the 
+customer 
+(*) 
+
+Hydrogen content  As specified by the 
+
+Outgassing 
+
+Offgassing 
+
+customer 
+(*) 
+As specified by the 
+customer 
+As specified by the 
+customer 
+
+(*) Test carried out on customer request. 
+
+ 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+Stainless steel 
+
+customer 
+(*) 
+As specified by the 
+customer 
+As specified by the 
+customer 
+(*) 
+As specified by the 
+customer 
+(*) 
+As specified by the 
+customer 
+(*) 
+As specified by the 
+customer 
+As specified by the 
+customer 
+
+Titanium alloys 
+customer 
+(*) 
+As specified by the 
+customer 
+As specified by the 
+customer 
+(*) 
+As specified by the 
+customer 
+(*) 
+Inspection level 
+S‐1, AQL 2,5 
+LQ 20,0 % 
+As specified by the 
+customer 
+As specified by the 
+customer 
+
+Alloys for high 
+
+temperature 
+applications  
+
+customer 
+(*) 
+As specified by the 
+customer 
+As specified by the 
+customer 
+(*) 
+As specified by the 
+customer 
+(*) 
+As specified by the 
+customer 
+(*) 
+As specified by the 
+customer 
+As specified by the 
+customer 
+
+32 
+
+ECSS‐Q‐ST‐70‐46C Rev.1 
+6 March 2009 
+
+Bibliography 
+
+ECSS‐S‐ST‐00 
+
+ 
+ 
+
+ 
+
+ECSS system – Description, implementation and 
+general requirements 
+ 
+
+33 
+
+
