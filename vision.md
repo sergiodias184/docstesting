@@ -1,4 +1,4 @@
-Documents converter
+VisionSpace
 ===================
 The script **converter.py** allows you convert any docx file into a Markdown file and any PDF file into a Markdown, text and HTML file. 
 
@@ -18,24 +18,6 @@ In the pdfminer folder:
 > python setup.py install
 
 > **Note:** The files **converter.py** and **main.py** have to be in the same directory as well the folder **pdf2md** 
-
-### Docx
-The script creates a new folder with the file name, and there are the Markdown file and their images.
-
-### PDF
-Sometimes PDF files have some restrictions, and the scrip starts to remove this restrictions and create a new file without them. The script also creates a folder with the file name and there are 3 files (Markdown,Text and HTML) and the extract images from the PDF.
-
-**Usage**
-=======
-After you downloaded the project:
->git clone https://github.com/visionspacetec/papper.git
->cd papper 
-
-Just type: 
-
->python converter.py  `<dir>`
-
-where **`<dir>`** is the script input, that desfines the location containing the input files.
 
 
 
